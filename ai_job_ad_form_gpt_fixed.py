@@ -175,6 +175,10 @@ st.session_state["values"]["education"] = st.selectbox(
         "I. level university degree", "II. level university degree", "III. level university degree"
     ].index(st.session_state["values"]["education"])
 )
+st.session_state["values"]["job_description"] = st.text_area("Job Description", st.session_state["values"].get("job_description", ""))
+st.session_state["values"]["benefits"] = st.text_area("Employee Benefits", st.session_state["values"].get("benefits", ""))
+st.session_state["values"]["skills"] = st.text_area("Skills and Education", st.session_state["values"].get("skills", ""))
+
 
 st.markdown("---")
 
