@@ -55,7 +55,7 @@ Extract these fields:
 
 
 Then generate the following content:
-- job_title: A single friendly job ad headline (max 60 characters, no exclamation marks)
+- job_title: A single creative friendly job ad headline (max 60 characters, no exclamation marks)
 - job_description_html: A <ul> list with at least 6 bullet points including job activities, daily routine (2 points max), and working hours (2 points max)
 - employee_benefits_html: A <ul> list with 6 friendly, engaging benefit sentences tailored to jobs in Slovakia
 - personality_prerequisites_and_skills_html: A <ul> list with 6 short lines describing required education, soft and hard skills
