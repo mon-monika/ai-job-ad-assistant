@@ -51,7 +51,7 @@ Extract these fields:
 - place_of_work:
     • type: one of: "Work is regularly performed in one workplace", "Work at a workplace with optional work from home", "Remote work", "The job requires travel"
     • location: if needed
-- salary: amount (numeric), currency (EUR, CZK, HUF), and time_period ("per month", "per hour")
+- salary: amount (numeric, pick the midpoint or lower value if a range is given), currency (EUR, CZK, HUF), and time_period ("per month", "per hour")
 - education_attained: one of:
   "elementary education",
   "secondary school with a GCSE equivalent",
