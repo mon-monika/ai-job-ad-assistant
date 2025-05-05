@@ -119,9 +119,11 @@ with st.expander("✨ Use AI to prefill the form"):
                 st.session_state["values"]["salary_currency"] = salary.get("currency", "EUR")
                 st.session_state["values"]["salary_period"] = salary.get("time_period", "per month")
                 st.session_state["values"]["education"] = result.get("education_attained", "")
-                st.session_state["values"]["job_description_html"] = result.get("job_description_html", "")
-                st.session_state["values"]["employee_benefits_html"] = result.get("employee_benefits_html", "")
-                st.session_state["values"]["personality_prerequisites_and_skills_html"] = result.get("personality_prerequisites_and_skills_html", "")
+                
+                # Clean HTML tags and show plain text
+                st.session_state["values"]["job_description_html"] = "\n".join(result.get("job_description_html", "").split("<li>")[1:]).replace("</li>", "")
+                st.session_state["values"]["employee_benefits_html"] = "\n".join(result.get("employee_benefits_html", "").split("<li>")[1:]).replace("</li>", "")
+                st.session_state["values"]["personality_prerequisites_and_skills_html"] = "\n".join(result.get("personality_prerequisites_and_skills_html", "").split("<li>")[1:]).replace("</li>", "")
         else:
             st.warning("Please enter a prompt before generating.")
 
@@ -172,51 +174,30 @@ st.session_state["values"]["education"] = st.selectbox(
 
 st.markdown("---")
 
-# Always show content inputs, fill them only after AI generates
+# Only show the editable text areas for job description, benefits, and skills
 st.subheader("📄 Job Description")
 st.session_state["values"]["job_description_html"] = st.text_area(
-    "Generated Job Description (HTML)", 
+    "Generated Job Description", 
     value=st.session_state["values"].get("job_description_html", ""), 
     height=180
 )
 
 st.subheader("🎁 Employee Benefits")
 st.session_state["values"]["employee_benefits_html"] = st.text_area(
-    "Generated Benefits (HTML)", 
+    "Generated Benefits", 
     value=st.session_state["values"].get("employee_benefits_html", ""), 
     height=150
 )
 
 st.subheader("🧠 Personality & Skills")
 st.session_state["values"]["personality_prerequisites_and_skills_html"] = st.text_area(
-    "Generated Skills (HTML)", 
+    "Generated Skills", 
     value=st.session_state["values"].get("personality_prerequisites_and_skills_html", ""), 
     height=150
 )
 
 st.subheader("🧪 Job Title Suggestion")
-st.session_state["values"]["job_title_variants"]["friendly"] = st.text_input(
-    "Friendly Job Title", 
-    value=st.session_state["values"]["job_title_variants"].get("friendly", "")
-)
-
-if "job_description_html" in st.session_state["values"]:
-    st.subheader("📄 Job Description")
-    st.markdown(st.session_state["values"]["job_description_html"], unsafe_allow_html=True)
-
-if "employee_benefits_html" in st.session_state["values"]:
-    st.subheader("🎁 Employee Benefits")
-    st.markdown(st.session_state["values"]["employee_benefits_html"], unsafe_allow_html=True)
-
-if "personality_prerequisites_and_skills_html" in st.session_state["values"]:
-    st.subheader("🧠 Personality & Skills")
-    st.markdown(st.session_state["values"]["personality_prerequisites_and_skills_html"], unsafe_allow_html=True)
-
-if "job_title_variants" in st.session_state["values"]:
-    st.subheader("🧪 Job Title Suggestions")
-    st.write(f"**Friendly:** {st.session_state['values']['job_title_variants']['friendly']}")
-
-st.markdown("---")
+# Removed job title input field at the bottom
 
 if st.button("✅ Submit"):
     st.success("Form submitted successfully!")
