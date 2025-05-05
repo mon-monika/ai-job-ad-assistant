@@ -217,9 +217,6 @@ st.session_state["values"]["personality_prerequisites_and_skills_html"] = st.tex
     height=150
 )
 
-st.subheader("🧪 Job Title Suggestion")
-# Removed job title input field at the bottom
-
 if st.button("✅ Submit"):
     st.success("Form submitted successfully!")
     st.json(st.session_state["values"])
