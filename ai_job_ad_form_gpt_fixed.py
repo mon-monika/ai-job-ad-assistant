@@ -61,37 +61,7 @@ Extract these fields:
   "II. level university degree",
   "III. level university degree"
 
-
-Then generate the following content:
-- job_title_variants: 3 creative job ad headlines (max 60 characters each, one serious, all unique, no exclamation marks)
-- job_description_html: A <ul> list with at least 6 bullet points including job activities, daily routine (2 points max), and working hours (2 points max)
-- employee_benefits_html: A <ul> list with 6 friendly, engaging benefit sentences tailored to jobs in Slovakia
-- personality_prerequisites_and_skills_html: A <ul> list with 6 short lines describing required education, soft and hard skills
-
-Return everything as a single JSON object with these keys:
-{
-  "job_title": "",
-  "employment_type": [],
-  "place_of_work": {
-    "type": "",
-    "location": ""
-  },
-  "salary": {
-    "amount": null,
-    "currency": "",
-    "time_period": ""
-  },
-  "education_attained": "",
-  "job_title_variants": {
-    "serious": "",
-    "casual": "",
-    "creative": ""
-  },
-  "job_description_html": "<ul>...</ul>",
-  "employee_benefits_html": "<ul>...</ul>",
-  "personality_prerequisites_and_skills_html": "<ul>...</ul>"
-}
-
+Return this as a JSON object.
 """
 
     user_prompt = f"Here is the job description: {prompt_text}"
@@ -179,48 +149,6 @@ st.session_state["values"]["education"] = st.selectbox(
         "I. level university degree", "II. level university degree", "III. level university degree"
     ].index(st.session_state["values"]["education"])
 )
-
-st.markdown("---")
-
-# Always-visible editable fields for AI-generated content
-
-st.subheader("📄 Job Description")
-st.session_state["values"]["job_description_html"] = st.text_area(
-    "Job Description (HTML)", 
-    value=st.session_state["values"].get("job_description_html", ""), 
-    height=180
-)
-
-st.subheader("🎁 Employee Benefits")
-st.session_state["values"]["employee_benefits_html"] = st.text_area(
-    "Employee Benefits (HTML)", 
-    value=st.session_state["values"].get("employee_benefits_html", ""), 
-    height=150
-)
-
-st.subheader("🧠 Personality & Skills")
-st.session_state["values"]["personality_prerequisites_and_skills_html"] = st.text_area(
-    "Personality Prerequisites & Skills (HTML)", 
-    value=st.session_state["values"].get("personality_prerequisites_and_skills_html", ""), 
-    height=150
-)
-
-if "job_description_html" in st.session_state["values"]:
-    st.subheader("📄 Job Description")
-    st.markdown(st.session_state["values"]["job_description_html"], unsafe_allow_html=True)
-
-if "employee_benefits_html" in st.session_state["values"]:
-    st.subheader("🎁 Employee Benefits")
-    st.markdown(st.session_state["values"]["employee_benefits_html"], unsafe_allow_html=True)
-
-if "personality_prerequisites_and_skills_html" in st.session_state["values"]:
-    st.subheader("🧠 Personality & Skills")
-    st.markdown(st.session_state["values"]["personality_prerequisites_and_skills_html"], unsafe_allow_html=True)
-
-if "job_title_variants" in st.session_state["values"]:
-    st.subheader("🧪 Alternative Job Title Suggestions")
-    for label, title in st.session_state["values"]["job_title_variants"].items():
-        st.write(f"**{label.capitalize()}:** {title}")
 
 st.markdown("---")
 
