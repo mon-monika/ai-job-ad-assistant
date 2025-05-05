@@ -132,6 +132,12 @@ with st.expander("✨ Use AI to prefill the form"):
                 st.session_state["values"]["salary_currency"] = salary.get("currency", "EUR")
                 st.session_state["values"]["salary_period"] = salary.get("time_period", "per month")
                 st.session_state["values"]["education"] = result.get("education_attained", "")
+
+                st.session_state["values"]["job_description_html"] = result.get("job_description_html", "")
+                st.session_state["values"]["employee_benefits_html"] = result.get("employee_benefits_html", "")
+                st.session_state["values"]["personality_prerequisites_and_skills_html"] = result.get("personality_prerequisites_and_skills_html", "")
+                st.session_state["values"]["job_title_variants"] = result.get("job_title_variants", {})
+
         else:
             st.warning("Please enter a prompt before generating.")
 
@@ -182,7 +188,35 @@ st.session_state["values"]["education"] = st.selectbox(
 
 st.markdown("---")
 
-# Display AI-generated content if available
+# Display content fields (always visible, filled by AI if generated)
+st.subheader("📄 Job Description")
+st.session_state["values"]["job_description_html"] = st.text_area(
+    "Generated Job Description (HTML)", 
+    value=st.session_state["values"].get("job_description_html", ""), 
+    height=180
+)
+
+st.subheader("🎁 Employee Benefits")
+st.session_state["values"]["employee_benefits_html"] = st.text_area(
+    "Generated Benefits (HTML)", 
+    value=st.session_state["values"].get("employee_benefits_html", ""), 
+    height=150
+)
+
+st.subheader("🧠 Personality & Skills")
+st.session_state["values"]["personality_prerequisites_and_skills_html"] = st.text_area(
+    "Generated Skills (HTML)", 
+    value=st.session_state["values"].get("personality_prerequisites_and_skills_html", ""), 
+    height=150
+)
+
+st.subheader("🧪 Alternative Job Title Suggestions")
+variant_defaults = st.session_state["values"].get("job_title_variants", {"serious": "", "casual": "", "creative": ""})
+variant_inputs = {}
+for mood in ["serious", "casual", "creative"]:
+    variant_inputs[mood] = st.text_input(f"{mood.capitalize()} title", value=variant_defaults.get(mood, ""))
+st.session_state["values"]["job_title_variants"] = variant_inputs
+
 if "job_description_html" in st.session_state["values"]:
     st.subheader("📄 Job Description")
     st.markdown(st.session_state["values"]["job_description_html"], unsafe_allow_html=True)
