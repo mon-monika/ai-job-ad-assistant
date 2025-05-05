@@ -182,34 +182,28 @@ st.session_state["values"]["education"] = st.selectbox(
 
 st.markdown("---")
 
-# Always show content inputs, fill them only after AI generates
+# Always-visible editable fields for AI-generated content
+
 st.subheader("📄 Job Description")
 st.session_state["values"]["job_description_html"] = st.text_area(
-    "Generated Job Description (HTML)", 
+    "Job Description (HTML)", 
     value=st.session_state["values"].get("job_description_html", ""), 
     height=180
 )
 
 st.subheader("🎁 Employee Benefits")
 st.session_state["values"]["employee_benefits_html"] = st.text_area(
-    "Generated Benefits (HTML)", 
+    "Employee Benefits (HTML)", 
     value=st.session_state["values"].get("employee_benefits_html", ""), 
     height=150
 )
 
 st.subheader("🧠 Personality & Skills")
 st.session_state["values"]["personality_prerequisites_and_skills_html"] = st.text_area(
-    "Generated Skills (HTML)", 
+    "Personality Prerequisites & Skills (HTML)", 
     value=st.session_state["values"].get("personality_prerequisites_and_skills_html", ""), 
     height=150
 )
-
-st.subheader("🧪 Alternative Job Title Suggestions")
-variant_defaults = st.session_state["values"].get("job_title_variants", {"serious": "", "casual": "", "creative": ""})
-variant_inputs = {}
-for mood in ["serious", "casual", "creative"]:
-    variant_inputs[mood] = st.text_input(f"{mood.capitalize()} title", value=variant_defaults.get(mood, ""))
-st.session_state["values"]["job_title_variants"] = variant_inputs
 
 if "job_description_html" in st.session_state["values"]:
     st.subheader("📄 Job Description")
