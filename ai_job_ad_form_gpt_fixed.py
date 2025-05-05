@@ -55,12 +55,12 @@ Extract these fields:
   "III. level university degree"
 
 
-Then generate the following content:
-- job_title: A single friendly job ad headline (max 60 characters, no exclamation marks)
-- job_description_html: A <ul> list with at least 6 bullet points including job activities, daily routine (2 points max), and working hours (2 points max)
-- employee_benefits_html: A <ul> list with 6 friendly, engaging benefit sentences tailored to jobs in Slovakia
-- personality_prerequisites_and_skills_html: A <ul> list with 6 short lines describing required education, soft and hard skills
-
+Then generate the following content, and make sure it’s in bullet points:
+- job_title: A single creative and friendly job ad headline (max 60 characters, no exclamation marks)
+- job_description_html: A <ul> list with at least 6 bullet points, each item representing a specific responsibility or task.
+- employee_benefits_html: A <ul> list with 6 friendly, engaging benefit sentences tailored to jobs in Slovakia.
+- personality_prerequisites_and_skills_html: A <ul> list with 6 short lines describing required education, soft and hard skills.
+  
 Return everything as a single JSON object with these keys:
 {
   "job_title": "",
@@ -80,6 +80,7 @@ Return everything as a single JSON object with these keys:
   "employee_benefits_html": "<ul>...</ul>",
   "personality_prerequisites_and_skills_html": "<ul>...</ul>"
 }
+
 """
 
     user_prompt = f"Here is the job description: {prompt_text}"
@@ -121,17 +122,19 @@ with st.expander("✨ Use AI to prefill the form"):
                 st.session_state["values"]["salary_period"] = salary.get("time_period", "per month")
                 st.session_state["values"]["education"] = result.get("education_attained", "")
                 
-                # Clean HTML tags and show plain text with bullet points (fixing the ul/li tags)
-                def clean_html_list(html):
-                    # Remove the <ul> tags and replace <li> tags with bullet points
-                    clean_text = re.sub(r'<ul>|</ul>', '', html)  # Remove <ul> and </ul>
-                    clean_text = re.sub(r'<li>', '- ', clean_text)  # Replace <li> with bullet point
-                    clean_text = re.sub(r'</li>', '', clean_text)  # Remove </li> tags
-                    return clean_text.strip()
+               # Clean HTML tags and show plain text with bullet points (fixing the ul/li tags)
+def clean_html_list(html):
+    # Remove the <ul> tags and replace <li> tags with bullet points
+    clean_text = re.sub(r'<ul>|</ul>', '', html)  # Remove <ul> and </ul>
+    clean_text = re.sub(r'<li>', '- ', clean_text)  # Replace <li> with bullet point
+    clean_text = re.sub(r'</li>', '', clean_text)  # Remove </li> tags
+    return clean_text.strip()
 
-                st.session_state["values"]["job_description_html"] = clean_html_list(result.get("job_description_html", ""))
-                st.session_state["values"]["employee_benefits_html"] = clean_html_list(result.get("employee_benefits_html", ""))
-                st.session_state["values"]["personality_prerequisites_and_skills_html"] = clean_html_list(result.get("personality_prerequisites_and_skills_html", ""))
+# Apply the clean_html_list function to each field
+st.session_state["values"]["job_description_html"] = clean_html_list(result.get("job_description_html", ""))
+st.session_state["values"]["employee_benefits_html"] = clean_html_list(result.get("employee_benefits_html", ""))
+st.session_state["values"]["personality_prerequisites_and_skills_html"] = clean_html_list(result.get("personality_prerequisites_and_skills_html", ""))
+
         else:
             st.warning("Please enter a prompt before generating.")
 
