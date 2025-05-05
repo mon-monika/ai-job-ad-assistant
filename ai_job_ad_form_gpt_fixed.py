@@ -2,7 +2,6 @@ import streamlit as st
 import openai
 import os
 import json
-import re  # For regular expression handling
 
 # Load API key securely
 openai.api_key = st.secrets["OPENAI_API_KEY"]
@@ -55,12 +54,12 @@ Extract these fields:
   "III. level university degree"
 
 
-Then generate the following content, and make sure it’s in bullet points:
-- job_title: A single creative and friendly job ad headline (max 60 characters, no exclamation marks)
-- job_description_html: A <ul> list with at least 6 bullet points, each item representing a specific responsibility or task.
-- employee_benefits_html: A <ul> list with 6 friendly, engaging benefit sentences tailored to jobs in Slovakia.
-- personality_prerequisites_and_skills_html: A <ul> list with 6 short lines describing required education, soft and hard skills.
-  
+Then generate the following content:
+- job_title: A single friendly job ad headline (max 60 characters, no exclamation marks)
+- job_description_html: A <ul> list with at least 6 bullet points including job activities, daily routine (2 points max), and working hours (2 points max)
+- employee_benefits_html: A <ul> list with 6 friendly, engaging benefit sentences tailored to jobs in Slovakia
+- personality_prerequisites_and_skills_html: A <ul> list with 6 short lines describing required education, soft and hard skills
+
 Return everything as a single JSON object with these keys:
 {
   "job_title": "",
@@ -80,7 +79,6 @@ Return everything as a single JSON object with these keys:
   "employee_benefits_html": "<ul>...</ul>",
   "personality_prerequisites_and_skills_html": "<ul>...</ul>"
 }
-
 """
 
     user_prompt = f"Here is the job description: {prompt_text}"
@@ -122,36 +120,20 @@ with st.expander("✨ Use AI to prefill the form"):
                 st.session_state["values"]["salary_period"] = salary.get("time_period", "per month")
                 st.session_state["values"]["education"] = result.get("education_attained", "")
                 
-# --- AI Section ---
-try:
-    # Generate result from AI
-    result = generate_from_prompt(user_prompt)  # Assuming this is the function that generates the result
-
-    # Ensure result contains expected keys
-    if result:
-        job_description_html = result.get("job_description_html", "")
-        employee_benefits_html = result.get("employee_benefits_html", "")
-        personality_prerequisites_and_skills_html = result.get("personality_prerequisites_and_skills_html", "")
-
-        # Clean HTML tags and show plain text with bullet points
-        def clean_html_list(html):
-            # Remove the <ul> tags and replace <li> tags with bullet points
-            clean_text = re.sub(r'<ul>|</ul>', '', html)  # Remove <ul> and </ul>
-            clean_text = re.sub(r'<li>', '- ', clean_text)  # Replace <li> with bullet point
-            clean_text = re.sub(r'</li>', '', clean_text)  # Remove </li> tags
-            return clean_text.strip()
-
-        # Apply the clean_html_list function to each field
-        st.session_state["values"]["job_description_html"] = clean_html_list(job_description_html)
-        st.session_state["values"]["employee_benefits_html"] = clean_html_list(employee_benefits_html)
-        st.session_state["values"]["personality_prerequisites_and_skills_html"] = clean_html_list(personality_prerequisites_and_skills_html)
-    else:
-        st.warning("AI did not return a valid result.")
-
-except Exception as e:
-    st.error(f"An error occurred: {e}")
-
-
+                # Clean HTML tags and show plain text with bullet points
+                st.session_state["values"]["job_description_html"] = "\n".join(
+                    [f"- {item.strip()}</li>" for item in result.get("job_description_html", "").split("<li>")[1:]]
+                ).replace("</li>", "")
+                
+                st.session_state["values"]["employee_benefits_html"] = "\n".join(
+                    [f"- {item.strip()}</li>" for item in result.get("employee_benefits_html", "").split("<li>")[1:]]
+                ).replace("</li>", "")
+                
+                st.session_state["values"]["personality_prerequisites_and_skills_html"] = "\n".join(
+                    [f"- {item.strip()}</li>" for item in result.get("personality_prerequisites_and_skills_html", "").split("<li>")[1:]]
+                ).replace("</li>", "")
+        else:
+            st.warning("Please enter a prompt before generating.")
 
 st.markdown("---")
 st.subheader("📄 Job Ad Form")
@@ -174,26 +156,13 @@ st.session_state["values"]["workplace_type"] = st.selectbox(
 st.session_state["values"]["workplace_location"] = st.text_input("Workplace Location", st.session_state["values"]["workplace_location"])
 
 col1, col2, col3 = st.columns(3)
-
-# Ensuring valid value for salary_currency
-valid_currencies = ["EUR", "CZK", "HUF"]
-salary_currency_value = st.session_state["values"].get("salary_currency", "EUR")  # Default to "EUR" if not set
-
-# If the value is not valid, default it to "EUR"
-if salary_currency_value not in valid_currencies:
-    salary_currency_value = "EUR"
-
-# Ensuring valid value for salary_amount
-salary_value = st.session_state["values"].get("salary_amount", 0.0)  # Default to 0 if not set
-
-# Now, assigning the number input for salary and the selectbox for currency
+try:
+    salary_value = float(st.session_state["values"].get("salary_amount", 0.0))
+except (TypeError, ValueError):
+    salary_value = 0.0
 st.session_state["values"]["salary_amount"] = col1.number_input("Salary Amount", value=salary_value)
-st.session_state["values"]["salary_currency"] = col2.selectbox(
-    "Currency", valid_currencies, index=valid_currencies.index(salary_currency_value)
-)
-
+st.session_state["values"]["salary_currency"] = col2.selectbox("Currency", ["EUR", "CZK", "HUF"], index=["EUR", "CZK", "HUF"].index(st.session_state["values"]["salary_currency"]))
 st.session_state["values"]["salary_period"] = col3.selectbox("Salary Period", ["per month", "per hour"], index=["per month", "per hour"].index(st.session_state["values"]["salary_period"]))
-
 
 st.session_state["values"]["education"] = st.selectbox(
     "Education Attained",
@@ -234,6 +203,9 @@ st.session_state["values"]["personality_prerequisites_and_skills_html"] = st.tex
     value=st.session_state["values"].get("personality_prerequisites_and_skills_html", ""), 
     height=150
 )
+
+st.subheader("🧪 Job Title Suggestion")
+# Removed job title input field at the bottom
 
 if st.button("✅ Submit"):
     st.success("Form submitted successfully!")
