@@ -66,18 +66,16 @@ Return this as a JSON object.
 
     user_prompt = f"Here is the job description: {prompt_text}"
 
-client = openai.OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
-
-response = client.chat.completions.create(
-    model="gpt-4",
-    messages=[
-        {"role": "system", "content": system_prompt},
-        {"role": "user", "content": user_prompt}
-    ],
-    temperature=0.4
-)
-
-raw_text = response.choices[0].message.content
+    client = openai.OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
+    response = client.chat.completions.create(
+        model="gpt-4",
+        messages=[
+            {"role": "system", "content": system_prompt},
+            {"role": "user", "content": user_prompt}
+        ],
+        temperature=0.4
+    )
+    raw_text = response.choices[0].message.content
     try:
         return json.loads(raw_text)
     except json.JSONDecodeError:
@@ -153,3 +151,4 @@ st.markdown("---")
 if st.button("✅ Submit"):
     st.success("Form submitted successfully!")
     st.json(st.session_state["values"])
+
