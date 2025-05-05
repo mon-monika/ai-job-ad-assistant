@@ -173,7 +173,7 @@ st.session_state["values"]["salary_amount"] = col1.number_input("Salary Amount",
 st.session_state["values"]["salary_currency"] = col2.selectbox(
     "Currency", valid_currencies, index=valid_currencies.index(salary_currency_value)
 )
-)
+
 st.session_state["values"]["salary_period"] = col3.selectbox("Salary Period", ["per month", "per hour"], index=["per month", "per hour"].index(st.session_state["values"]["salary_period"]))
 
 
