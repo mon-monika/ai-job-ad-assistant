@@ -41,11 +41,10 @@ if "values" not in st.session_state:
     }
 
 # --- Real GPT-4 call ---
-def generate_from_prompt(prompt_text):
+def generate_from_prompt(prompt_text, field_type):
     system_prompt = """
 You are assisting a recruiter by generating a structured job ad based on freeform input. Based on the provided text:
-
-Extract these fields:
+    
 - job_title
 - employment_type: full-time, part-time, internship, trade licence, agreement-based (1 or more)
 - place_of_work:
@@ -63,8 +62,15 @@ Extract these fields:
 
 Return this as a JSON object.
 """
-
-    user_prompt = f"Here is the job description: {prompt_text}"
+    user_prompt = ""
+    if field_type == "job_title":
+        user_prompt = f"You are an experienced HR manager in a company that wants to fill the position of {prompt_text}. Come up with a headline for a job advertisement to be posted on a job portal. The character count for each headline is a maximum of 60. The language is English. You must not use an exclamation mark."
+    elif field_type == "job_description":
+        user_prompt = f"Formulate in a minimum of 6 points the job description and activities typical for the position of {prompt_text}. Address the job applicant using the formal 'you' in the present tense. The tone of the text should be friendly and informal."
+    elif field_type == "benefits":
+        user_prompt = f"Formulate in 6 sentences typical company benefits that will interest applicants for the job position {prompt_text}. Adjust your benefit suggestions for the job position in Slovakia, but keep the output in English. The tone of the text is friendly and informal."
+    elif field_type == "skills":
+        user_prompt = f"Formulate in 6 short sentences typical skills and education required for the position of {prompt_text}. The tone of the text is friendly and informal. Put each skill on a separate line. Always return the text as an HTML list."
 
     client = openai.OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
     response = client.chat.completions.create(
@@ -77,7 +83,7 @@ Return this as a JSON object.
     )
     raw_text = response.choices[0].message.content
     try:
-        return json.loads(raw_text)
+        return raw_text
     except json.JSONDecodeError:
         st.error("⚠️ AI output could not be parsed. Try rewording your prompt.")
         return {}
@@ -102,6 +108,26 @@ with st.expander("✨ Use AI to prefill the form"):
                 st.session_state["values"]["salary_currency"] = salary.get("currency", "EUR")
                 st.session_state["values"]["salary_period"] = salary.get("time_period", "per month")
                 st.session_state["values"]["education"] = result.get("education_attained", "")
+                job_title = generate_from_prompt(user_prompt, "job_title")
+            st.session_state["values"]["job_title"] = job_title
+            
+            # Generate job description
+            job_description = generate_from_prompt(user_prompt, "job_description")
+            st.session_state["values"]["job_description"] = job_description
+
+            # Generate employee benefits
+            benefits = generate_from_prompt(user_prompt, "benefits")
+            st.session_state["values"]["benefits"] = benefits
+
+            # Generate skills
+            skills = generate_from_prompt(user_prompt, "skills")
+            st.session_state["values"]["skills"] = skills
+
+            # Populate the form with results
+            st.write(f"**Job Title:** {job_title}")
+            st.write(f"**Job Description:** {job_description}")
+            st.write(f"**Benefits:** {benefits}")
+            st.write(f"**Skills and Education:** {skills}")
         else:
             st.warning("Please enter a prompt before generating.")
 
