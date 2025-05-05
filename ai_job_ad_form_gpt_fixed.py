@@ -61,7 +61,37 @@ Extract these fields:
   "II. level university degree",
   "III. level university degree"
 
-Return this as a JSON object.
+
+Then generate the following content:
+- job_title_variants: 3 creative job ad headlines (max 60 characters each, one serious, all unique, no exclamation marks)
+- job_description_html: A <ul> list with at least 6 bullet points including job activities, daily routine (2 points max), and working hours (2 points max)
+- employee_benefits_html: A <ul> list with 6 friendly, engaging benefit sentences tailored to jobs in Slovakia
+- personality_prerequisites_and_skills_html: A <ul> list with 6 short lines describing required education, soft and hard skills
+
+Return everything as a single JSON object with these keys:
+{
+  "job_title": "",
+  "employment_type": [],
+  "place_of_work": {
+    "type": "",
+    "location": ""
+  },
+  "salary": {
+    "amount": null,
+    "currency": "",
+    "time_period": ""
+  },
+  "education_attained": "",
+  "job_title_variants": {
+    "serious": "",
+    "casual": "",
+    "creative": ""
+  },
+  "job_description_html": "<ul>...</ul>",
+  "employee_benefits_html": "<ul>...</ul>",
+  "personality_prerequisites_and_skills_html": "<ul>...</ul>"
+}
+
 """
 
     user_prompt = f"Here is the job description: {prompt_text}"
@@ -152,6 +182,26 @@ st.session_state["values"]["education"] = st.selectbox(
 
 st.markdown("---")
 
-if st.button("✅ Submit"):
+# Display AI-generated content if available
+if "job_description_html" in st.session_state["values"]:
+    st.subheader("📄 Job Description")
+    st.markdown(st.session_state["values"]["job_description_html"], unsafe_allow_html=True)
+
+if "employee_benefits_html" in st.session_state["values"]:
+    st.subheader("🎁 Employee Benefits")
+    st.markdown(st.session_state["values"]["employee_benefits_html"], unsafe_allow_html=True)
+
+if "personality_prerequisites_and_skills_html" in st.session_state["values"]:
+    st.subheader("🧠 Personality & Skills")
+    st.markdown(st.session_state["values"]["personality_prerequisites_and_skills_html"], unsafe_allow_html=True)
+
+if "job_title_variants" in st.session_state["values"]:
+    st.subheader("🧪 Alternative Job Title Suggestions")
+    for label, title in st.session_state["values"]["job_title_variants"].items():
+        st.write(f"**{label.capitalize()}:** {title}")
+
+st.markdown("---")
+
+if st.button("✅ Submit"):"
     st.success("Form submitted successfully!")
     st.json(st.session_state["values"])
