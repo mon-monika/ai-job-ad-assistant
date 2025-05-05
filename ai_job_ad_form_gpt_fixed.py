@@ -10,17 +10,25 @@ st.set_page_config(page_title="AI Job Ad Assistant", layout="centered")
 st.title("📝 Job Ad Form")
 
 # --- Initialize session state safely ---
+# --- Robust session state initialization ---
+default_values = {
+    "job_title": "",
+    "employment_type": [],
+    "workplace_type": "",
+    "workplace_location": "",
+    "salary_amount": 0,
+    "salary_currency": "EUR",
+    "salary_period": "per month",
+    "education": ""
+}
+
 if "values" not in st.session_state:
-    st.session_state.values = {
-        "job_title": "",
-        "employment_type": [],
-        "workplace_type": "",
-        "workplace_location": "",
-        "salary_amount": 0,
-        "salary_currency": "EUR",
-        "salary_period": "per month",
-        "education": ""
-    }
+    st.session_state.values = default_values.copy()
+else:
+    for key, default in default_values.items():
+        if key not in st.session_state.values:
+            st.session_state.values[key] = default
+
 
 # --- Real GPT-4 call ---
 def generate_from_prompt(prompt_text):
