@@ -158,6 +158,13 @@ st.session_state["values"]["workplace_location"] = st.text_input("Workplace Loca
 col1, col2, col3 = st.columns(3)
 
 # Ensuring valid value for salary_currency
+col1, col2, col3 = st.columns(3)
+
+# Ensuring valid value for salary_amount
+salary_value = st.session_state["values"].get("salary_amount", 0.0)  # Default to 0 if not set
+
+st.session_state["values"]["salary_amount"] = col1.number_input("Salary Amount", value=salary_value)
+
 valid_currencies = ["EUR", "CZK", "HUF"]
 salary_currency_value = st.session_state["values"].get("salary_currency", "EUR")
 if salary_currency_value not in valid_currencies:
