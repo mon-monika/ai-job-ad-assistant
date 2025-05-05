@@ -2,6 +2,7 @@ import streamlit as st
 import openai
 import os
 import json
+import re  # For regular expression handling
 
 # Load API key securely
 openai.api_key = st.secrets["OPENAI_API_KEY"]
@@ -55,7 +56,7 @@ Extract these fields:
 
 
 Then generate the following content:
-- job_title: A single creative friendly job ad headline (max 60 characters, no exclamation marks)
+- job_title: A single friendly job ad headline (max 60 characters, no exclamation marks)
 - job_description_html: A <ul> list with at least 6 bullet points including job activities, daily routine (2 points max), and working hours (2 points max)
 - employee_benefits_html: A <ul> list with 6 friendly, engaging benefit sentences tailored to jobs in Slovakia
 - personality_prerequisites_and_skills_html: A <ul> list with 6 short lines describing required education, soft and hard skills
@@ -122,10 +123,11 @@ with st.expander("✨ Use AI to prefill the form"):
                 
                 # Clean HTML tags and show plain text with bullet points (fixing the ul/li tags)
                 def clean_html_list(html):
-                    # Remove the <ul> and </ul> tags and replace <li> with bullet points
-                    return "\n".join(
-                        [f"- {item.strip()}</li>" for item in html.split("<li>")[1:]]
-                    ).replace("</li>", "")
+                    # Remove the <ul> tags and replace <li> tags with bullet points
+                    clean_text = re.sub(r'<ul>|</ul>', '', html)  # Remove <ul> and </ul>
+                    clean_text = re.sub(r'<li>', '- ', clean_text)  # Replace <li> with bullet point
+                    clean_text = re.sub(r'</li>', '', clean_text)  # Remove </li> tags
+                    return clean_text.strip()
 
                 st.session_state["values"]["job_description_html"] = clean_html_list(result.get("job_description_html", ""))
                 st.session_state["values"]["employee_benefits_html"] = clean_html_list(result.get("employee_benefits_html", ""))
@@ -201,6 +203,9 @@ st.session_state["values"]["personality_prerequisites_and_skills_html"] = st.tex
     value=st.session_state["values"].get("personality_prerequisites_and_skills_html", ""), 
     height=150
 )
+
+st.subheader("🧪 Job Title Suggestion")
+# Removed job title input field at the bottom
 
 if st.button("✅ Submit"):
     st.success("Form submitted successfully!")
