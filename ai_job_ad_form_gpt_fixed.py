@@ -202,6 +202,6 @@ if "job_title_variants" in st.session_state["values"]:
 
 st.markdown("---")
 
-if st.button("✅ Submit"):"
+if st.button("✅ Submit"):
     st.success("Form submitted successfully!")
     st.json(st.session_state["values"])
