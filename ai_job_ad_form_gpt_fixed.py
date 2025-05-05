@@ -28,18 +28,6 @@ else:
         if key not in st.session_state["values"]:
             st.session_state["values"][key] = default
 
-if "values" not in st.session_state:
-    st.session_state["values"] = {
-        "job_title": "",
-        "employment_type": [],
-        "workplace_type": "",
-        "workplace_location": "",
-        "salary_amount": 0,
-        "salary_currency": "EUR",
-        "salary_period": "per month",
-        "education": ""
-    }
-
 # --- Real GPT-4 call ---
 def generate_from_prompt(prompt_text, field_type):
     system_prompt = """
@@ -96,21 +84,10 @@ with st.expander("✨ Use AI to prefill the form"):
     )
     if st.button("Generate with AI"):
         if user_prompt.strip():
-            result = generate_from_prompt(user_prompt)
-            if result:
-                st.session_state["values"]["job_title"] = result.get("job_title", "")
-                st.session_state["values"]["employment_type"] = result.get("employment_type", [])
-                place = result.get("place_of_work", {})
-                st.session_state["values"]["workplace_type"] = place.get("type", "")
-                st.session_state["values"]["workplace_location"] = place.get("location", "")
-                salary = result.get("salary", {})
-                st.session_state["values"]["salary_amount"] = salary.get("amount", 0)
-                st.session_state["values"]["salary_currency"] = salary.get("currency", "EUR")
-                st.session_state["values"]["salary_period"] = salary.get("time_period", "per month")
-                st.session_state["values"]["education"] = result.get("education_attained", "")
-                job_title = generate_from_prompt(user_prompt, "job_title")
+            # Generate job title
+            job_title = generate_from_prompt(user_prompt, "job_title")
             st.session_state["values"]["job_title"] = job_title
-            
+
             # Generate job description
             job_description = generate_from_prompt(user_prompt, "job_description")
             st.session_state["values"]["job_description"] = job_description
