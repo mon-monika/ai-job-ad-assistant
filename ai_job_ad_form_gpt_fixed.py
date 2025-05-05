@@ -126,7 +126,8 @@ st.session_state["values"]["workplace_type"] = st.selectbox(
 st.session_state["values"]["workplace_location"] = st.text_input("Workplace Location", st.session_state["values"]["workplace_location"])
 
 col1, col2, col3 = st.columns(3)
-st.session_state["values"]["salary_amount"] = col1.number_input("Salary Amount", value=st.session_state["values"]["salary_amount"])
+salary_value = st.session_state["values"].get("salary_amount", 0.0) or 0.0
+st.session_state["values"]["salary_amount"] = col1.number_input("Salary Amount", value=salary_value)
 st.session_state["values"]["salary_currency"] = col2.selectbox("Currency", ["EUR", "CZK", "HUF"], index=["EUR", "CZK", "HUF"].index(st.session_state["values"]["salary_currency"]))
 st.session_state["values"]["salary_period"] = col3.selectbox("Salary Period", ["per month", "per hour"], index=["per month", "per hour"].index(st.session_state["values"]["salary_period"]))
 
@@ -151,4 +152,3 @@ st.markdown("---")
 if st.button("✅ Submit"):
     st.success("Form submitted successfully!")
     st.json(st.session_state["values"])
-
