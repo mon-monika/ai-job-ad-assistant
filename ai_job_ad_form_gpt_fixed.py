@@ -22,14 +22,14 @@ default_values = {
 }
 
 if "values" not in st.session_state:
-    st.session_state.values = default_values.copy()
+    st.session_state["values"] = default_values.copy()
 else:
     for key, default in default_values.items():
-        if key not in st.session_state.values:
-            st.session_state.values[key] = default
+        if key not in st.session_state["values"]:
+            st.session_state["values"][key] = default
 
 if "values" not in st.session_state:
-    st.session_state.values = {
+    st.session_state["values"] = {
         "job_title": "",
         "employment_type": [],
         "workplace_type": "",
@@ -92,16 +92,16 @@ with st.expander("✨ Use AI to prefill the form"):
         if user_prompt.strip():
             result = generate_from_prompt(user_prompt)
             if result:
-                st.session_state.values["job_title"] = result.get("job_title", "")
-                st.session_state.values["employment_type"] = result.get("employment_type", [])
+                st.session_state["values"]["job_title"] = result.get("job_title", "")
+                st.session_state["values"]["employment_type"] = result.get("employment_type", [])
                 place = result.get("place_of_work", {})
-                st.session_state.values["workplace_type"] = place.get("type", "")
-                st.session_state.values["workplace_location"] = place.get("location", "")
+                st.session_state["values"]["workplace_type"] = place.get("type", "")
+                st.session_state["values"]["workplace_location"] = place.get("location", "")
                 salary = result.get("salary", {})
-                st.session_state.values["salary_amount"] = salary.get("amount", 0)
-                st.session_state.values["salary_currency"] = salary.get("currency", "EUR")
-                st.session_state.values["salary_period"] = salary.get("time_period", "per month")
-                st.session_state.values["education"] = result.get("education_attained", "")
+                st.session_state["values"]["salary_amount"] = salary.get("amount", 0)
+                st.session_state["values"]["salary_currency"] = salary.get("currency", "EUR")
+                st.session_state["values"]["salary_period"] = salary.get("time_period", "per month")
+                st.session_state["values"]["education"] = result.get("education_attained", "")
         else:
             st.warning("Please enter a prompt before generating.")
 
@@ -109,28 +109,28 @@ st.markdown("---")
 st.subheader("📄 Job Ad Form")
 
 # --- Job Ad Form Inputs ---
-st.session_state.values["job_title"] = st.text_input("Job Title", st.session_state.values["job_title"])
+st.session_state["values"]["job_title"] = st.text_input("Job Title", st.session_state["values"]["job_title"])
 
-st.session_state.values["employment_type"] = st.multiselect(
+st.session_state["values"]["employment_type"] = st.multiselect(
     "Employment Type",
     ["full-time", "part-time", "internship", "trade licence", "agreement-based"],
-    default=st.session_state.values["employment_type"]
+    default=st.session_state["values"]["employment_type"]
 )
 
-st.session_state.values["workplace_type"] = st.selectbox(
+st.session_state["values"]["workplace_type"] = st.selectbox(
     "Workplace Type",
     ["", "Work is regularly performed in one workplace", "Work at a workplace with optional work from home", "Remote work", "The job requires travel"],
-    index=0 if not st.session_state.values["workplace_type"] else ["", "Work is regularly performed in one workplace", "Work at a workplace with optional work from home", "Remote work", "The job requires travel"].index(st.session_state.values["workplace_type"])
+    index=0 if not st.session_state["values"]["workplace_type"] else ["", "Work is regularly performed in one workplace", "Work at a workplace with optional work from home", "Remote work", "The job requires travel"].index(st.session_state["values"]["workplace_type"])
 )
 
-st.session_state.values["workplace_location"] = st.text_input("Workplace Location", st.session_state.values["workplace_location"])
+st.session_state["values"]["workplace_location"] = st.text_input("Workplace Location", st.session_state["values"]["workplace_location"])
 
 col1, col2, col3 = st.columns(3)
-st.session_state.values["salary_amount"] = col1.number_input("Salary Amount", value=st.session_state.values["salary_amount"])
-st.session_state.values["salary_currency"] = col2.selectbox("Currency", ["EUR", "CZK", "HUF"], index=["EUR", "CZK", "HUF"].index(st.session_state.values["salary_currency"]))
-st.session_state.values["salary_period"] = col3.selectbox("Salary Period", ["per month", "per hour"], index=["per month", "per hour"].index(st.session_state.values["salary_period"]))
+st.session_state["values"]["salary_amount"] = col1.number_input("Salary Amount", value=st.session_state["values"]["salary_amount"])
+st.session_state["values"]["salary_currency"] = col2.selectbox("Currency", ["EUR", "CZK", "HUF"], index=["EUR", "CZK", "HUF"].index(st.session_state["values"]["salary_currency"]))
+st.session_state["values"]["salary_period"] = col3.selectbox("Salary Period", ["per month", "per hour"], index=["per month", "per hour"].index(st.session_state["values"]["salary_period"]))
 
-st.session_state.values["education"] = st.selectbox(
+st.session_state["values"]["education"] = st.selectbox(
     "Education Attained",
     [
         "", "elementary education", "secondary school with a GCSE equivalent",
@@ -138,16 +138,16 @@ st.session_state.values["education"] = st.selectbox(
         "post-secondary technical follow-up / tertiary professional",
         "I. level university degree", "II. level university degree", "III. level university degree"
     ],
-    index=0 if not st.session_state.values["education"] else [
+    index=0 if not st.session_state["values"]["education"] else [
         "", "elementary education", "secondary school with a GCSE equivalent",
         "secondary school with an A-Levels equivalent",
         "post-secondary technical follow-up / tertiary professional",
         "I. level university degree", "II. level university degree", "III. level university degree"
-    ].index(st.session_state.values["education"])
+    ].index(st.session_state["values"]["education"])
 )
 
 st.markdown("---")
 
 if st.button("✅ Submit"):
     st.success("Form submitted successfully!")
-    st.json(st.session_state.values)
+    st.json(st.session_state["values"])
