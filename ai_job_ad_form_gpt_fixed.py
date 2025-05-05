@@ -120,18 +120,16 @@ with st.expander("✨ Use AI to prefill the form"):
                 st.session_state["values"]["salary_period"] = salary.get("time_period", "per month")
                 st.session_state["values"]["education"] = result.get("education_attained", "")
                 
-                # Clean HTML tags and show plain text with bullet points
-                st.session_state["values"]["job_description_html"] = "\n".join(
-                    [f"- {item.strip()}</li>" for item in result.get("job_description_html", "").split("<li>")[1:]]
-                ).replace("</li>", "")
-                
-                st.session_state["values"]["employee_benefits_html"] = "\n".join(
-                    [f"- {item.strip()}</li>" for item in result.get("employee_benefits_html", "").split("<li>")[1:]]
-                ).replace("</li>", "")
-                
-                st.session_state["values"]["personality_prerequisites_and_skills_html"] = "\n".join(
-                    [f"- {item.strip()}</li>" for item in result.get("personality_prerequisites_and_skills_html", "").split("<li>")[1:]]
-                ).replace("</li>", "")
+                # Clean HTML tags and show plain text with bullet points (fixing the ul/li tags)
+                def clean_html_list(html):
+                    # Remove the <ul> and </ul> tags and replace <li> with bullet points
+                    return "\n".join(
+                        [f"- {item.strip()}</li>" for item in html.split("<li>")[1:]]
+                    ).replace("</li>", "")
+
+                st.session_state["values"]["job_description_html"] = clean_html_list(result.get("job_description_html", ""))
+                st.session_state["values"]["employee_benefits_html"] = clean_html_list(result.get("employee_benefits_html", ""))
+                st.session_state["values"]["personality_prerequisites_and_skills_html"] = clean_html_list(result.get("personality_prerequisites_and_skills_html", ""))
         else:
             st.warning("Please enter a prompt before generating.")
 
@@ -203,9 +201,6 @@ st.session_state["values"]["personality_prerequisites_and_skills_html"] = st.tex
     value=st.session_state["values"].get("personality_prerequisites_and_skills_html", ""), 
     height=150
 )
-
-st.subheader("🧪 Job Title Suggestion")
-# Removed job title input field at the bottom
 
 if st.button("✅ Submit"):
     st.success("Form submitted successfully!")
