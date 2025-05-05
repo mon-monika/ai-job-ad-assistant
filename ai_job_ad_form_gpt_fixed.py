@@ -122,26 +122,35 @@ with st.expander("✨ Use AI to prefill the form"):
                 st.session_state["values"]["salary_period"] = salary.get("time_period", "per month")
                 st.session_state["values"]["education"] = result.get("education_attained", "")
                 
-# Ensure result contains expected keys
-if result:
-    job_description_html = result.get("job_description_html", "")
-    employee_benefits_html = result.get("employee_benefits_html", "")
-    personality_prerequisites_and_skills_html = result.get("personality_prerequisites_and_skills_html", "")
+# --- AI Section ---
+try:
+    # Generate result from AI
+    result = generate_from_prompt(user_prompt)  # Assuming this is the function that generates the result
 
-    # Clean HTML tags and show plain text with bullet points
-    def clean_html_list(html):
-        # Remove the <ul> tags and replace <li> tags with bullet points
-        clean_text = re.sub(r'<ul>|</ul>', '', html)  # Remove <ul> and </ul>
-        clean_text = re.sub(r'<li>', '- ', clean_text)  # Replace <li> with bullet point
-        clean_text = re.sub(r'</li>', '', clean_text)  # Remove </li> tags
-        return clean_text.strip()
+    # Ensure result contains expected keys
+    if result:
+        job_description_html = result.get("job_description_html", "")
+        employee_benefits_html = result.get("employee_benefits_html", "")
+        personality_prerequisites_and_skills_html = result.get("personality_prerequisites_and_skills_html", "")
 
-    # Apply the clean_html_list function to each field
-    st.session_state["values"]["job_description_html"] = clean_html_list(job_description_html)
-    st.session_state["values"]["employee_benefits_html"] = clean_html_list(employee_benefits_html)
-    st.session_state["values"]["personality_prerequisites_and_skills_html"] = clean_html_list(personality_prerequisites_and_skills_html)
-else:
-    st.warning("Please enter a prompt before generating.")
+        # Clean HTML tags and show plain text with bullet points
+        def clean_html_list(html):
+            # Remove the <ul> tags and replace <li> tags with bullet points
+            clean_text = re.sub(r'<ul>|</ul>', '', html)  # Remove <ul> and </ul>
+            clean_text = re.sub(r'<li>', '- ', clean_text)  # Replace <li> with bullet point
+            clean_text = re.sub(r'</li>', '', clean_text)  # Remove </li> tags
+            return clean_text.strip()
+
+        # Apply the clean_html_list function to each field
+        st.session_state["values"]["job_description_html"] = clean_html_list(job_description_html)
+        st.session_state["values"]["employee_benefits_html"] = clean_html_list(employee_benefits_html)
+        st.session_state["values"]["personality_prerequisites_and_skills_html"] = clean_html_list(personality_prerequisites_and_skills_html)
+    else:
+        st.warning("AI did not return a valid result.")
+
+except Exception as e:
+    st.error(f"An error occurred: {e}")
+
 
 
 st.markdown("---")
