@@ -132,12 +132,6 @@ with st.expander("✨ Use AI to prefill the form"):
                 st.session_state["values"]["salary_currency"] = salary.get("currency", "EUR")
                 st.session_state["values"]["salary_period"] = salary.get("time_period", "per month")
                 st.session_state["values"]["education"] = result.get("education_attained", "")
-
-                st.session_state["values"]["job_description_html"] = result.get("job_description_html", "")
-                st.session_state["values"]["employee_benefits_html"] = result.get("employee_benefits_html", "")
-                st.session_state["values"]["personality_prerequisites_and_skills_html"] = result.get("personality_prerequisites_and_skills_html", "")
-                st.session_state["values"]["job_title_variants"] = result.get("job_title_variants", {})
-
         else:
             st.warning("Please enter a prompt before generating.")
 
@@ -188,7 +182,7 @@ st.session_state["values"]["education"] = st.selectbox(
 
 st.markdown("---")
 
-# Display content fields (always visible, filled by AI if generated)
+# Always show content inputs, fill them only after AI generates
 st.subheader("📄 Job Description")
 st.session_state["values"]["job_description_html"] = st.text_area(
     "Generated Job Description (HTML)", 
