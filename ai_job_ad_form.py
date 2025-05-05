@@ -1,12 +1,10 @@
 import streamlit as st
 
 st.set_page_config(page_title="AI Job Ad Assistant", layout="centered")
-
 st.title("📝 Job Ad Form")
 
-# Session state to store values across reruns
-if "prefilled" not in st.session_state:
-    st.session_state.prefilled = False
+# --- Initialize session state safely ---
+if "values" not in st.session_state:
     st.session_state.values = {
         "job_title": "",
         "employment_type": [],
@@ -17,6 +15,7 @@ if "prefilled" not in st.session_state:
         "salary_period": "per month",
         "education": ""
     }
+
 
 # Simulated AI output for testing
 def generate_from_prompt(prompt):
