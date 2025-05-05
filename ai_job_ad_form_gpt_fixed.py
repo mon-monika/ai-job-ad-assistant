@@ -158,14 +158,21 @@ st.session_state["values"]["workplace_location"] = st.text_input("Workplace Loca
 col1, col2, col3 = st.columns(3)
 
 # Ensuring valid value for salary_currency
-col1, col2, col3 = st.columns(3)
+valid_currencies = ["EUR", "CZK", "HUF"]
+salary_currency_value = st.session_state["values"].get("salary_currency", "EUR")  # Default to "EUR" if not set
+
+# If the value is not valid, default it to "EUR"
+if salary_currency_value not in valid_currencies:
+    salary_currency_value = "EUR"
 
 # Ensuring valid value for salary_amount
 salary_value = st.session_state["values"].get("salary_amount", 0.0)  # Default to 0 if not set
 
+# Now, assigning the number input for salary and the selectbox for currency
 st.session_state["values"]["salary_amount"] = col1.number_input("Salary Amount", value=salary_value)
 st.session_state["values"]["salary_currency"] = col2.selectbox(
     "Currency", valid_currencies, index=valid_currencies.index(salary_currency_value)
+)
 )
 st.session_state["values"]["salary_period"] = col3.selectbox("Salary Period", ["per month", "per hour"], index=["per month", "per hour"].index(st.session_state["values"]["salary_period"]))
 
