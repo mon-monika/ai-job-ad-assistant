@@ -18,7 +18,11 @@ default_values = {
     "salary_amount": 0,
     "salary_currency": "EUR",
     "salary_period": "per month",
-    "education": ""
+    "education": "",
+    "job_description_html": "",
+    "employee_benefits_html": "",
+    "personality_prerequisites_and_skills_html": "",
+    "job_title_variants": {"friendly": ""}
 }
 
 if "values" not in st.session_state:
@@ -29,10 +33,11 @@ else:
             st.session_state["values"][key] = default
 
 # --- Real GPT-4 call ---
-def generate_from_prompt(prompt_text, field_type):
+def generate_from_prompt(prompt_text):
     system_prompt = """
 You are assisting a recruiter by generating a structured job ad based on freeform input. Based on the provided text:
-    
+
+Extract these fields:
 - job_title
 - employment_type: full-time, part-time, internship, trade licence, agreement-based (1 or more)
 - place_of_work:
@@ -48,17 +53,35 @@ You are assisting a recruiter by generating a structured job ad based on freefor
   "II. level university degree",
   "III. level university degree"
 
-Return this as a JSON object.
+
+Then generate the following content:
+- job_title: A single friendly job ad headline (max 60 characters, no exclamation marks)
+- job_description_html: A <ul> list with at least 6 bullet points including job activities, daily routine (2 points max), and working hours (2 points max)
+- employee_benefits_html: A <ul> list with 6 friendly, engaging benefit sentences tailored to jobs in Slovakia
+- personality_prerequisites_and_skills_html: A <ul> list with 6 short lines describing required education, soft and hard skills
+
+Return everything as a single JSON object with these keys:
+{
+  "job_title": "",
+  "employment_type": [],
+  "place_of_work": {
+    "type": "",
+    "location": ""
+  },
+  "salary": {
+    "amount": null,
+    "currency": "",
+    "time_period": ""
+  },
+  "education_attained": "",
+  "job_title": "",
+  "job_description_html": "<ul>...</ul>",
+  "employee_benefits_html": "<ul>...</ul>",
+  "personality_prerequisites_and_skills_html": "<ul>...</ul>"
+}
 """
-    user_prompt = ""
-    if field_type == "job_title":
-        user_prompt = f"You are an experienced HR manager in a company that wants to fill the position of {prompt_text}. Come up with a headline for a job advertisement to be posted on a job portal. The character count for each headline is a maximum of 60. The language is English. You must not use an exclamation mark."
-    elif field_type == "job_description":
-        user_prompt = f"Formulate in a minimum of 6 points the job description and activities typical for the position of {prompt_text}. Address the job applicant using the formal 'you' in the present tense. The tone of the text should be friendly and informal."
-    elif field_type == "benefits":
-        user_prompt = f"Formulate in 6 sentences typical company benefits that will interest applicants for the job position {prompt_text}. Adjust your benefit suggestions for the job position in Slovakia, but keep the output in English. The tone of the text is friendly and informal."
-    elif field_type == "skills":
-        user_prompt = f"Formulate in 6 short sentences typical skills and education required for the position of {prompt_text}. The tone of the text is friendly and informal. Put each skill on a separate line. Always return the text as an HTML list."
+
+    user_prompt = f"Here is the job description: {prompt_text}"
 
     client = openai.OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
     response = client.chat.completions.create(
@@ -71,7 +94,7 @@ Return this as a JSON object.
     )
     raw_text = response.choices[0].message.content
     try:
-        return raw_text
+        return json.loads(raw_text)
     except json.JSONDecodeError:
         st.error("⚠️ AI output could not be parsed. Try rewording your prompt.")
         return {}
@@ -84,27 +107,21 @@ with st.expander("✨ Use AI to prefill the form"):
     )
     if st.button("Generate with AI"):
         if user_prompt.strip():
-            # Generate job title
-            job_title = generate_from_prompt(user_prompt, "job_title")
-            st.session_state["values"]["job_title"] = job_title
-
-            # Generate job description
-            job_description = generate_from_prompt(user_prompt, "job_description")
-            st.session_state["values"]["job_description"] = job_description
-
-            # Generate employee benefits
-            benefits = generate_from_prompt(user_prompt, "benefits")
-            st.session_state["values"]["benefits"] = benefits
-
-            # Generate skills
-            skills = generate_from_prompt(user_prompt, "skills")
-            st.session_state["values"]["skills"] = skills
-
-            # Populate the form with results
-            st.write(f"**Job Title:** {job_title}")
-            st.write(f"**Job Description:** {job_description}")
-            st.write(f"**Benefits:** {benefits}")
-            st.write(f"**Skills and Education:** {skills}")
+            result = generate_from_prompt(user_prompt)
+            if result:
+                st.session_state["values"]["job_title"] = result.get("job_title", "")
+                st.session_state["values"]["employment_type"] = result.get("employment_type", [])
+                place = result.get("place_of_work", {})
+                st.session_state["values"]["workplace_type"] = place.get("type", "")
+                st.session_state["values"]["workplace_location"] = place.get("location", "")
+                salary = result.get("salary", {})
+                st.session_state["values"]["salary_amount"] = salary.get("amount", 0)
+                st.session_state["values"]["salary_currency"] = salary.get("currency", "EUR")
+                st.session_state["values"]["salary_period"] = salary.get("time_period", "per month")
+                st.session_state["values"]["education"] = result.get("education_attained", "")
+                st.session_state["values"]["job_description_html"] = result.get("job_description_html", "")
+                st.session_state["values"]["employee_benefits_html"] = result.get("employee_benefits_html", "")
+                st.session_state["values"]["personality_prerequisites_and_skills_html"] = result.get("personality_prerequisites_and_skills_html", "")
         else:
             st.warning("Please enter a prompt before generating.")
 
@@ -152,10 +169,52 @@ st.session_state["values"]["education"] = st.selectbox(
         "I. level university degree", "II. level university degree", "III. level university degree"
     ].index(st.session_state["values"]["education"])
 )
-st.session_state["values"]["job_description"] = st.text_area("Job Description", st.session_state["values"].get("job_description", ""))
-st.session_state["values"]["benefits"] = st.text_area("Employee Benefits", st.session_state["values"].get("benefits", ""))
-st.session_state["values"]["skills"] = st.text_area("Skills and Education", st.session_state["values"].get("skills", ""))
 
+st.markdown("---")
+
+# Always show content inputs, fill them only after AI generates
+st.subheader("📄 Job Description")
+st.session_state["values"]["job_description_html"] = st.text_area(
+    "Generated Job Description (HTML)", 
+    value=st.session_state["values"].get("job_description_html", ""), 
+    height=180
+)
+
+st.subheader("🎁 Employee Benefits")
+st.session_state["values"]["employee_benefits_html"] = st.text_area(
+    "Generated Benefits (HTML)", 
+    value=st.session_state["values"].get("employee_benefits_html", ""), 
+    height=150
+)
+
+st.subheader("🧠 Personality & Skills")
+st.session_state["values"]["personality_prerequisites_and_skills_html"] = st.text_area(
+    "Generated Skills (HTML)", 
+    value=st.session_state["values"].get("personality_prerequisites_and_skills_html", ""), 
+    height=150
+)
+
+st.subheader("🧪 Job Title Suggestion")
+st.session_state["values"]["job_title_variants"]["friendly"] = st.text_input(
+    "Friendly Job Title", 
+    value=st.session_state["values"]["job_title_variants"].get("friendly", "")
+)
+
+if "job_description_html" in st.session_state["values"]:
+    st.subheader("📄 Job Description")
+    st.markdown(st.session_state["values"]["job_description_html"], unsafe_allow_html=True)
+
+if "employee_benefits_html" in st.session_state["values"]:
+    st.subheader("🎁 Employee Benefits")
+    st.markdown(st.session_state["values"]["employee_benefits_html"], unsafe_allow_html=True)
+
+if "personality_prerequisites_and_skills_html" in st.session_state["values"]:
+    st.subheader("🧠 Personality & Skills")
+    st.markdown(st.session_state["values"]["personality_prerequisites_and_skills_html"], unsafe_allow_html=True)
+
+if "job_title_variants" in st.session_state["values"]:
+    st.subheader("🧪 Job Title Suggestions")
+    st.write(f"**Friendly:** {st.session_state['values']['job_title_variants']['friendly']}")
 
 st.markdown("---")
 
