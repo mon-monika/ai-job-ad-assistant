@@ -135,9 +135,6 @@ st.session_state["values"]["job_description_html"] = clean_html_list(result.get(
 st.session_state["values"]["employee_benefits_html"] = clean_html_list(result.get("employee_benefits_html", ""))
 st.session_state["values"]["personality_prerequisites_and_skills_html"] = clean_html_list(result.get("personality_prerequisites_and_skills_html", ""))
 
-else:
-st.warning("Please enter a prompt before generating.")
-
 st.markdown("---")
 st.subheader("📄 Job Ad Form")
 
