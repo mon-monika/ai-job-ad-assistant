@@ -33,9 +33,11 @@ else:
 # --- Real GPT-4 call ---
 def generate_from_prompt(prompt_text):
     system_prompt = """
-    You are assisting a recruiter by generating a structured job ad based on freeform input. Based on the provided text, return the following in **valid JSON format** without any introduction or explanation text:
-
-    - job_title: A motivational and friendly job title (max 60 characters)
+    You are assisting a recruiter by generating a structured job ad based on freeform input. Based on the provided text, return the following in **valid JSON format** without any introduction or explanation text.
+    
+    Your response MUST include ALL of these fields:
+    
+    - job_title: A creative job title (max 60 characters)
     - employment_type: full-time, part-time, internship, trade licence, agreement-based (1 or more)
     - place_of_work:
         • type: one of: "Work is regularly performed in one workplace", "Work at a workplace with optional work from home", "Remote work", "The job requires travel"
@@ -43,26 +45,13 @@ def generate_from_prompt(prompt_text):
     - salary: amount (numeric, pick the midpoint or lower value if a range is given), currency (EUR, CZK, HUF), and time_period ("per month", "per hour")
     - education_attained: one of:
         "elementary education", "secondary school with a GCSE equivalent", "secondary school with an A-Levels equivalent", "post-secondary technical follow-up / tertiary professional", "I. level university degree", "II. level university degree", "III. level university degree"
+    - job_description_html: A detailed HTML list of job responsibilities and tasks (<ul><li>item</li></ul> format)
+    - employee_benefits_html: A detailed HTML list of benefits offered (<ul><li>item</li></ul> format)
+    - personality_prerequisites_and_skills_html: A detailed HTML list of required skills and traits (<ul><li>item</li></ul> format)
 
-    Return ONLY the JSON object without any explanatory text before or after it. For example:
-
-    {
-        "job_title": "Product Manager - Innovate with Us",
-        "employment_type": ["full-time"],
-        "place_of_work": {
-            "type": "Remote work",
-            "location": "Bratislava"
-        },
-        "salary": {
-            "amount": 1500,
-            "currency": "EUR",
-            "time_period": "per month"
-        },
-        "education_attained": "I. level university degree",
-        "job_description_html": "<ul><li>Lead product development</li><li>Collaborate with teams</li><li>Enhance user experience</li></ul>",
-        "employee_benefits_html": "<ul><li>Remote work</li><li>Competitive salary</li><li>Flexible hours</li></ul>",
-        "personality_prerequisites_and_skills_html": "<ul><li>Problem-solving skills</li><li>Team collaboration</li><li>Excellent communication</li></ul>"
-    }
+    If any information is not explicitly provided, use your best judgment to create appropriate content for the missing fields.
+    
+    Return ONLY the JSON object without any explanatory text before or after it.
     """
     user_prompt = f"Here is the job description: {prompt_text}"
 
@@ -90,6 +79,60 @@ def generate_from_prompt(prompt_text):
             if json_start >= 0 and json_end > json_start:
                 json_text = raw_text[json_start:json_end]
                 job_ad = json.loads(json_text)  # Parse the JSON string
+                
+                # Check for missing fields
+                required_fields = [
+                    "job_description_html", 
+                    "employee_benefits_html", 
+                    "personality_prerequisites_and_skills_html"
+                ]
+                
+                missing_fields = [field for field in required_fields if field not in job_ad]
+                if missing_fields:
+                    st.warning(f"The AI response is missing these fields: {', '.join(missing_fields)}. Generating them now...")
+                    
+                    # Make a second API call to generate the missing fields
+                    completion_prompt = f"""
+                    Based on this job information:
+                    
+                    Job Title: {job_ad.get('job_title', '')}
+                    Employment Type: {', '.join(job_ad.get('employment_type', []))}
+                    Workplace: {job_ad.get('place_of_work', {}).get('type', '')} in {job_ad.get('place_of_work', {}).get('location', '')}
+                    Salary: {job_ad.get('salary', {}).get('amount', '')} {job_ad.get('salary', {}).get('currency', '')} {job_ad.get('salary', {}).get('time_period', '')}
+                    Education: {job_ad.get('education_attained', '')}
+                    
+                    Generate the following in valid JSON format:
+                    
+                    {{
+                        "job_description_html": "<ul><li>detailed job responsibilities</li><li>...</li></ul>",
+                        "employee_benefits_html": "<ul><li>benefits offered</li><li>...</li></ul>",
+                        "personality_prerequisites_and_skills_html": "<ul><li>required skills</li><li>...</li></ul>"
+                    }}
+                    
+                    Be creative and detailed. Return ONLY the JSON object.
+                    """
+                    
+                    completion_response = client.chat.completions.create(
+                        model="gpt-4",
+                        messages=[{"role": "user", "content": completion_prompt}],
+                        max_tokens=1000,
+                        temperature=0.5
+                    )
+                    
+                    completion_text = completion_response.choices[0].message.content.strip()
+                    
+                    # Extract JSON from the completion response
+                    comp_json_start = completion_text.find('{')
+                    comp_json_end = completion_text.rfind('}') + 1
+                    
+                    if comp_json_start >= 0 and comp_json_end > comp_json_start:
+                        completion_json = json.loads(completion_text[comp_json_start:comp_json_end])
+                        
+                        # Update the job_ad with the missing fields
+                        for field in missing_fields:
+                            if field in completion_json:
+                                job_ad[field] = completion_json[field]
+                
                 return job_ad
             else:
                 # If we can't find JSON markers, try parsing the whole thing
@@ -102,8 +145,7 @@ def generate_from_prompt(prompt_text):
 
     except Exception as e:
         st.error(f"An error occurred: {e}")
-        return {}# --- AI Section ---
-with st.expander("✨ Use AI to prefill the form"):
+        return {}with st.expander("✨ Use AI to prefill the form"):
     user_prompt = st.text_area(
         "Describe the position (freeform):",
         placeholder="We’re hiring a part-time office assistant in Bratislava..."
