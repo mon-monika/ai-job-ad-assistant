@@ -77,7 +77,7 @@ Return everything as a JSON object with these keys:
   "employee_benefits_html": "<ul><li>...</li></ul>",
   "personality_prerequisites_and_skills_html": "<ul><li>...</li></ul>"
 }
-
+"""
 
 
     user_prompt = f"Here is the job description: {prompt_text}"
