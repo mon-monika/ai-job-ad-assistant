@@ -92,7 +92,7 @@ Return everything as a JSON object with these keys:
         temperature=0.4
     )
 # Debug: Print the raw response from the AI
-        st.write(response)  
+st.write(response)  
 # This will display the raw AI response
         raw_text = response.choices[0].message.content
         try:
