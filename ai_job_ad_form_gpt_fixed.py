@@ -1,8 +1,9 @@
 import streamlit as st
+import openai
 import json
-from openai import OpenAI
 
-client = OpenAI(api_key="your-api-key")
+# Load API key securely
+openai.api_key = st.secrets["OPENAI_API_KEY"]
 
 st.set_page_config(page_title="AI Job Ad Assistant", layout="centered")
 st.title("📝 Job Ad Form")
@@ -31,11 +32,6 @@ else:
             st.session_state["values"][key] = default
 
 # --- Real GPT-4 call ---
-response = client.chat.completions.create(
-    model="gpt-4o",
-    messages=[{"role": "user", "content": "Your prompt here"}]
-)
-print(response.choices[0].message.content)
 def generate_from_prompt(prompt_text):
     system_prompt = """
     You are assisting a recruiter by generating a structured job ad based on freeform input. Based on the provided text, return the following in **valid JSON format**:
@@ -72,7 +68,7 @@ def generate_from_prompt(prompt_text):
     user_prompt = f"Here is the job description: {prompt_text}"
 
     try:
-        # New API call for OpenAI 1.0.0 and above
+        # Correct OpenAI API call
         response = openai.Completion.create(
             model="gpt-4",
             prompt=user_prompt,
@@ -80,7 +76,6 @@ def generate_from_prompt(prompt_text):
             temperature=0.4
         )
 
-        # Extract raw text from the response
         raw_text = response['choices'][0]['text'].strip()  # Extracting text from the response
         st.write("Raw AI response:", raw_text)  # Debug: Print the raw response from the AI
 
