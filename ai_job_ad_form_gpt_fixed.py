@@ -35,45 +35,36 @@ else:
 # --- Real GPT-4 call ---
 def generate_from_prompt(prompt_text):
     system_prompt = """
-    You are assisting a recruiter by generating a structured job ad based on freeform input. Based on the provided text:
-    Extract these fields:
-    - job_title
-    - employment_type: full-time, part-time, internship, trade licence, agreement-based (1 or more)
-    - place_of_work:
-        • type: one of: "Work is regularly performed in one workplace", "Work at a workplace with optional work from home", "Remote work", "The job requires travel"
-        • location: if needed
-    - salary: amount (numeric, pick the midpoint or lower value if a range is given), currency (EUR, CZK, HUF), and time_period ("per month", "per hour")
-    - education_attained: one of:
-      "elementary education",
-      "secondary school with a GCSE equivalent",
-      "secondary school with an A-Levels equivalent",
-      "post-secondary technical follow-up / tertiary professional",
-      "I. level university degree",
-      "II. level university degree",
-      "III. level university degree"
-    Then generate the following content in a structured JSON format:
-    - job_title: A single creative and friendly job ad headline (max 60 characters, no exclamation marks)
-    - job_description_html: A <ul> list with at least 6 bullet points, each item representing a specific responsibility or task.
-    - employee_benefits_html: A <ul> list with 6 friendly, engaging benefit sentences tailored to jobs in Slovakia.
-    - personality_prerequisites_and_skills_html: A <ul> list with 6 short lines describing required education, soft and hard skills.
-    Return everything as a JSON object with these keys:
-    {
-      "job_title": "",
-      "employment_type": [],
-      "place_of_work": {
-        "type": "",
-        "location": ""
-      },
-      "salary": {
-        "amount": null,
-        "currency": "",
-        "time_period": ""
-      },
-      "education_attained": "",
-      "job_description_html": "<ul><li>...</li></ul>",
-      "employee_benefits_html": "<ul><li>...</li></ul>",
-      "personality_prerequisites_and_skills_html": "<ul><li>...</li></ul>"
-    }
+    You are assisting a recruiter by generating a structured job ad based on freeform input. Based on the provided text, return the following in **valid JSON format**:
+
+- job_title: A creative job title (max 60 characters)
+- employment_type: full-time, part-time, internship, trade licence, agreement-based (1 or more)
+- place_of_work:
+    • type: one of: "Work is regularly performed in one workplace", "Work at a workplace with optional work from home", "Remote work", "The job requires travel"
+    • location: if needed
+- salary: amount (numeric, pick the midpoint or lower value if a range is given), currency (EUR, CZK, HUF), and time_period ("per month", "per hour")
+- education_attained: one of:
+  "elementary education", "secondary school with a GCSE equivalent", "secondary school with an A-Levels equivalent", "post-secondary technical follow-up / tertiary professional", "I. level university degree", "II. level university degree", "III. level university degree"
+
+Return everything as a **JSON object** like this:
+
+{
+  "job_title": "Product Manager - Innovate with Us",
+  "employment_type": ["full-time"],
+  "place_of_work": {
+    "type": "Remote work",
+    "location": "Bratislava"
+  },
+  "salary": {
+    "amount": 1500,
+    "currency": "EUR",
+    "time_period": "per month"
+  },
+  "education_attained": "I. level university degree",
+  "job_description_html": "<ul><li>Lead product development</li><li>Collaborate with teams</li><li>Enhance user experience</li></ul>",
+  "employee_benefits_html": "<ul><li>Remote work</li><li>Competitive salary</li><li>Flexible hours</li></ul>",
+  "personality_prerequisites_and_skills_html": "<ul><li>Problem-solving skills</li><li>Team collaboration</li><li>Excellent communication</li></ul>"
+}
     """
     user_prompt = f"Here is the job description: {prompt_text}"
 
