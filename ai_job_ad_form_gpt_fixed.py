@@ -1,35 +1,9 @@
-import streamlit as st
 import openai
+import streamlit as st
 import json
 
 # Load API key securely
 openai.api_key = st.secrets["OPENAI_API_KEY"]
-
-st.set_page_config(page_title="AI Job Ad Assistant", layout="centered")
-st.title("📝 Job Ad Form")
-
-# --- Robust session state initialization ---
-default_values = {
-    "job_title": "",
-    "employment_type": [],
-    "workplace_type": "",
-    "workplace_location": "",
-    "salary_amount": 0,
-    "salary_currency": "EUR",
-    "salary_period": "per month",
-    "education": "",
-    "job_description_html": "",
-    "employee_benefits_html": "",
-    "personality_prerequisites_and_skills_html": "",
-    "job_title_variants": {"friendly": ""}
-}
-
-if "values" not in st.session_state:
-    st.session_state["values"] = default_values.copy()
-else:
-    for key, default in default_values.items():
-        if key not in st.session_state["values"]:
-            st.session_state["values"][key] = default
 
 # --- Real GPT-4 call ---
 def generate_from_prompt(prompt_text):
@@ -68,32 +42,21 @@ def generate_from_prompt(prompt_text):
     user_prompt = f"Here is the job description: {prompt_text}"
 
     try:
-        response = openai.ChatCompletion.create(
+        response = openai.Completion.create(
             model="gpt-4",
-            messages=[
-                {"role": "system", "content": system_prompt},
-                {"role": "user", "content": user_prompt}
-            ],
+            prompt=user_prompt,
+            max_tokens=1500,
             temperature=0.4
         )
 
-        raw_text = response.choices[0].message.content
-        st.write("Raw AI response:", raw_text)  # This will display the raw response for debugging
+        raw_text = response['choices'][0]['text'].strip()  # Extracting text from the response
+        st.write("Raw AI response:", raw_text)  # Debug: Print the raw response from the AI
 
         try:
-            # Extract the JSON part from the response (if properly formatted)
-            if "```json" in raw_text and "```" in raw_text:
-                json_string = raw_text.split("```json\n")[1].split("\n```")[0]  # Extract the JSON part
-                job_ad = json.loads(json_string)  # Parse the extracted JSON string
-                return job_ad
-            else:
-                st.error("AI response does not contain the expected JSON format.")
-                st.write("Raw response:", raw_text)
-                return {}
-
-        except Exception as e:
-            st.error(f"Error parsing AI output: {e}")
-            st.write("Raw response:", raw_text)
+            job_ad = json.loads(raw_text)  # Parse the JSON string
+            return job_ad
+        except json.JSONDecodeError:
+            st.error("⚠️ AI output could not be parsed. Raw response: " + raw_text)
             return {}
 
     except Exception as e:
