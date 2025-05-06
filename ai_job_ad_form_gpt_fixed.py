@@ -45,7 +45,7 @@ def generate_from_prompt(prompt_text):
     - salary: amount (numeric, pick the midpoint or lower value if a range is given), currency (EUR, CZK, HUF), and time_period ("per month", "per hour")
     - education_attained: one of:
         "elementary education", "secondary school with a GCSE equivalent", "secondary school with an A-Levels equivalent", "post-secondary technical follow-up / tertiary professional", "I. level university degree", "II. level university degree", "III. level university degree"
-    - job_description_html: A detailed HTML list of job responsibilities and tasks (<ul><li>item</li></ul> format)
+    - job_description_html: A detailed HTML list. Formulate in a minimum of 6 points the job description and activities typical for the position of %s. Address the job applicant using the formal "you" in the present tense (Example: You will operate machines). The tone of the text should be friendly and informal. Describe a typical day in the job position, maximum of 2 points. Describe the typical working hours for the position, maximum of 2 points. of job responsibilities and tasks (<ul><li>item</li></ul> format)
     - employee_benefits_html: A detailed HTML list of benefits offered (<ul><li>item</li></ul> format)
     - personality_prerequisites_and_skills_html: A detailed HTML list of required skills and traits (<ul><li>item</li></ul> format)
 
