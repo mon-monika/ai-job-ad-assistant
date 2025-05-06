@@ -88,13 +88,19 @@ def generate_from_prompt(prompt_text):
             temperature=0.4
         )
 
-        st.write(response)  # Debug: Print the raw response from the AI
+        # Debug: Print the raw response from the AI
+        st.write(response)  # This will display the raw AI response
 
         raw_text = response.choices[0].message.content
+        
+        # Extract the JSON part from the response (strip out markdown and parse it)
         try:
-            return json.loads(raw_text)
-        except json.JSONDecodeError:
-            st.error("⚠️ AI output could not be parsed. Raw response: " + raw_text)
+            json_string = raw_text.split("```json\n")[1].split("\n```")[0]  # Extract the JSON string
+            job_ad = json.loads(json_string)  # Parse the extracted JSON string
+            return job_ad
+        except Exception as e:
+            st.error(f"Error parsing AI output: {e}")
+            st.error(f"Raw response: {raw_text}")
             return {}
 
     except Exception as e:
