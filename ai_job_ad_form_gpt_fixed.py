@@ -37,7 +37,7 @@ def generate_from_prompt(prompt_text):
     
     Your response MUST include ALL of these fields:
     
-    - job_title: A friendly and motivational job ad title (max 60 characters)
+    - job_title: You are an experienced HR manager in a company that wants to fill the position of a %s. Come up with a friendly and motivational headline for a job advertisement to be posted on a job portal. The character count for each headline is a maximum of 60. The language is English. You must not use an exclamation mark. 
     - employment_type: full-time, part-time, internship, trade licence, agreement-based (1 or more)
     - place_of_work:
         • type: one of: "Work is regularly performed in one workplace", "Work at a workplace with optional work from home", "Remote work", "The job requires travel"
@@ -46,7 +46,7 @@ def generate_from_prompt(prompt_text):
     - education_attained: one of:
         "elementary education", "secondary school with a GCSE equivalent", "secondary school with an A-Levels equivalent", "post-secondary technical follow-up / tertiary professional", "I. level university degree", "II. level university degree", "III. level university degree"
     - job_description_html: A detailed HTML list. Formulate in a minimum of 6 points the job description and activities typical for the position of %s. Address the job applicant using the formal "you" in the present tense (Example: You will operate machines). The tone of the text should be friendly and informal. Describe a typical day in the job position, maximum of 2 points. Describe the typical working hours for the position, maximum of 2 points. of job responsibilities and tasks (<ul><li>item</li></ul> format)
-    - employee_benefits_html: A detailed HTML list of benefits offered (<ul><li>item</li></ul> format)
+    - employee_benefits_html: A detailed HTML list. Formulate in 6 sentences typical company benefits that will interest applicants for the job position %s. Adjust your benefit suggestions for the job position in Slovakia, but keep the output in English. The tone of the text is friendly and informal, in the second person singular (Example: You can receive a contribution). Make a list and write longer and interesting sentences. Omit introductory and concluding sentences. (<ul><li>item</li></ul> format)
     - personality_prerequisites_and_skills_html: A detailed HTML list of required skills and traits (<ul><li>item</li></ul> format)
 
     If any information is not explicitly provided, use your best judgment to create appropriate content for the missing fields.
