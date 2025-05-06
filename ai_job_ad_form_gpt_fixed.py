@@ -91,11 +91,18 @@ Return everything as a JSON object with these keys:
         ],
         temperature=0.4
     )
-    raw_text = response.choices[0].message.content
-    try:
-        return json.loads(raw_text)
-    except json.JSONDecodeError:
-        st.error("⚠️ AI output could not be parsed. Try rewording your prompt.")
+# Debug: Print the raw response from the AI
+        st.write(response)  # This will display the raw AI response
+
+        raw_text = response.choices[0].message.content
+        try:
+            return json.loads(raw_text)
+        except json.JSONDecodeError:
+            st.error("⚠️ AI output could not be parsed. Raw response: " + raw_text)
+            return {}
+
+    except Exception as e:
+        st.error(f"An error occurred: {e}")
         return {}
 
 # --- AI Section ---
