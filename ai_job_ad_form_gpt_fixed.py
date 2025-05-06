@@ -1,9 +1,8 @@
 import streamlit as st
-from openai import OpenAI
 import json
+from openai import OpenAI
 
-# Load API key securely
-client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
+client = OpenAI(api_key="your-api-key")
 
 st.set_page_config(page_title="AI Job Ad Assistant", layout="centered")
 st.title("📝 Job Ad Form")
