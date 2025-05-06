@@ -1,5 +1,5 @@
 import streamlit as st
-import openai
+from openai import OpenAI
 import json
 
 # Load API key securely
@@ -32,6 +32,11 @@ else:
             st.session_state["values"][key] = default
 
 # --- Real GPT-4 call ---
+response = client.chat.completions.create(
+    model="gpt-4o",
+    messages=[{"role": "user", "content": "Your prompt here"}]
+)
+print(response.choices[0].message.content)
 def generate_from_prompt(prompt_text):
     system_prompt = """
     You are assisting a recruiter by generating a structured job ad based on freeform input. Based on the provided text, return the following in **valid JSON format**:
