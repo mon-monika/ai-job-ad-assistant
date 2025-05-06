@@ -1,9 +1,35 @@
-import openai
 import streamlit as st
+import openai
 import json
 
 # Load API key securely
 openai.api_key = st.secrets["OPENAI_API_KEY"]
+
+st.set_page_config(page_title="AI Job Ad Assistant", layout="centered")
+st.title("📝 Job Ad Form")
+
+# --- Robust session state initialization ---
+default_values = {
+    "job_title": "",
+    "employment_type": [],
+    "workplace_type": "",
+    "workplace_location": "",
+    "salary_amount": 0,
+    "salary_currency": "EUR",
+    "salary_period": "per month",
+    "education": "",
+    "job_description_html": "",
+    "employee_benefits_html": "",
+    "personality_prerequisites_and_skills_html": "",
+    "job_title_variants": {"friendly": ""}
+}
+
+if "values" not in st.session_state:
+    st.session_state["values"] = default_values.copy()
+else:
+    for key, default in default_values.items():
+        if key not in st.session_state["values"]:
+            st.session_state["values"][key] = default
 
 # --- Real GPT-4 call ---
 def generate_from_prompt(prompt_text):
@@ -104,12 +130,14 @@ st.markdown("---")
 st.subheader("📄 Job Ad Form")
 
 # --- Job Ad Form Inputs ---
-st.session_state["values"]["job_title"] = st.text_input("Job Title", st.session_state["values"]["job_title"])
+st.session_state["values"]["job_title"] = st.text_input(
+    "Job Title", st.session_state["values"].get("job_title", "")
+)
 
 st.session_state["values"]["employment_type"] = st.multiselect(
     "Employment Type",
     ["full-time", "part-time", "internship", "trade licence", "agreement-based"],
-    default=st.session_state["values"]["employment_type"]
+    default=st.session_state["values"].get("employment_type", [])
 )
 
 st.session_state["values"]["workplace_type"] = st.selectbox(
@@ -118,7 +146,9 @@ st.session_state["values"]["workplace_type"] = st.selectbox(
     index=0 if not st.session_state["values"]["workplace_type"] else ["", "Work is regularly performed in one workplace", "Work at a workplace with optional work from home", "Remote work", "The job requires travel"].index(st.session_state["values"]["workplace_type"])
 )
 
-st.session_state["values"]["workplace_location"] = st.text_input("Workplace Location", st.session_state["values"]["workplace_location"])
+st.session_state["values"]["workplace_location"] = st.text_input(
+    "Workplace Location", st.session_state["values"].get("workplace_location", "")
+)
 
 col1, col2, col3 = st.columns(3)
 try:
