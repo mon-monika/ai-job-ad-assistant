@@ -68,6 +68,7 @@ def generate_from_prompt(prompt_text):
     user_prompt = f"Here is the job description: {prompt_text}"
 
     try:
+        # New API call for OpenAI 1.0.0 and above
         response = openai.Completion.create(
             model="gpt-4",
             prompt=user_prompt,
@@ -75,10 +76,12 @@ def generate_from_prompt(prompt_text):
             temperature=0.4
         )
 
+        # Extract raw text from the response
         raw_text = response['choices'][0]['text'].strip()  # Extracting text from the response
         st.write("Raw AI response:", raw_text)  # Debug: Print the raw response from the AI
 
         try:
+            # Try parsing the raw text as JSON
             job_ad = json.loads(raw_text)  # Parse the JSON string
             return job_ad
         except json.JSONDecodeError:
