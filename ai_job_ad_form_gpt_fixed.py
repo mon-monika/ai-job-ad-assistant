@@ -92,7 +92,7 @@ def generate_from_prompt(prompt_text):
         raw_text = response.choices[0].message.content
         st.write("Raw AI response:", raw_text)  # This will display the raw response for debugging
 
-    try:
+try:
     # Attempt to extract the JSON part from the response
             if "```json" in raw_text and "```" in raw_text:
                 json_string = raw_text.split("```json\n")[1].split("\n```")[0]  # Extract the JSON part
