@@ -91,17 +91,17 @@ def generate_from_prompt(prompt_text):
         # Debug: Print the raw response from the AI
         raw_text = response.choices[0].message.content
         st.write("Raw AI response:", raw_text)  # This will display the raw response for debugging
-
+    
+# Attempt to extract the JSON part from the response
 try:
-    # Attempt to extract the JSON part from the response
-            if "```json" in raw_text and "```" in raw_text:
-                json_string = raw_text.split("```json\n")[1].split("\n```")[0]  # Extract the JSON part
-                job_ad = json.loads(json_string)  # Parse the extracted JSON string
-                return job_ad
-            else:
-                st.error("AI response does not contain the expected JSON format.")
-                st.write("Raw response:", raw_text)
-                return {}
+        if "```json" in raw_text and "```" in raw_text:
+            json_string = raw_text.split("```json\n")[1].split("\n```")[0]  # Extract the JSON part
+            job_ad = json.loads(json_string)  # Parse the extracted JSON string
+            return job_ad
+        else:
+            st.error("AI response does not contain the expected JSON format.")
+            st.write("Raw response:", raw_text)
+            return {}
 
         except Exception as e:
             st.error(f"Error parsing AI output: {e}")
