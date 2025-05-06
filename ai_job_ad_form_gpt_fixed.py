@@ -68,9 +68,7 @@ def generate_from_prompt(prompt_text):
 
     try:
         # Updated OpenAI API call for version 1.0.0+
-        client = openai.OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
-        response = client.chat.completions.create(
-            model="gpt-4",
+        response = client.chat.completions.create(            model="gpt-4",
             messages=[
                 {"role": "system", "content": system_prompt},
                 {"role": "user", "content": user_prompt}
