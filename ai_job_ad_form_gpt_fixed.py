@@ -77,6 +77,10 @@ def generate_from_prompt(prompt_text):
     """
     user_prompt = f"Here is the job description: {prompt_text}"
 
+def generate_from_prompt(prompt_text):
+    system_prompt = """<Your system prompt here>"""  # your system prompt content
+    user_prompt = f"Here is the job description: {prompt_text}"
+
     try:
         client = openai.OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
         response = client.chat.completions.create(
@@ -91,17 +95,17 @@ def generate_from_prompt(prompt_text):
         # Debug: Print the raw response from the AI
         raw_text = response.choices[0].message.content
         st.write("Raw AI response:", raw_text)  # This will display the raw response for debugging
-    
-# Attempt to extract the JSON part from the response
-try:
-        if "```json" in raw_text and "```" in raw_text:
-            json_string = raw_text.split("```json\n")[1].split("\n```")[0]  # Extract the JSON part
-            job_ad = json.loads(json_string)  # Parse the extracted JSON string
-            return job_ad
-        else:
-            st.error("AI response does not contain the expected JSON format.")
-            st.write("Raw response:", raw_text)
-            return {}
+
+        try:
+            # Attempt to extract the JSON part from the response
+            if "```json" in raw_text and "```" in raw_text:
+                json_string = raw_text.split("```json\n")[1].split("\n```")[0]  # Extract the JSON part
+                job_ad = json.loads(json_string)  # Parse the extracted JSON string
+                return job_ad
+            else:
+                st.error("AI response does not contain the expected JSON format.")
+                st.write("Raw response:", raw_text)
+                return {}
 
         except Exception as e:
             st.error(f"Error parsing AI output: {e}")
