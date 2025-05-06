@@ -37,7 +37,7 @@ def generate_from_prompt(prompt_text):
     
     Your response MUST include ALL of these fields:
     
-    - job_title: A friendly and motivational job title (max 60 characters)
+    - job_title: A friendly and motivational job title for the job ad (max 60 characters)
     - employment_type: full-time, part-time, internship, trade licence, agreement-based (1 or more)
     - place_of_work:
         • type: one of: "Work is regularly performed in one workplace", "Work at a workplace with optional work from home", "Remote work", "The job requires travel"
