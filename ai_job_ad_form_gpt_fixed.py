@@ -93,8 +93,10 @@ Return everything as a JSON object with these keys:
     )
 # Debug: Print the raw response from the AI
 st.write(response)  
+
 # This will display the raw AI response
-        raw_text = response.choices[0].message.content
+
+raw_text = response.choices[0].message.content
         try:
             return json.loads(raw_text)
         except json.JSONDecodeError:
