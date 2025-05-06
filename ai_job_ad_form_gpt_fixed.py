@@ -1,6 +1,5 @@
 import streamlit as st
 import openai
-import os
 import json
 
 # Load API key securely
@@ -37,44 +36,39 @@ def generate_from_prompt(prompt_text):
     system_prompt = """
     You are assisting a recruiter by generating a structured job ad based on freeform input. Based on the provided text, return the following in **valid JSON format**:
 
-- job_title: A creative job title (max 60 characters)
-- employment_type: full-time, part-time, internship, trade licence, agreement-based (1 or more)
-- place_of_work:
-    • type: one of: "Work is regularly performed in one workplace", "Work at a workplace with optional work from home", "Remote work", "The job requires travel"
-    • location: if needed
-- salary: amount (numeric, pick the midpoint or lower value if a range is given), currency (EUR, CZK, HUF), and time_period ("per month", "per hour")
-- education_attained: one of:
-  "elementary education", "secondary school with a GCSE equivalent", "secondary school with an A-Levels equivalent", "post-secondary technical follow-up / tertiary professional", "I. level university degree", "II. level university degree", "III. level university degree"
+    - job_title: A creative job title (max 60 characters)
+    - employment_type: full-time, part-time, internship, trade licence, agreement-based (1 or more)
+    - place_of_work:
+        • type: one of: "Work is regularly performed in one workplace", "Work at a workplace with optional work from home", "Remote work", "The job requires travel"
+        • location: if needed
+    - salary: amount (numeric, pick the midpoint or lower value if a range is given), currency (EUR, CZK, HUF), and time_period ("per month", "per hour")
+    - education_attained: one of:
+        "elementary education", "secondary school with a GCSE equivalent", "secondary school with an A-Levels equivalent", "post-secondary technical follow-up / tertiary professional", "I. level university degree", "II. level university degree", "III. level university degree"
 
-Return everything as a JSON object like this:
+    Return everything as a JSON object like this:
 
-{
-  "job_title": "Product Manager - Innovate with Us",
-  "employment_type": ["full-time"],
-  "place_of_work": {
-    "type": "Remote work",
-    "location": "Bratislava"
-  },
-  "salary": {
-    "amount": 1500,
-    "currency": "EUR",
-    "time_period": "per month"
-  },
-  "education_attained": "I. level university degree",
-  "job_description_html": "<ul><li>Lead product development</li><li>Collaborate with teams</li><li>Enhance user experience</li></ul>",
-  "employee_benefits_html": "<ul><li>Remote work</li><li>Competitive salary</li><li>Flexible hours</li></ul>",
-  "personality_prerequisites_and_skills_html": "<ul><li>Problem-solving skills</li><li>Team collaboration</li><li>Excellent communication</li></ul>"
-}
+    {
+        "job_title": "Product Manager - Innovate with Us",
+        "employment_type": ["full-time"],
+        "place_of_work": {
+            "type": "Remote work",
+            "location": "Bratislava"
+        },
+        "salary": {
+            "amount": 1500,
+            "currency": "EUR",
+            "time_period": "per month"
+        },
+        "education_attained": "I. level university degree",
+        "job_description_html": "<ul><li>Lead product development</li><li>Collaborate with teams</li><li>Enhance user experience</li></ul>",
+        "employee_benefits_html": "<ul><li>Remote work</li><li>Competitive salary</li><li>Flexible hours</li></ul>",
+        "personality_prerequisites_and_skills_html": "<ul><li>Problem-solving skills</li><li>Team collaboration</li><li>Excellent communication</li></ul>"
+    }
     """
     user_prompt = f"Here is the job description: {prompt_text}"
 
-def generate_from_prompt(prompt_text):
-    system_prompt = """<Your system prompt here>"""  # your system prompt content
-    user_prompt = f"Here is the job description: {prompt_text}"
-
     try:
-        client = openai.OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
-        response = client.chat.completions.create(
+        response = openai.ChatCompletion.create(
             model="gpt-4",
             messages=[
                 {"role": "system", "content": system_prompt},
@@ -83,12 +77,11 @@ def generate_from_prompt(prompt_text):
             temperature=0.4
         )
 
-        # Debug: Print the raw response from the AI
         raw_text = response.choices[0].message.content
         st.write("Raw AI response:", raw_text)  # This will display the raw response for debugging
 
         try:
-            # Attempt to extract the JSON part from the response
+            # Extract the JSON part from the response (if properly formatted)
             if "```json" in raw_text and "```" in raw_text:
                 json_string = raw_text.split("```json\n")[1].split("\n```")[0]  # Extract the JSON part
                 job_ad = json.loads(json_string)  # Parse the extracted JSON string
