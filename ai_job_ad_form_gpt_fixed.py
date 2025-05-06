@@ -1,8 +1,8 @@
 import streamlit as st
-import openai
+from openai import OpenAI
 import json
 
-# Load API key securely
+# Load API key securely - this will be used when creating the client
 openai.api_key = st.secrets["OPENAI_API_KEY"]
 
 st.set_page_config(page_title="AI Job Ad Assistant", layout="centered")
@@ -68,15 +68,19 @@ def generate_from_prompt(prompt_text):
     user_prompt = f"Here is the job description: {prompt_text}"
 
     try:
-        # Correct OpenAI API call
-        response = openai.Completion.create(
+        # Updated OpenAI API call for version 1.0.0+
+        client = openai.OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
+        response = client.chat.completions.create(
             model="gpt-4",
-            prompt=user_prompt,
+            messages=[
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": user_prompt}
+            ],
             max_tokens=1500,
             temperature=0.4
         )
 
-        raw_text = response['choices'][0]['text'].strip()  # Extracting text from the response
+        raw_text = response.choices[0].message.content.strip()  # Extracting text from the response
         st.write("Raw AI response:", raw_text)  # Debug: Print the raw response from the AI
 
         try:
@@ -90,7 +94,6 @@ def generate_from_prompt(prompt_text):
     except Exception as e:
         st.error(f"An error occurred: {e}")
         return {}
-
 # --- AI Section ---
 with st.expander("✨ Use AI to prefill the form"):
     user_prompt = st.text_area(
