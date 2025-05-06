@@ -145,10 +145,13 @@ def generate_from_prompt(prompt_text):
 
     except Exception as e:
         st.error(f"An error occurred: {e}")
-        return {}with st.expander("✨ Use AI to prefill the form"):
+        return {}
+
+# --- AI Section ---
+with st.expander("✨ Use AI to prefill the form"):
     user_prompt = st.text_area(
         "Describe the position (freeform):",
-        placeholder="We’re hiring a part-time office assistant in Bratislava..."
+        placeholder="We're hiring a part-time office assistant in Bratislava..."
     )
 
     if st.button("Generate with AI"):
@@ -180,7 +183,6 @@ def generate_from_prompt(prompt_text):
                 ).replace("</li>", "")
         else:
             st.warning("Please enter a prompt before generating.")
-
 st.markdown("---")
 st.subheader("📄 Job Ad Form")
 
