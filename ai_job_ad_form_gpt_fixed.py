@@ -68,8 +68,7 @@ def generate_from_prompt(prompt_text):
         )
 
         raw_text = response.choices[0].message.content.strip()  # Extracting text from the response
-        st.write("Raw AI response:", raw_text)  # Debug: Print the raw response from the AI
-
+        # st.write("Raw AI response:", raw_text)  # Debug: Print the raw response from the AI - commented out
         try:
             # Try to extract just the JSON part if there's explanatory text
             # Look for the first '{' and the last '}'
