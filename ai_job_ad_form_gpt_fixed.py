@@ -75,10 +75,11 @@ def generate_from_prompt(prompt_text):
       "personality_prerequisites_and_skills_html": "<ul><li>...</li></ul>"
     }
     """
-    user_prompt = f"Here is the job description: {prompt_text}"
-    try:
-        client = openai.OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
-        response = client.chat.completions.create(
+user_prompt = f"Here is the job description: {prompt_text}"
+
+try:
+    client = openai.OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
+    response = client.chat.completions.create(
             model="gpt-4",
             messages=[
                 {"role": "system", "content": system_prompt},
@@ -87,11 +88,14 @@ def generate_from_prompt(prompt_text):
             temperature=0.4
         )
 
-        st.write(response)  # Debug: Print the raw response from the AI
+        # Debug: Print the raw response from the AI
+        st.write(response)  # This will display the raw AI response
 
         raw_text = response.choices[0].message.content
         try:
-            return json.loads(raw_text)
+            # The AI returns a stringified JSON. Parse it here.
+            job_ad = json.loads(raw_text.split("```json\n")[1].split("\n```")[0])
+            return job_ad
         except json.JSONDecodeError:
             st.error("⚠️ AI output could not be parsed. Raw response: " + raw_text)
             return {}
