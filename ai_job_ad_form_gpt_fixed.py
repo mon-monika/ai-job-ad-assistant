@@ -46,7 +46,7 @@ def generate_from_prompt(prompt_text):
 - education_attained: one of:
   "elementary education", "secondary school with a GCSE equivalent", "secondary school with an A-Levels equivalent", "post-secondary technical follow-up / tertiary professional", "I. level university degree", "II. level university degree", "III. level university degree"
 
-Return everything as a **JSON object** like this:
+Return everything as a JSON object like this:
 
 {
   "job_title": "Product Manager - Innovate with Us",
