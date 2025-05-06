@@ -61,22 +61,23 @@ Then generate the following content in a structured JSON format:
 
 Return everything as a JSON object with these keys:
 {
-  "job_title": "Job Title Here",
-  "employment_type": ["full-time"],
+  "job_title": "",
+  "employment_type": [],
   "place_of_work": {
-    "type": "Work is regularly performed in one workplace",
-    "location": "Bratislava"
+    "type": "",
+    "location": ""
   },
   "salary": {
-    "amount": 3000,
-    "currency": "EUR",
-    "time_period": "per month"
+    "amount": null,
+    "currency": "",
+    "time_period": ""
   },
-  "education_attained": "I. level university degree",
-  "job_description_html": "<ul><li>Develop software solutions</li><li>Work with cross-functional teams</li><li>Optimize performance</li><li>Contribute to product strategy</li><li>Attend client meetings</li><li>Write technical documentation</li></ul>",
-  "employee_benefits_html": "<ul><li>Health insurance</li><li>Paid vacation</li><li>Flexible working hours</li><li>Career growth opportunities</li><li>Work-life balance</li><li>Professional development budget</li></ul>",
-  "personality_prerequisites_and_skills_html": "<ul><li>Proactive and a team player</li><li>Creative problem-solving skills</li><li>Ability to learn quickly</li><li>Strong communication skills</li><li>Experience in Python and Django</li><li>Bachelor's degree</li></ul>"
+  "education_attained": "",
+  "job_description_html": "<ul><li>...</li></ul>",
+  "employee_benefits_html": "<ul><li>...</li></ul>",
+  "personality_prerequisites_and_skills_html": "<ul><li>...</li></ul>"
 }
+
 
 
     user_prompt = f"Here is the job description: {prompt_text}"
