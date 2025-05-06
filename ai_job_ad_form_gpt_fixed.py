@@ -33,7 +33,7 @@ else:
 # --- Real GPT-4 call ---
 def generate_from_prompt(prompt_text):
     system_prompt = """
-    You are assisting a recruiter by generating a structured job ad based on freeform input. Based on the provided text, return the following in **valid JSON format**:
+    You are assisting a recruiter by generating a structured job ad based on freeform input. Based on the provided text, return the following in **valid JSON format** without any introduction or explanation text:
 
     - job_title: A creative job title (max 60 characters)
     - employment_type: full-time, part-time, internship, trade licence, agreement-based (1 or more)
@@ -44,7 +44,7 @@ def generate_from_prompt(prompt_text):
     - education_attained: one of:
         "elementary education", "secondary school with a GCSE equivalent", "secondary school with an A-Levels equivalent", "post-secondary technical follow-up / tertiary professional", "I. level university degree", "II. level university degree", "III. level university degree"
 
-    Return everything as a JSON object like this:
+    Return ONLY the JSON object without any explanatory text before or after it. For example:
 
     {
         "job_title": "Product Manager - Innovate with Us",
@@ -68,7 +68,8 @@ def generate_from_prompt(prompt_text):
 
     try:
         # Updated OpenAI API call for version 1.0.0+
-        response = client.chat.completions.create(            model="gpt-4",
+        response = client.chat.completions.create(
+            model="gpt-4",
             messages=[
                 {"role": "system", "content": system_prompt},
                 {"role": "user", "content": user_prompt}
@@ -81,17 +82,27 @@ def generate_from_prompt(prompt_text):
         st.write("Raw AI response:", raw_text)  # Debug: Print the raw response from the AI
 
         try:
-            # Try parsing the raw text as JSON
-            job_ad = json.loads(raw_text)  # Parse the JSON string
-            return job_ad
-        except json.JSONDecodeError:
-            st.error("⚠️ AI output could not be parsed. Raw response: " + raw_text)
+            # Try to extract just the JSON part if there's explanatory text
+            # Look for the first '{' and the last '}'
+            json_start = raw_text.find('{')
+            json_end = raw_text.rfind('}') + 1
+            
+            if json_start >= 0 and json_end > json_start:
+                json_text = raw_text[json_start:json_end]
+                job_ad = json.loads(json_text)  # Parse the JSON string
+                return job_ad
+            else:
+                # If we can't find JSON markers, try parsing the whole thing
+                job_ad = json.loads(raw_text)
+                return job_ad
+                
+        except json.JSONDecodeError as e:
+            st.error(f"⚠️ AI output could not be parsed. Error: {e}. Raw response: {raw_text}")
             return {}
 
     except Exception as e:
         st.error(f"An error occurred: {e}")
-        return {}
-# --- AI Section ---
+        return {}# --- AI Section ---
 with st.expander("✨ Use AI to prefill the form"):
     user_prompt = st.text_area(
         "Describe the position (freeform):",
