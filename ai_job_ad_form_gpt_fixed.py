@@ -35,7 +35,7 @@ def generate_from_prompt(prompt_text):
     system_prompt = """
     You are assisting a recruiter by generating a structured job ad based on freeform input. Based on the provided text, return the following in **valid JSON format** without any introduction or explanation text:
 
-    - job_title: A creative job title (max 60 characters)
+    - job_title: A motivational and friendly job title (max 60 characters)
     - employment_type: full-time, part-time, internship, trade licence, agreement-based (1 or more)
     - place_of_work:
         • type: one of: "Work is regularly performed in one workplace", "Work at a workplace with optional work from home", "Remote work", "The job requires travel"
