@@ -53,33 +53,31 @@ Extract these fields:
   "II. level university degree",
   "III. level university degree"
 
+Then generate the following content in a structured JSON format:
+- job_title: A single creative and friendly job ad headline (max 60 characters, no exclamation marks)
+- job_description_html: A <ul> list with at least 6 bullet points, each item representing a specific responsibility or task.
+- employee_benefits_html: A <ul> list with 6 friendly, engaging benefit sentences tailored to jobs in Slovakia.
+- personality_prerequisites_and_skills_html: A <ul> list with 6 short lines describing required education, soft and hard skills.
 
-Then generate the following content:
-- job_title: A single friendly job ad headline (max 60 characters, no exclamation marks)
-- job_description_html: A <ul> list with at least 6 bullet points including job activities, daily routine (2 points max), and working hours (2 points max)
-- employee_benefits_html: A <ul> list with 6 friendly, engaging benefit sentences tailored to jobs in Slovakia
-- personality_prerequisites_and_skills_html: A <ul> list with 6 short lines describing required education, soft and hard skills
-
-Return everything as a single JSON object with these keys:
+Return everything as a JSON object with these keys:
 {
-  "job_title": "",
-  "employment_type": [],
+  "job_title": "Job Title Here",
+  "employment_type": ["full-time"],
   "place_of_work": {
-    "type": "",
-    "location": ""
+    "type": "Work is regularly performed in one workplace",
+    "location": "Bratislava"
   },
   "salary": {
-    "amount": null,
-    "currency": "",
-    "time_period": ""
+    "amount": 3000,
+    "currency": "EUR",
+    "time_period": "per month"
   },
-  "education_attained": "",
-  "job_title": "",
-  "job_description_html": "<ul>...</ul>",
-  "employee_benefits_html": "<ul>...</ul>",
-  "personality_prerequisites_and_skills_html": "<ul>...</ul>"
+  "education_attained": "I. level university degree",
+  "job_description_html": "<ul><li>Develop software solutions</li><li>Work with cross-functional teams</li><li>Optimize performance</li><li>Contribute to product strategy</li><li>Attend client meetings</li><li>Write technical documentation</li></ul>",
+  "employee_benefits_html": "<ul><li>Health insurance</li><li>Paid vacation</li><li>Flexible working hours</li><li>Career growth opportunities</li><li>Work-life balance</li><li>Professional development budget</li></ul>",
+  "personality_prerequisites_and_skills_html": "<ul><li>Proactive and a team player</li><li>Creative problem-solving skills</li><li>Ability to learn quickly</li><li>Strong communication skills</li><li>Experience in Python and Django</li><li>Bachelor's degree</li></ul>"
 }
-"""
+
 
     user_prompt = f"Here is the job description: {prompt_text}"
 
