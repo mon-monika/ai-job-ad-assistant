@@ -3,7 +3,7 @@ from openai import OpenAI
 import json
 
 # Load API key securely
-openai.api_key = st.secrets["OPENAI_API_KEY"]
+client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
 st.set_page_config(page_title="AI Job Ad Assistant", layout="centered")
 st.title("📝 Job Ad Form")
