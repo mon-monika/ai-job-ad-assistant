@@ -184,6 +184,8 @@ with st.expander("✨ Use AI to prefill the form"):
             st.warning("Please enter a prompt before generating.")
 st.markdown("---")
 st.subheader("📄 Job Ad Form")
+
+result = None
 # --- Summary Section ---  
 
 def job_ad_summary_list(job_ad):
