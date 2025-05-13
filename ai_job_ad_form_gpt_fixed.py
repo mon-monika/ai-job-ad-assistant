@@ -2,6 +2,9 @@ import streamlit as st
 from openai import OpenAI
 import json
 
+def display_job_ad_summary():
+    """Display a concise summary of the job ad for client review"""
+
 # Create OpenAI client with API key from Streamlit secrets
 client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 st.set_page_config(page_title="AI Job Ad Assistant", layout="centered")
@@ -153,6 +156,7 @@ with st.expander("✨ Use AI to prefill the form"):
         placeholder="We're hiring a part-time office assistant in Bratislava..."
     )
 
+# In the AI Section, modify the button handler:
 if st.button("Generate with AI"):
     if user_prompt.strip():
         result = generate_from_prompt(user_prompt)
@@ -171,7 +175,7 @@ if st.button("Generate with AI"):
             st.session_state["values"]["salary_period"] = salary.get("time_period", "per month")
             st.session_state["values"]["education"] = result.get("education_attained", "")
 
-             # Clean HTML tags and show plain text with bullet points
+            # Clean HTML tags and show plain text with bullet points
             st.session_state["values"]["job_description_html"] = "\n".join(
                 [f"- {item.strip()}</li>" for item in result.get("job_description_html", "").split("<li>")[1:]]
             ).replace("</li>", "")
@@ -189,10 +193,10 @@ if st.button("Generate with AI"):
             st.subheader("📋 AI-Generated Job Ad Summary")
             display_job_ad_summary()
     else:
-        st.warning("Please enter a prompt before generating.")       
+        st.warning("Please enter a prompt before generating.")
+      
 
 if st.session_state.get("ai_generated", False):
-    st.markdown("---")
     st.subheader("📋 AI-Generated Job Ad Summary")
     
     # Format employment type as comma-separated string
@@ -228,6 +232,8 @@ if st.session_state.get("ai_generated", False):
 
 # --- Job Ad Form ---
 st.markdown("---")
+if st.session_state.get("ai_generated", False):
+    st.info("✨ This form has been filled by AI based on your description")
 st.subheader("📄 Job Ad Form")
 
 # First, let's add a helper function to create a badge
