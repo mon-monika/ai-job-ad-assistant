@@ -184,6 +184,46 @@ with st.expander("✨ Use AI to prefill the form"):
             st.warning("Please enter a prompt before generating.")
 st.markdown("---")
 st.subheader("📄 Job Ad Form")
+# --- Summary Section ---  
+
+def job_ad_summary_list(job_ad):
+    summary_lines = []
+
+    # Job Title
+    if job_ad.get("job_title"):
+        summary_lines.append(f"- **Job Title:** {job_ad['job_title']}")
+
+    # Salary
+    salary = job_ad.get("salary", {})
+    if salary and salary.get("amount"):
+        salary_str = f"{salary['amount']} {salary.get('currency', '')} per {salary.get('time_period', '')}"
+        summary_lines.append(f"- **Salary:** {salary_str}")
+
+    # Employment Type
+    if job_ad.get("employment_type"):
+        summary_lines.append(f"- **Employment Type:** {', '.join(job_ad['employment_type'])}")
+
+    # Workplace
+    place = job_ad.get("place_of_work", {})
+    if place and place.get("type"):
+        location = place.get("location", "")
+        summary_lines.append(f"- **Workplace:** {place['type']} in {location}")
+
+    # Education
+    if job_ad.get("education_attained"):
+        summary_lines.append(f"- **Education:** {job_ad['education_attained']}")
+
+    # Job Description
+    if job_ad.get("job_description_html"):
+        summary_lines.append("- **Job Description:** (has been edited)")
+
+    return "\n".join(summary_lines)
+
+if result:
+    summary_md = job_ad_summary_list(result)
+    st.markdown("### AI-Filled Fields Overview")
+    st.markdown(summary_md)
+
 
 # --- Job Ad Form Inputs ---
 st.session_state["values"]["job_title"] = st.text_input(
