@@ -23,7 +23,8 @@ default_values = {
     "job_title_variants": {"friendly": ""},
     "missing_fields": [],  # Track missing fields
     "follow_up_questions": "",  # Store follow-up questions
-    "ai_edited_fields": []  # Track which fields were edited by AI
+    "ai_edited_fields": [],  # Track which fields were edited by AI
+    "show_summary": False  # Flag to control when to show the summary
 }
 
 if "values" not in st.session_state:
@@ -257,18 +258,19 @@ with st.expander("✨ Use AI to prefill the form"):
                 # Save the list of AI-edited fields
                 st.session_state["values"]["ai_edited_fields"] = ai_edited_fields
                 
-                # Display a summary of what was generated
-                with st.expander("✨ AI Generation Summary", expanded=True):
-                    st.markdown("### What AI Generated:")
-                    
-                    summary_items = []
-                    if "job_title" in ai_edited_fields:
-                        summary_items.append(f"- **Job Title**: {st.session_state['values']['job_title']}")
-                    
-                    if "employment_type" in ai_edited_fields:
-                        summary_items.append(f"- **Employment Type**: {', '.join(st.session_state['values']['employment_type'])}")
-                    
-                    if "workplace_type" in ai_edited_fields or "workplace_location" in ai_edited_fields:
-                        workplace_info = []
-                        if "workplace_type" in ai_edited_fields:
-                            workplace_info.append(st.session_state['values']['workplace_type'])
+                # Set flag to show summary
+                st.session_state["values"]["show_summary"] = True
+                
+                # If there are missing fields, generate follow-up questions
+                if missing_info:
+                    job_title = result.get("job_title", "this position")
+                    follow_up_questions = generate_follow_up_questions(missing_info, job_title)
+                    st.session_state["values"]["follow_up_questions"] = follow_up_questions
+                
+                # Force a rerun to show the summary
+                st.rerun()
+        else:
+            st.warning("Please enter a prompt before generating.")
+
+# --- Display AI Generation Summary (outside of the expander) ---
+if st.session_state["values"].
