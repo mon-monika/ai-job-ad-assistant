@@ -273,4 +273,48 @@ with st.expander("✨ Use AI to prefill the form"):
             st.warning("Please enter a prompt before generating.")
 
 # --- Display AI Generation Summary (outside of the expander) ---
-if st.session_state["values"].
+if st.session_state["values"].get("show_summary", False):
+    st.success("✨ AI has generated content for your job ad!")
+    
+    # Create a summary of what was generated
+    st.markdown("### What AI Generated:")
+    
+    summary_items = []
+    ai_edited_fields = st.session_state["values"].get("ai_edited_fields", [])
+    
+    # Map field names to user-friendly labels
+    field_labels = {
+        "job_title": "Job Title",
+        "employment_type": "Employment Type",
+        "workplace_type": "Workplace Type",
+        "workplace_location": "Workplace Location",
+        "salary_amount": "Salary Amount",
+        "salary_currency": "Salary Currency",
+        "salary_period": "Salary Period",
+        "education": "Education Required",
+        "job_description_html": "Job Description",
+        "employee_benefits_html": "Employee Benefits",
+        "personality_prerequisites_and_skills_html": "Required Skills & Personality"
+    }
+    
+    # Create summary list
+    for field in ai_edited_fields:
+        if field in field_labels:
+            value = st.session_state["values"].get(field, "")
+            if isinstance(value, list):
+                value = ", ".join(value)
+            summary_items.append(f"- **{field_labels[field]}**: {value[:50]}{'...' if len(str(value)) > 50 else ''}")
+    
+    if summary_items:
+        st.markdown("\n".join(summary_items))
+    
+    # Display follow-up questions if there are missing fields
+    if st.session_state["values"].get("follow_up_questions"):
+        st.markdown("### Follow-up Questions:")
+        st.markdown(st.session_state["values"]["follow_up_questions"])
+        st.markdown("---")
+    
+    # Add a button to clear the summary
+    if st.button("Clear Summary"):
+        st.session_state["values"]["show_summary"] = False
+        st.rerun()
