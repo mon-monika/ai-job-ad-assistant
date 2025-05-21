@@ -2,13 +2,6 @@ import streamlit as st
 from openai import OpenAI
 import json
 
-# Inject custom CSS
-def load_custom_css(path="form_style.css"):
-    with open(path) as f:
-        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
-
-load_custom_css()
-
 
 # Create OpenAI client with API key from Streamlit secrets
 client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
