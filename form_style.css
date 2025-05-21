@@ -1,0 +1,9831 @@
+/* Info o ponuke: Existujuca firma */
+
+position: relative;
+width: 1440px;
+height: 5350px;
+
+/* Neutral Light/0 | #F6F6F6 */
+background: #F6F6F6;
+
+
+/* Sequence Control */
+
+position: absolute;
+visibility: hidden;
+height: 97px;
+left: 0px;
+right: 0px;
+top: 92px;
+
+background: #FFFFFF;
+
+
+/* Divider line */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 98.97%;
+bottom: 0%;
+
+
+
+/* background copy 4 */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+/* Neutral Light/3 | #DADADA */
+background: #DADADA;
+
+
+/* Group 71 */
+
+position: absolute;
+width: 742px;
+height: 24px;
+left: calc(50% - 742px/2);
+top: 24px;
+
+
+
+/* Rectangle */
+
+position: absolute;
+width: 218px;
+left: calc(50% - 218px/2 - 240px);
+top: 36.08%;
+bottom: 61.86%;
+
+background: #C2CDDE;
+
+
+/* Rectangle Copy */
+
+position: absolute;
+width: 218px;
+left: calc(50% - 218px/2 - 1px);
+top: 36.08%;
+bottom: 61.86%;
+
+background: #C2CDDE;
+
+
+/* Rectangle Copy */
+
+position: absolute;
+width: 218px;
+left: calc(50% - 218px/2 + 240px);
+top: 36.08%;
+bottom: 61.86%;
+
+background: #C2CDDE;
+
+
+/* SequenceControl (24x24) */
+
+position: absolute;
+width: 24px;
+left: calc(50% - 24px/2 - 359px);
+top: 24.74%;
+bottom: 50.52%;
+
+
+
+/* Group */
+
+position: absolute;
+width: 24px;
+height: 24px;
+left: 0px;
+top: 0px;
+
+
+
+/* Oval Copy */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+/* Neutral Light/White | #FFFFFF */
+background: #FFFFFF;
+box-shadow: 0px 4px 12px rgba(126, 126, 126, 0.35);
+
+
+/* Rectangle */
+
+position: absolute;
+left: 18.81%;
+right: 37.08%;
+top: 41.67%;
+bottom: 14.23%;
+
+/* Primary/Orange | #FFB100
+
+Usage: Pay attantion
+*/
+background: #FFB100;
+transform: rotate(-45deg);
+
+
+/* SequenceControl (24x24) */
+
+position: absolute;
+width: 24px;
+left: calc(50% - 24px/2 + 119px);
+top: 24.74%;
+bottom: 50.52%;
+
+
+
+/* Group */
+
+position: absolute;
+width: 24px;
+height: 24px;
+left: 0px;
+top: 0px;
+
+
+
+/* Oval Copy */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+border: 2px solid #C2CDDE;
+
+
+/* SequenceControl (24x24) */
+
+position: absolute;
+width: 24px;
+left: calc(50% - 24px/2 + 359px);
+top: 24.74%;
+bottom: 50.52%;
+
+
+
+/* Group */
+
+position: absolute;
+width: 24px;
+height: 24px;
+left: 0px;
+top: 0px;
+
+
+
+/* Oval Copy */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+border: 2px solid #C2CDDE;
+
+
+/* Icons/SequenceControl/Empty Copy */
+
+position: absolute;
+width: 24px;
+left: calc(50% - 24px/2 - 120px);
+top: 24.74%;
+bottom: 50.52%;
+
+
+
+/* Group */
+
+position: absolute;
+width: 24px;
+height: 24px;
+left: 0px;
+top: 0px;
+
+
+
+/* Oval Copy */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+border: 2px solid #C2CDDE;
+
+
+/* 1. Informácie o pozí */
+
+position: absolute;
+width: 142px;
+height: 20px;
+left: calc(50% - 142px/2 - 360px);
+top: calc(50% - 20px/2 + 17.5px);
+
+/* Headings/H5 */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+text-align: center;
+
+/* Primary/Blue | #2774F0 */
+color: #2774F0;
+
+
+
+/* 2. Dotazník */
+
+position: absolute;
+width: 126px;
+height: 20px;
+left: calc(50% - 126px/2 - 120px);
+top: calc(50% - 20px/2 + 17.5px);
+
+/* Headings/H5 */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+text-align: center;
+
+color: #ACBBD2;
+
+
+
+/* 3. Automatická odpov */
+
+position: absolute;
+width: 72px;
+height: 20px;
+left: calc(50% - 72px/2 + 119px);
+top: calc(50% - 20px/2 + 17.5px);
+
+/* Headings/H5 */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+text-align: center;
+
+color: #ACBBD2;
+
+
+
+/* 3. Automatická odpov */
+
+position: absolute;
+width: 154px;
+height: 20px;
+left: calc(50% - 154px/2 + 359px);
+top: calc(50% - 20px/2 + 17.5px);
+
+/* Headings/H5 */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+text-align: center;
+
+color: #ACBBD2;
+
+
+
+/* Footer (Form) */
+
+position: absolute;
+width: 1439px;
+height: 84px;
+left: 1px;
+bottom: 0px;
+
+/* Neutral Light/White | #FFFFFF */
+background: #FFFFFF;
+
+
+/* Link */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+position: absolute;
+width: 117px;
+height: 20px;
+left: 32px;
+top: 32px;
+
+
+
+/* Label */
+
+width: 117px;
+height: 20px;
+
+/* Form/Buttom primary */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+/* Primary/Blue | #2774F0 */
+color: #2774F0;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Underline */
+
+width: 117px;
+height: 0px;
+
+/* Primary/Blue | #2774F0
+
+Usage: Interaction
+*/
+border: 1px dashed #2774F0;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 2 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+position: absolute;
+width: 232px;
+height: 36px;
+right: 32px;
+bottom: 24px;
+
+
+
+/* Button (Default) */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 8px 16px;
+
+width: 70px;
+height: 36px;
+
+/* Neutral Light/2 | #E9E9E9 */
+background: #E9E9E9;
+/* Buttons/Navy 20% */
+border: 1px solid rgba(33, 44, 61, 0.2);
+border-radius: 4px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Label */
+
+width: 38px;
+height: 20px;
+
+/* Form/Buttom primary */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+text-align: center;
+
+/* Primary/Navy | #212C3D */
+color: #212C3D;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Button (Default) */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 8px 16px;
+
+width: 154px;
+height: 36px;
+
+/* Primary/Orange | #FFB100
+
+Usage: Pay attantion
+*/
+background: #FFB100;
+/* Buttons/Navy 20% */
+border: 1px solid rgba(33, 44, 61, 0.2);
+border-radius: 4px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Label */
+
+width: 122px;
+height: 20px;
+
+/* Form/Buttom primary */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+/* Primary/Navy | #212C3D */
+color: #212C3D;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Template Header/Extended */
+
+position: absolute;
+height: 92px;
+left: 0px;
+right: 0px;
+top: 0px;
+
+/* Neutral Light/1 | #EEEFF1 */
+background: #EEEFF1;
+
+
+/* Button (Square) */
+
+position: absolute;
+width: 92px;
+height: 92px;
+left: 0px;
+top: 0px;
+
+
+
+/* Divider R */
+
+position: absolute;
+width: 1px;
+right: 0px;
+top: 0%;
+bottom: 0%;
+
+
+
+/* background copy 4 */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+/* Neutral Light/3 | #DADADA */
+background: #DADADA;
+
+
+/* Close (32x32) */
+
+position: absolute;
+width: 32px;
+height: 32px;
+left: 30px;
+top: 16px;
+
+
+
+/* Path */
+
+position: absolute;
+left: 15.62%;
+right: 15.62%;
+top: 15.62%;
+bottom: 15.62%;
+
+/* Primary/Blue | #2774F0
+
+Usage: Interaction
+*/
+border: 2px solid #2774F0;
+
+
+/* Path */
+
+position: absolute;
+left: 15.62%;
+right: 15.62%;
+top: 15.62%;
+bottom: 15.62%;
+
+/* Primary/Blue | #2774F0
+
+Usage: Interaction
+*/
+border: 2px solid #2774F0;
+
+
+/* Frame 3 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+position: absolute;
+width: 90px;
+height: 92px;
+left: calc(50% - 90px/2);
+top: calc(50% - 92px/2);
+
+
+
+/* Rectangle 4 */
+
+width: 34px;
+height: 48px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Label */
+
+width: 90px;
+height: 24px;
+
+/* Form/Button square */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 24px;
+/* identical to box height, or 171% */
+text-align: center;
+
+/* Black/0 | #000000 */
+color: #000000;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+
+/* Rectangle 5 */
+
+width: 34px;
+height: 20px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Button (Square) */
+
+position: absolute;
+width: 92px;
+height: 92px;
+right: 0px;
+top: 0px;
+
+
+
+/* Divider L */
+
+position: absolute;
+width: 1px;
+left: 0px;
+top: 0%;
+bottom: 0%;
+
+
+
+/* background copy 4 */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+/* Neutral Light/3 | #DADADA */
+background: #DADADA;
+
+
+/* Close (32x32) */
+
+position: absolute;
+visibility: hidden;
+width: 32px;
+height: 32px;
+left: 30px;
+top: 16px;
+
+
+
+/* Frame 3 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+position: absolute;
+width: 90px;
+height: 92px;
+left: calc(50% - 90px/2);
+top: calc(50% - 92px/2);
+
+
+
+/* Rectangle 4 */
+
+width: 34px;
+height: 48px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Label */
+
+width: 90px;
+height: 24px;
+
+/* Form/Button square */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 24px;
+/* identical to box height, or 171% */
+text-align: center;
+
+/* Black/0 | #000000 */
+color: #000000;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+
+/* Rectangle 5 */
+
+width: 34px;
+height: 20px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Group */
+
+position: absolute;
+left: 95.83%;
+right: 2.22%;
+top: 19.57%;
+bottom: 50%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 96.18%;
+right: 2.92%;
+top: 23.91%;
+bottom: 70.65%;
+
+/* Primary/Blue | #2774F0
+
+Usage: Interaction
+*/
+border: 2px solid #2774F0;
+
+
+/* Vector */
+
+position: absolute;
+left: 96.18%;
+right: 2.57%;
+top: 38.04%;
+bottom: 54.35%;
+
+/* Primary/Blue | #2774F0
+
+Usage: Interaction
+*/
+border: 2px solid #2774F0;
+
+
+/* Vector */
+
+position: absolute;
+left: 95.83%;
+right: 2.22%;
+top: 19.57%;
+bottom: 50%;
+
+/* Primary/Blue | #2774F0
+
+Usage: Interaction
+*/
+border: 2px solid #2774F0;
+
+
+/* Button (Square) */
+
+position: absolute;
+width: 92px;
+height: 92px;
+right: 91px;
+top: 0px;
+
+
+
+/* Divider L */
+
+position: absolute;
+width: 1px;
+left: 0px;
+top: 0%;
+bottom: 0%;
+
+
+
+/* background copy 4 */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+/* Neutral Light/3 | #DADADA */
+background: #DADADA;
+
+
+/* Close (32x32) */
+
+position: absolute;
+visibility: hidden;
+width: 32px;
+height: 32px;
+left: 30px;
+top: 16px;
+
+
+
+/* Frame 3 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+position: absolute;
+width: 90px;
+height: 92px;
+left: calc(50% - 90px/2);
+top: calc(50% - 92px/2);
+
+
+
+/* Rectangle 4 */
+
+width: 34px;
+height: 48px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Label */
+
+width: 90px;
+height: 24px;
+
+/* Form/Button square */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 24px;
+/* identical to box height, or 171% */
+text-align: center;
+
+/* Black/0 | #000000 */
+color: #000000;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+
+/* Rectangle 5 */
+
+width: 34px;
+height: 20px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Group */
+
+position: absolute;
+left: 89.58%;
+right: 8.61%;
+top: 19.57%;
+bottom: 52.17%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 89.58%;
+right: 8.61%;
+top: 19.57%;
+bottom: 52.17%;
+
+/* Primary/Blue | #2774F0
+
+Usage: Interaction
+*/
+border: 2px solid #2774F0;
+
+
+/* Vector */
+
+position: absolute;
+left: 90.59%;
+right: 9.1%;
+top: 35.36%;
+bottom: 59.78%;
+
+/* Primary/Blue | #2774F0
+
+Usage: Interaction
+*/
+border: 2px solid #2774F0;
+
+
+/* Vector */
+
+position: absolute;
+left: 90%;
+right: 9.31%;
+top: 26.09%;
+bottom: 63.04%;
+
+/* Primary/Blue | #2774F0
+
+Usage: Interaction
+*/
+border: 2px solid #2774F0;
+
+
+/* Vytvoriť novú ponuku */
+
+position: absolute;
+width: 192px;
+height: 32px;
+left: 116px;
+top: 30px;
+
+/* Headings/H3 Medium */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 32px;
+/* identical to box height, or 160% */
+
+/* Black/0 | #000000 */
+color: #000000;
+
+
+
+/* Rectangle 1 */
+
+position: absolute;
+height: 1px;
+left: 1px;
+right: 0px;
+top: 91px;
+
+/* Neutral Light/3 | #DADADA */
+background: #DADADA;
+
+
+/* Sequence Control */
+
+position: absolute;
+height: 97px;
+left: 0px;
+right: 0px;
+top: 92px;
+
+background: #FFFFFF;
+
+
+/* Divider line */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 98.97%;
+bottom: 0%;
+
+
+
+/* background copy 4 */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+/* Neutral Light/3 | #DADADA */
+background: #DADADA;
+
+
+/* Group 71 */
+
+position: absolute;
+width: 742px;
+height: 24px;
+left: calc(50% - 742px/2);
+top: 24px;
+
+
+
+/* Rectangle */
+
+position: absolute;
+width: 218px;
+left: calc(50% - 218px/2 - 240px);
+top: 36.08%;
+bottom: 61.86%;
+
+background: #C2CDDE;
+
+
+/* Rectangle Copy */
+
+position: absolute;
+width: 218px;
+left: calc(50% - 218px/2 - 1px);
+top: 36.08%;
+bottom: 61.86%;
+
+background: #C2CDDE;
+
+
+/* Rectangle Copy */
+
+position: absolute;
+width: 218px;
+left: calc(50% - 218px/2 + 240px);
+top: 36.08%;
+bottom: 61.86%;
+
+background: #C2CDDE;
+
+
+/* SequenceControl (24x24) */
+
+position: absolute;
+width: 24px;
+left: calc(50% - 24px/2 - 359px);
+top: 24.74%;
+bottom: 50.52%;
+
+
+
+/* Group */
+
+position: absolute;
+width: 24px;
+height: 24px;
+left: 0px;
+top: 0px;
+
+
+
+/* Oval Copy */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+/* Neutral Light/White | #FFFFFF */
+background: #FFFFFF;
+box-shadow: 0px 4px 12px rgba(126, 126, 126, 0.35);
+
+
+/* Rectangle */
+
+position: absolute;
+left: 18.81%;
+right: 37.08%;
+top: 41.67%;
+bottom: 14.23%;
+
+/* Primary/Orange | #FFB100
+
+Usage: Pay attantion
+*/
+background: #FFB100;
+transform: rotate(-45deg);
+
+
+/* SequenceControl (24x24) */
+
+position: absolute;
+width: 24px;
+left: calc(50% - 24px/2 + 119px);
+top: 24.74%;
+bottom: 50.52%;
+
+
+
+/* Group */
+
+position: absolute;
+width: 24px;
+height: 24px;
+left: 0px;
+top: 0px;
+
+
+
+/* Oval Copy */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+border: 2px solid #C2CDDE;
+
+
+/* SequenceControl (24x24) */
+
+position: absolute;
+width: 24px;
+left: calc(50% - 24px/2 + 359px);
+top: 24.74%;
+bottom: 50.52%;
+
+
+
+/* Group */
+
+position: absolute;
+width: 24px;
+height: 24px;
+left: 0px;
+top: 0px;
+
+
+
+/* Oval Copy */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+border: 2px solid #C2CDDE;
+
+
+/* Icons/SequenceControl/Empty Copy */
+
+position: absolute;
+width: 24px;
+left: calc(50% - 24px/2 - 120px);
+top: 24.74%;
+bottom: 50.52%;
+
+
+
+/* Group */
+
+position: absolute;
+width: 24px;
+height: 24px;
+left: 0px;
+top: 0px;
+
+
+
+/* Oval Copy */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+border: 2px solid #C2CDDE;
+
+
+/* 1. Informácie o pozí */
+
+position: absolute;
+width: 140px;
+height: 20px;
+left: calc(50% - 140px/2 - 360px);
+top: calc(50% - 20px/2 + 17.5px);
+
+/* Headings/H5 */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+text-align: center;
+
+/* Primary/Blue | #2774F0 */
+color: #2774F0;
+
+
+
+/* 2. Dotazník */
+
+position: absolute;
+width: 126px;
+height: 20px;
+left: calc(50% - 126px/2 - 120px);
+top: calc(50% - 20px/2 + 17.5px);
+
+/* Headings/H5 */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+text-align: center;
+
+color: #ACBBD2;
+
+
+
+/* 3. Automatická odpov */
+
+position: absolute;
+width: 72px;
+height: 20px;
+left: calc(50% - 72px/2 + 119px);
+top: calc(50% - 20px/2 + 17.5px);
+
+/* Headings/H5 */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+text-align: center;
+
+color: #ACBBD2;
+
+
+
+/* 3. Automatická odpov */
+
+position: absolute;
+width: 154px;
+height: 20px;
+left: calc(50% - 154px/2 + 359px);
+top: calc(50% - 20px/2 + 17.5px);
+
+/* Headings/H5 */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+text-align: center;
+
+color: #ACBBD2;
+
+
+
+/* Hint */
+
+position: absolute;
+width: 226px;
+height: 104px;
+left: 1174px;
+top: 324px;
+
+opacity: 0.5;
+
+
+/* Label */
+
+position: absolute;
+left: 12.39%;
+right: 79.65%;
+top: 0%;
+bottom: 80.77%;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 12px;
+line-height: 20px;
+/* identical to box height, or 167% */
+
+/* Neutral Dark/4 | #5673A0 */
+color: #5673A0;
+
+
+
+/* Label */
+
+position: absolute;
+left: 12.39%;
+right: 7.96%;
+top: 23.08%;
+bottom: 0%;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 12px;
+line-height: 20px;
+/* or 167% */
+
+/* Neutral Dark/4 | #5673A0 */
+color: #5673A0;
+
+
+
+/* Bulb (20x20) */
+
+position: absolute;
+left: 0%;
+right: 91.15%;
+top: 0%;
+bottom: 80.77%;
+
+
+
+/* Group */
+
+position: absolute;
+left: 20%;
+right: 20%;
+top: 10%;
+bottom: 10%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 20%;
+right: 20%;
+top: 10%;
+bottom: 20%;
+
+/* Neutral Dark/4 | #5673A0 */
+border: 2px solid #5673A0;
+
+
+/* Vector */
+
+position: absolute;
+left: 40%;
+right: 40%;
+top: 80%;
+bottom: 10%;
+
+/* Neutral Dark/4 | #5673A0 */
+border: 2px solid #5673A0;
+
+
+/* Vector */
+
+position: absolute;
+left: 35%;
+right: 50%;
+top: 25%;
+bottom: 60%;
+
+/* Neutral Dark/4 | #5673A0 */
+border: 2px solid #5673A0;
+
+
+/* Hint */
+
+position: absolute;
+width: 226px;
+height: 104px;
+left: 1174px;
+top: 524px;
+
+opacity: 0.5;
+
+
+/* Label */
+
+position: absolute;
+left: 12.39%;
+right: 79.65%;
+top: 0%;
+bottom: 80.77%;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 12px;
+line-height: 20px;
+/* identical to box height, or 167% */
+
+/* Neutral Dark/4 | #5673A0 */
+color: #5673A0;
+
+
+
+/* Label */
+
+position: absolute;
+left: 12.39%;
+right: 7.96%;
+top: 23.08%;
+bottom: 0%;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 12px;
+line-height: 20px;
+/* or 167% */
+
+/* Neutral Dark/4 | #5673A0 */
+color: #5673A0;
+
+
+
+/* Bulb (20x20) */
+
+position: absolute;
+left: 0%;
+right: 91.15%;
+top: 0%;
+bottom: 80.77%;
+
+
+
+/* Group */
+
+position: absolute;
+left: 20%;
+right: 20%;
+top: 10%;
+bottom: 10%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 20%;
+right: 20%;
+top: 10%;
+bottom: 20%;
+
+/* Neutral Dark/4 | #5673A0 */
+border: 2px solid #5673A0;
+
+
+/* Vector */
+
+position: absolute;
+left: 40%;
+right: 40%;
+top: 80%;
+bottom: 10%;
+
+/* Neutral Dark/4 | #5673A0 */
+border: 2px solid #5673A0;
+
+
+/* Vector */
+
+position: absolute;
+left: 35%;
+right: 50%;
+top: 25%;
+bottom: 60%;
+
+/* Neutral Dark/4 | #5673A0 */
+border: 2px solid #5673A0;
+
+
+/* Frame 26940 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 16px;
+
+position: absolute;
+width: 860px;
+height: 4956px;
+left: 290px;
+top: 244px;
+
+
+
+/* Group 26927 */
+
+width: 860px;
+height: 184px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Form group container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 32px;
+gap: 10px;
+
+position: absolute;
+width: 860px;
+height: 136px;
+left: 0px;
+top: 48px;
+
+/* Neutral Light/White | #FFFFFF */
+background: #FFFFFF;
+/* 1 */
+box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.06);
+border-radius: 4px;
+
+
+/* Frame 26930 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 10px;
+
+width: 798px;
+height: 72px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Textfield Extra Large */
+
+width: 740px;
+height: 72px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Background */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 33.33%;
+
+/* Neutral Light/White | #FFFFFF */
+background: #FFFFFF;
+/* Neutral Light/5 | #B4B4B4 */
+border: 1px solid #B4B4B4;
+border-radius: 4px;
+
+
+/* Value */
+
+position: absolute;
+width: 264px;
+height: 20px;
+left: 16px;
+top: 14px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 20px;
+/* identical to box height, or 111% */
+
+/* Black/4 | #AAAAAA */
+color: #AAAAAA;
+
+
+
+/* Description */
+
+position: absolute;
+width: 385px;
+height: 20px;
+left: 0px;
+top: 52px;
+
+/* Text/Small Regular */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 20px;
+/* identical to box height, or 167% */
+
+/* Neutral Dark/4 | #5673A0 */
+color: #5673A0;
+
+
+
+/* AI button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: flex-end;
+align-items: flex-start;
+padding: 12px;
+gap: 8px;
+
+width: 48px;
+height: 48px;
+
+/* Neutral Light/0 | #F6F6F6 */
+background: #F6F6F6;
+/* Buttons/Black 10% */
+border: 1px solid rgba(0, 0, 0, 0.1);
+border-radius: 4px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* AI */
+
+width: 24px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Group */
+
+position: absolute;
+left: 4.17%;
+right: 4%;
+top: 4%;
+bottom: 4.17%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 4.17%;
+right: 66.67%;
+top: 4.17%;
+bottom: 66.67%;
+
+/* Neutral Light/5 | #B4B4B4 */
+background: #B4B4B4;
+
+
+/* Vector */
+
+position: absolute;
+left: 66.67%;
+right: 4.17%;
+top: 66.67%;
+bottom: 4.17%;
+
+/* Neutral Light/5 | #B4B4B4 */
+background: #B4B4B4;
+
+
+/* Vector */
+
+position: absolute;
+left: 41.66%;
+right: 4%;
+top: 4%;
+bottom: 41.67%;
+
+/* Neutral Light/5 | #B4B4B4 */
+background: #B4B4B4;
+
+
+/* Vector */
+
+position: absolute;
+left: 4.17%;
+right: 47.23%;
+top: 47.23%;
+bottom: 4.17%;
+
+/* Black/3 | #7F7F7F */
+background: #7F7F7F;
+
+
+/* Header (Form) */
+
+position: absolute;
+width: 860px;
+height: 48px;
+left: 0px;
+top: 0px;
+
+
+
+/* Title */
+
+position: absolute;
+height: 32px;
+left: 0px;
+right: 119px;
+top: 0px;
+
+/* Headings/H3 Regular */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 32px;
+/* identical to box height, or 160% */
+
+/* Primary/Blue | #2774F0 */
+color: #2774F0;
+
+
+
+/* Language selector */
+
+position: absolute;
+width: 269px;
+height: 38px;
+right: 0px;
+top: 0px;
+
+
+
+/* Background */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 37.55%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: rgba(39, 116, 240, 0.08);
+/* Primary/Blue | #2774F0
+
+Usage: Interaction
+*/
+border: 1px solid #2774F0;
+border-radius: 4px;
+
+
+/* Flag */
+
+position: absolute;
+left: 42.01%;
+right: 46.1%;
+top: 21.05%;
+bottom: 21.05%;
+
+
+
+/* image 16 */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: url(image);
+
+
+/* image 15 */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 3.03%;
+
+background: url(image);
+
+
+/* Value */
+
+position: absolute;
+left: 56.88%;
+right: 16.73%;
+top: 23.68%;
+bottom: 23.68%;
+
+/* Form/Field label */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+/* Primary/Navy | #212C3D */
+color: #212C3D;
+
+
+
+/* Label */
+
+position: absolute;
+left: 0%;
+right: 66.17%;
+top: 23.68%;
+bottom: 23.68%;
+
+/* Form/Field label */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+text-align: right;
+
+/* Neutral Dark/1 | #384B69 */
+color: #384B69;
+
+
+
+/* ArrowDown (16x16) */
+
+position: absolute;
+left: 89.59%;
+right: 4.46%;
+top: 28.95%;
+bottom: 28.95%;
+
+
+
+/* Path */
+
+position: absolute;
+left: 25%;
+right: 25%;
+top: 31.25%;
+bottom: 37.5%;
+
+/* Primary/Navy | #212C3D
+
+Usage: Text
+*/
+background: #212C3D;
+
+
+/* Group 26925 */
+
+width: 860px;
+height: 370px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Form group container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 32px;
+gap: 10px;
+
+position: absolute;
+width: 860px;
+height: 322px;
+left: 0px;
+top: 248px;
+
+/* Neutral Light/White | #FFFFFF */
+background: #FFFFFF;
+/* 1 */
+box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.06);
+border-radius: 4px;
+
+
+/* Tag field */
+
+width: 796px;
+height: 78px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Normal */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #FFFFFF;
+
+
+/* Background */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 0px;
+right: 0px;
+top: 24px;
+bottom: 16px;
+
+/* Neutral Light/White | #FFFFFF */
+background: #FFFFFF;
+/* Neutral Light/5 | #B4B4B4 */
+border: 1px solid #B4B4B4;
+border-radius: 4px;
+
+
+/* Value */
+
+position: absolute;
+visibility: hidden;
+left: 12px;
+right: 12px;
+top: 33px;
+bottom: 25px;
+
+/* Form/Field value */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+/* Primary/Navy | #212C3D */
+color: #212C3D;
+
+
+
+/* Placeholder */
+
+position: absolute;
+width: 170px;
+height: 20px;
+left: 12px;
+top: 33px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+/* Black/3 | #7F7F7F */
+color: #7F7F7F;
+
+
+
+/* Properties/Label */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 74.36%;
+
+
+
+/* Frame 1 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 2px;
+
+position: absolute;
+width: 394px;
+height: 20px;
+left: 0px;
+top: 0px;
+
+
+
+/* Label */
+
+width: 394px;
+height: 20px;
+
+/* Form/Field label */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+/* Neutral Dark/1 | #384B69 */
+color: #384B69;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 26911 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px 0px 16px;
+gap: 6px;
+
+width: 796px;
+height: 80px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Label */
+
+width: 169px;
+height: 20px;
+
+/* Form/Field label */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+/* Neutral Dark/1 | #384B69 */
+color: #384B69;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Group 26911 */
+
+width: 754px;
+height: 38px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Checkbox Highlighted  */
+
+position: absolute;
+width: 132px;
+height: 38px;
+left: 0px;
+top: 26px;
+
+
+
+/* Frame 26846 */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 5px 16px;
+gap: 10px;
+
+position: absolute;
+width: 132px;
+height: 38px;
+left: 0.5px;
+top: 0px;
+
+border: 1px solid rgba(86, 115, 160, 0.4);
+border-radius: 4px;
+
+
+/* Checkbox Item */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 4px 0px;
+gap: 8px;
+
+width: 100px;
+height: 28px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Components/Forms/Assets/Checkbox-checked */
+
+width: 18px;
+height: 18px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Background */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+/* Neutral Light/White | #FFFFFF */
+background: #FFFFFF;
+/* Neutral Dark/3 | #506B95 */
+border: 1px solid #506B95;
+border-radius: 4px;
+
+
+/* Value */
+
+width: 74px;
+height: 20px;
+
+/* Form/Field value */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+/* Primary/Navy | #212C3D */
+color: #212C3D;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Checkbox Highlighted  */
+
+position: absolute;
+width: 160px;
+height: 38px;
+left: 136px;
+top: 26px;
+
+
+
+/* Frame 26846 */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 5px 16px;
+gap: 10px;
+
+position: absolute;
+width: 159px;
+height: 38px;
+left: 0.5px;
+top: 0px;
+
+border: 1px solid rgba(86, 115, 160, 0.4);
+border-radius: 4px;
+
+
+/* Checkbox Item */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 4px 0px;
+gap: 8px;
+
+width: 127px;
+height: 28px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Components/Forms/Assets/Checkbox-checked */
+
+width: 18px;
+height: 18px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Background */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+/* Neutral Light/White | #FFFFFF */
+background: #FFFFFF;
+/* Neutral Dark/3 | #506B95 */
+border: 1px solid #506B95;
+border-radius: 4px;
+
+
+/* Value */
+
+width: 101px;
+height: 20px;
+
+/* Form/Field value */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+/* Primary/Navy | #212C3D */
+color: #212C3D;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Checkbox Highlighted  */
+
+position: absolute;
+width: 160px;
+height: 38px;
+left: 299px;
+top: 26px;
+
+
+
+/* Frame 26846 */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 5px 16px;
+gap: 10px;
+
+position: absolute;
+width: 184px;
+height: 38px;
+left: 0.5px;
+top: 0px;
+
+border: 1px solid rgba(86, 115, 160, 0.4);
+border-radius: 4px;
+
+
+/* Checkbox Item */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 4px 0px;
+gap: 8px;
+
+width: 152px;
+height: 28px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Components/Forms/Assets/Checkbox-checked */
+
+width: 18px;
+height: 18px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Background */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+/* Neutral Light/White | #FFFFFF */
+background: #FFFFFF;
+/* Neutral Dark/3 | #506B95 */
+border: 1px solid #506B95;
+border-radius: 4px;
+
+
+/* Value */
+
+width: 126px;
+height: 20px;
+
+/* Form/Field value */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+/* Primary/Navy | #212C3D */
+color: #212C3D;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Checkbox Highlighted  */
+
+position: absolute;
+width: 160px;
+height: 38px;
+left: 487px;
+top: 26px;
+
+
+
+/* Frame 26846 */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 5px 16px;
+gap: 10px;
+
+position: absolute;
+width: 103px;
+height: 38px;
+left: 0.5px;
+top: 0px;
+
+border: 1px solid rgba(86, 115, 160, 0.4);
+border-radius: 4px;
+
+
+/* Checkbox Item */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 4px 0px;
+gap: 8px;
+
+width: 71px;
+height: 28px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Components/Forms/Assets/Checkbox-checked */
+
+width: 18px;
+height: 18px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Background */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+/* Neutral Light/White | #FFFFFF */
+background: #FFFFFF;
+/* Neutral Dark/3 | #506B95 */
+border: 1px solid #506B95;
+border-radius: 4px;
+
+
+/* Value */
+
+width: 45px;
+height: 20px;
+
+/* Form/Field value */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+/* Primary/Navy | #212C3D */
+color: #212C3D;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Checkbox Highlighted  */
+
+position: absolute;
+width: 160px;
+height: 38px;
+left: 594px;
+top: 26px;
+
+
+
+/* Frame 26846 */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 5px 16px;
+gap: 10px;
+
+position: absolute;
+width: 153px;
+height: 38px;
+left: 0.5px;
+top: 0px;
+
+border: 1px solid rgba(86, 115, 160, 0.4);
+border-radius: 4px;
+
+
+/* Checkbox Item */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 4px 0px;
+gap: 8px;
+
+width: 121px;
+height: 28px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Components/Forms/Assets/Checkbox-checked */
+
+width: 18px;
+height: 18px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Background */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+/* Neutral Light/White | #FFFFFF */
+background: #FFFFFF;
+/* Neutral Dark/3 | #506B95 */
+border: 1px solid #506B95;
+border-radius: 4px;
+
+
+/* Value */
+
+width: 95px;
+height: 20px;
+
+/* Form/Field value */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+/* Primary/Navy | #212C3D */
+color: #212C3D;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 26912 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px 0px 16px;
+gap: 6px;
+
+width: 796px;
+height: 80px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Label */
+
+width: 121px;
+height: 20px;
+
+/* Form/Field label */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+/* Neutral Dark/1 | #384B69 */
+color: #384B69;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Group 26911 */
+
+width: 824px;
+height: 38px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Checkbox Highlighted  */
+
+position: absolute;
+width: 394px;
+height: 38px;
+left: 430px;
+top: 26px;
+
+
+
+/* Frame 26846 */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 5px 16px;
+gap: 10px;
+
+position: absolute;
+width: 323px;
+height: 38px;
+left: 0.5px;
+top: 0px;
+
+border: 1px solid rgba(86, 115, 160, 0.4);
+border-radius: 4px;
+
+
+/* Checkbox Item */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 4px 0px;
+gap: 8px;
+
+width: 291px;
+height: 28px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Components/Forms/Assets/Checkbox-checked */
+
+width: 18px;
+height: 18px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Background */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+/* Neutral Light/White | #FFFFFF */
+background: #FFFFFF;
+/* Neutral Dark/3 | #506B95 */
+border: 1px solid #506B95;
+border-radius: 4px;
+
+
+/* Value */
+
+width: 265px;
+height: 20px;
+
+/* Form/Field value */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+/* Primary/Navy | #212C3D */
+color: #212C3D;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Checkbox Highlighted  */
+
+position: absolute;
+width: 132px;
+height: 38px;
+left: 284px;
+top: 26px;
+
+
+
+/* Frame 26846 */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 5px 16px;
+gap: 10px;
+
+position: absolute;
+width: 142px;
+height: 38px;
+left: 0.5px;
+top: 0px;
+
+border: 1px solid rgba(86, 115, 160, 0.4);
+border-radius: 4px;
+
+
+/* Checkbox Item */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 4px 0px;
+gap: 8px;
+
+width: 110px;
+height: 28px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Components/Forms/Assets/Checkbox-checked */
+
+width: 18px;
+height: 18px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Background */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+/* Neutral Light/White | #FFFFFF */
+background: #FFFFFF;
+/* Neutral Dark/3 | #506B95 */
+border: 1px solid #506B95;
+border-radius: 4px;
+
+
+/* Value */
+
+width: 84px;
+height: 20px;
+
+/* Form/Field value */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+/* Primary/Navy | #212C3D */
+color: #212C3D;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Checkbox Highlighted  */
+
+position: absolute;
+width: 132px;
+height: 38px;
+left: 139px;
+top: 26px;
+
+
+
+/* Frame 26846 */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 5px 16px;
+gap: 10px;
+
+position: absolute;
+width: 141px;
+height: 38px;
+left: 0.5px;
+top: 0px;
+
+border: 1px solid rgba(86, 115, 160, 0.4);
+border-radius: 4px;
+
+
+/* Checkbox Item */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 4px 0px;
+gap: 8px;
+
+width: 109px;
+height: 28px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Components/Forms/Assets/Checkbox-checked */
+
+width: 18px;
+height: 18px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Background */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+/* Neutral Light/White | #FFFFFF */
+background: #FFFFFF;
+/* Neutral Dark/3 | #506B95 */
+border: 1px solid #506B95;
+border-radius: 4px;
+
+
+/* Value */
+
+width: 83px;
+height: 20px;
+
+/* Form/Field value */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+/* Primary/Navy | #212C3D */
+color: #212C3D;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Checkbox Highlighted  */
+
+position: absolute;
+width: 132px;
+height: 38px;
+left: 0px;
+top: 26px;
+
+
+
+/* Frame 26846 */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 5px 16px;
+gap: 10px;
+
+position: absolute;
+width: 135px;
+height: 38px;
+left: 0.5px;
+top: 0px;
+
+border: 1px solid rgba(86, 115, 160, 0.4);
+border-radius: 4px;
+
+
+/* Checkbox Item */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 4px 0px;
+gap: 8px;
+
+width: 103px;
+height: 28px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Components/Forms/Assets/Checkbox-checked */
+
+width: 18px;
+height: 18px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Background */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+/* Neutral Light/White | #FFFFFF */
+background: #FFFFFF;
+/* Neutral Dark/3 | #506B95 */
+border: 1px solid #506B95;
+border-radius: 4px;
+
+
+/* Value */
+
+width: 77px;
+height: 20px;
+
+/* Form/Field value */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+/* Primary/Navy | #212C3D */
+color: #212C3D;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Header (Form) */
+
+position: absolute;
+width: 860px;
+height: 48px;
+left: 0px;
+top: 200px;
+
+
+
+/* Title */
+
+position: absolute;
+height: 32px;
+left: 0px;
+right: 0px;
+top: 0px;
+
+/* Headings/H3 Regular */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 32px;
+/* identical to box height, or 160% */
+
+/* Primary/Blue | #2774F0 */
+color: #2774F0;
+
+
+
+/* Form group container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 32px;
+gap: 10px;
+
+width: 860px;
+height: 554px;
+
+/* Neutral Light/White | #FFFFFF */
+background: #FFFFFF;
+/* 1 */
+box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.06);
+border-radius: 4px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Wysiwyg Light */
+
+width: 796px;
+height: 240px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Background */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 0px;
+right: 0px;
+top: 24px;
+bottom: 16px;
+
+/* Neutral Light/White | #FFFFFF */
+background: #FFFFFF;
+/* Neutral Light/5 | #B4B4B4 */
+border: 1px solid #B4B4B4;
+border-radius: 4px;
+
+
+/* Placeholder */
+
+position: absolute;
+height: 130px;
+left: 24px;
+right: 24px;
+top: 88px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+/* or 171% */
+
+/* Black/3 | #7F7F7F */
+color: #7F7F7F;
+
+
+
+/* Background */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 0px;
+right: 0px;
+top: 218px;
+bottom: 16px;
+
+/* Neutral Light/White | #FFFFFF */
+background: #FFFFFF;
+/* Neutral Light/4 | #CCCCCC */
+border: 1px solid #CCCCCC;
+border-radius: 0px 0px 4px 4px;
+
+
+/* Background */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 0px;
+right: 0px;
+top: 24px;
+bottom: 176px;
+
+/* Neutral Light/White | #FFFFFF */
+background: #FFFFFF;
+/* Neutral Light/5 | #B4B4B4 */
+border: 1px solid #B4B4B4;
+border-radius: 4px 4px 0px 0px;
+
+
+/* Bold(24x24) */
+
+position: absolute;
+width: 24px;
+height: 24px;
+left: 8px;
+top: 32px;
+
+
+
+/* Group */
+
+position: absolute;
+left: 29.17%;
+right: 26.04%;
+top: 16.67%;
+bottom: 25%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 29.17%;
+right: 26.04%;
+top: 16.67%;
+bottom: 25%;
+
+/* Primary/Navy | #212C3D
+
+Usage: Text
+*/
+background: #212C3D;
+
+
+/* Italic(24x24) */
+
+position: absolute;
+width: 24px;
+height: 24px;
+left: 36px;
+top: 32px;
+
+
+
+/* Group */
+
+position: absolute;
+left: 25%;
+right: 25%;
+top: 16.67%;
+bottom: 25%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 25%;
+right: 25%;
+top: 16.67%;
+bottom: 25%;
+
+/* Primary/Navy | #212C3D
+
+Usage: Text
+*/
+background: #212C3D;
+
+
+/* Ordered(24x24) */
+
+position: absolute;
+width: 24px;
+height: 24px;
+left: 76px;
+top: 32px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 17.7%;
+right: 65.82%;
+top: 52.08%;
+bottom: 25%;
+
+/* Primary/Navy | #212C3D
+
+Usage: Text
+*/
+background: #212C3D;
+
+
+/* Vector */
+
+position: absolute;
+left: 17.72%;
+right: 70.83%;
+top: 21.88%;
+bottom: 55.21%;
+
+/* Primary/Navy | #212C3D
+
+Usage: Text
+*/
+background: #212C3D;
+
+
+/* Vector */
+
+position: absolute;
+left: 41.67%;
+right: 16.67%;
+top: 25%;
+bottom: 66.67%;
+
+/* Primary/Navy | #212C3D
+
+Usage: Text
+*/
+background: #212C3D;
+
+
+/* Vector */
+
+position: absolute;
+left: 41.67%;
+right: 16.67%;
+top: 45.83%;
+bottom: 45.83%;
+
+/* Primary/Navy | #212C3D
+
+Usage: Text
+*/
+background: #212C3D;
+
+
+/* Vector */
+
+position: absolute;
+left: 41.67%;
+right: 16.67%;
+top: 66.67%;
+bottom: 25%;
+
+/* Primary/Navy | #212C3D
+
+Usage: Text
+*/
+background: #212C3D;
+
+
+/* Rectangle 5635 */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+
+
+/* Unordered(24x24) */
+
+position: absolute;
+width: 24px;
+height: 24px;
+left: 104px;
+top: 32px;
+
+
+
+/* Group */
+
+position: absolute;
+left: 16.67%;
+right: 16.67%;
+top: 22.92%;
+bottom: 22.92%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 16.67%;
+right: 70.83%;
+top: 22.92%;
+bottom: 64.58%;
+
+/* Primary/Navy | #212C3D
+
+Usage: Text
+*/
+background: #212C3D;
+
+
+/* Vector */
+
+position: absolute;
+left: 16.67%;
+right: 70.83%;
+top: 64.58%;
+bottom: 22.92%;
+
+/* Primary/Navy | #212C3D
+
+Usage: Text
+*/
+background: #212C3D;
+
+
+/* Vector */
+
+position: absolute;
+left: 16.67%;
+right: 70.83%;
+top: 43.75%;
+bottom: 43.75%;
+
+/* Primary/Navy | #212C3D
+
+Usage: Text
+*/
+background: #212C3D;
+
+
+/* Vector */
+
+position: absolute;
+left: 41.67%;
+right: 16.67%;
+top: 25%;
+bottom: 66.67%;
+
+/* Primary/Navy | #212C3D
+
+Usage: Text
+*/
+background: #212C3D;
+
+
+/* Vector */
+
+position: absolute;
+left: 41.67%;
+right: 16.67%;
+top: 45.83%;
+bottom: 45.83%;
+
+/* Primary/Navy | #212C3D
+
+Usage: Text
+*/
+background: #212C3D;
+
+
+/* Vector */
+
+position: absolute;
+left: 41.67%;
+right: 16.67%;
+top: 66.67%;
+bottom: 25%;
+
+/* Primary/Navy | #212C3D
+
+Usage: Text
+*/
+background: #212C3D;
+
+
+/* Rectangle 5635 */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+
+
+/* Prev(24x24) */
+
+position: absolute;
+width: 24px;
+height: 24px;
+left: 144px;
+top: 32px;
+
+
+
+/* Rectangle 5635 */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+
+
+/* Group */
+
+position: absolute;
+left: 20.83%;
+right: 20.83%;
+top: 20.86%;
+bottom: 20.86%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 20.83%;
+right: 20.83%;
+top: 20.86%;
+bottom: 20.86%;
+
+/* Primary/Navy | #212C3D
+
+Usage: Text
+*/
+background: #212C3D;
+
+
+/* Next(24x24) */
+
+position: absolute;
+width: 24px;
+height: 24px;
+left: 172px;
+top: 32px;
+
+
+
+/* Rectangle 5635 */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+
+
+/* Group */
+
+position: absolute;
+left: 20.83%;
+right: 20.83%;
+top: 20.86%;
+bottom: 20.86%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 79.17%;
+right: -37.5%;
+top: 20.86%;
+bottom: 20.86%;
+
+/* Primary/Navy | #212C3D
+
+Usage: Text
+*/
+background: #212C3D;
+transform: matrix(-1, 0, 0, 1, 0, 0);
+
+
+/* Frame 1 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 2px;
+
+position: absolute;
+width: 86px;
+height: 20px;
+left: 0px;
+top: 0px;
+
+
+
+/* Label */
+
+width: 86px;
+height: 20px;
+
+/* Form/Field label */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+/* Neutral Dark/1 | #384B69 */
+color: #384B69;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* AI text button */
+
+position: absolute;
+width: 180px;
+height: 32px;
+right: 4px;
+top: 28px;
+
+
+
+/* Label */
+
+position: absolute;
+height: 20px;
+left: 9px;
+right: 38px;
+top: 6px;
+
+/* Form/Buttom primary */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+text-align: right;
+
+/* Black/3 | #7F7F7F */
+color: #7F7F7F;
+
+
+
+/* AI */
+
+position: absolute;
+left: 83.33%;
+right: 3.33%;
+top: 12.5%;
+bottom: 12.5%;
+
+
+
+/* Group */
+
+position: absolute;
+left: 4.17%;
+right: 4%;
+top: 4%;
+bottom: 4.17%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 4.17%;
+right: 66.67%;
+top: 4.17%;
+bottom: 66.67%;
+
+/* Neutral Light/5 | #B4B4B4 */
+background: #B4B4B4;
+
+
+/* Vector */
+
+position: absolute;
+left: 66.67%;
+right: 4.17%;
+top: 66.67%;
+bottom: 4.17%;
+
+/* Neutral Light/5 | #B4B4B4 */
+background: #B4B4B4;
+
+
+/* Vector */
+
+position: absolute;
+left: 41.66%;
+right: 4%;
+top: 4%;
+bottom: 41.67%;
+
+/* Neutral Light/5 | #B4B4B4 */
+background: #B4B4B4;
+
+
+/* Vector */
+
+position: absolute;
+left: 4.17%;
+right: 47.23%;
+top: 47.23%;
+bottom: 4.17%;
+
+/* Black/3 | #7F7F7F */
+background: #7F7F7F;
+
+
+/* Wysiwyg Light */
+
+width: 796px;
+height: 240px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Background */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 0px;
+right: 0px;
+top: 24px;
+bottom: 16px;
+
+/* Neutral Light/White | #FFFFFF */
+background: #FFFFFF;
+/* Neutral Light/5 | #B4B4B4 */
+border: 1px solid #B4B4B4;
+border-radius: 4px;
+
+
+/* Placeholder */
+
+position: absolute;
+height: 130px;
+left: 24px;
+right: 24px;
+top: 88px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+/* or 171% */
+
+/* Black/3 | #7F7F7F */
+color: #7F7F7F;
+
+
+
+/* Background */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 0px;
+right: 0px;
+top: 218px;
+bottom: 16px;
+
+/* Neutral Light/White | #FFFFFF */
+background: #FFFFFF;
+/* Neutral Light/4 | #CCCCCC */
+border: 1px solid #CCCCCC;
+border-radius: 0px 0px 4px 4px;
+
+
+/* Background */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 0px;
+right: 0px;
+top: 24px;
+bottom: 176px;
+
+/* Neutral Light/White | #FFFFFF */
+background: #FFFFFF;
+/* Neutral Light/5 | #B4B4B4 */
+border: 1px solid #B4B4B4;
+border-radius: 4px 4px 0px 0px;
+
+
+/* Bold(24x24) */
+
+position: absolute;
+width: 24px;
+height: 24px;
+left: 8px;
+top: 32px;
+
+
+
+/* Group */
+
+position: absolute;
+left: 29.17%;
+right: 26.04%;
+top: 16.67%;
+bottom: 25%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 29.17%;
+right: 26.04%;
+top: 16.67%;
+bottom: 25%;
+
+/* Primary/Navy | #212C3D
+
+Usage: Text
+*/
+background: #212C3D;
+
+
+/* Italic(24x24) */
+
+position: absolute;
+width: 24px;
+height: 24px;
+left: 36px;
+top: 32px;
+
+
+
+/* Group */
+
+position: absolute;
+left: 25%;
+right: 25%;
+top: 16.67%;
+bottom: 25%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 25%;
+right: 25%;
+top: 16.67%;
+bottom: 25%;
+
+/* Primary/Navy | #212C3D
+
+Usage: Text
+*/
+background: #212C3D;
+
+
+/* Ordered(24x24) */
+
+position: absolute;
+width: 24px;
+height: 24px;
+left: 76px;
+top: 32px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 17.7%;
+right: 65.82%;
+top: 52.08%;
+bottom: 25.01%;
+
+/* Primary/Navy | #212C3D
+
+Usage: Text
+*/
+background: #212C3D;
+
+
+/* Vector */
+
+position: absolute;
+left: 17.72%;
+right: 70.83%;
+top: 21.88%;
+bottom: 55.21%;
+
+/* Primary/Navy | #212C3D
+
+Usage: Text
+*/
+background: #212C3D;
+
+
+/* Vector */
+
+position: absolute;
+left: 41.67%;
+right: 16.67%;
+top: 25%;
+bottom: 66.67%;
+
+/* Primary/Navy | #212C3D
+
+Usage: Text
+*/
+background: #212C3D;
+
+
+/* Vector */
+
+position: absolute;
+left: 41.67%;
+right: 16.67%;
+top: 45.83%;
+bottom: 45.83%;
+
+/* Primary/Navy | #212C3D
+
+Usage: Text
+*/
+background: #212C3D;
+
+
+/* Vector */
+
+position: absolute;
+left: 41.67%;
+right: 16.67%;
+top: 66.67%;
+bottom: 25%;
+
+/* Primary/Navy | #212C3D
+
+Usage: Text
+*/
+background: #212C3D;
+
+
+/* Rectangle 5635 */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+
+
+/* Unordered(24x24) */
+
+position: absolute;
+width: 24px;
+height: 24px;
+left: 104px;
+top: 32px;
+
+
+
+/* Group */
+
+position: absolute;
+left: 16.67%;
+right: 16.67%;
+top: 22.92%;
+bottom: 22.92%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 16.67%;
+right: 70.83%;
+top: 22.92%;
+bottom: 64.58%;
+
+/* Primary/Navy | #212C3D
+
+Usage: Text
+*/
+background: #212C3D;
+
+
+/* Vector */
+
+position: absolute;
+left: 16.67%;
+right: 70.83%;
+top: 64.58%;
+bottom: 22.92%;
+
+/* Primary/Navy | #212C3D
+
+Usage: Text
+*/
+background: #212C3D;
+
+
+/* Vector */
+
+position: absolute;
+left: 16.67%;
+right: 70.83%;
+top: 43.75%;
+bottom: 43.75%;
+
+/* Primary/Navy | #212C3D
+
+Usage: Text
+*/
+background: #212C3D;
+
+
+/* Vector */
+
+position: absolute;
+left: 41.67%;
+right: 16.67%;
+top: 25%;
+bottom: 66.67%;
+
+/* Primary/Navy | #212C3D
+
+Usage: Text
+*/
+background: #212C3D;
+
+
+/* Vector */
+
+position: absolute;
+left: 41.67%;
+right: 16.67%;
+top: 45.83%;
+bottom: 45.83%;
+
+/* Primary/Navy | #212C3D
+
+Usage: Text
+*/
+background: #212C3D;
+
+
+/* Vector */
+
+position: absolute;
+left: 41.67%;
+right: 16.67%;
+top: 66.67%;
+bottom: 25%;
+
+/* Primary/Navy | #212C3D
+
+Usage: Text
+*/
+background: #212C3D;
+
+
+/* Rectangle 5635 */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+
+
+/* Prev(24x24) */
+
+position: absolute;
+width: 24px;
+height: 24px;
+left: 144px;
+top: 32px;
+
+
+
+/* Rectangle 5635 */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+
+
+/* Group */
+
+position: absolute;
+left: 20.83%;
+right: 20.83%;
+top: 20.86%;
+bottom: 20.86%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 20.83%;
+right: 20.83%;
+top: 20.86%;
+bottom: 20.86%;
+
+/* Primary/Navy | #212C3D
+
+Usage: Text
+*/
+background: #212C3D;
+
+
+/* Next(24x24) */
+
+position: absolute;
+width: 24px;
+height: 24px;
+left: 172px;
+top: 32px;
+
+
+
+/* Rectangle 5635 */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+
+
+/* Group */
+
+position: absolute;
+left: 20.83%;
+right: 20.83%;
+top: 20.86%;
+bottom: 20.86%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 79.17%;
+right: -37.5%;
+top: 20.86%;
+bottom: 20.86%;
+
+/* Primary/Navy | #212C3D
+
+Usage: Text
+*/
+background: #212C3D;
+transform: matrix(-1, 0, 0, 1, 0, 0);
+
+
+/* Frame 1 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 2px;
+
+position: absolute;
+width: 207px;
+height: 20px;
+left: 0px;
+top: 0px;
+
+
+
+/* Label */
+
+width: 207px;
+height: 20px;
+
+/* Form/Field label */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+/* Neutral Dark/1 | #384B69 */
+color: #384B69;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* AI text button */
+
+position: absolute;
+width: 180px;
+height: 32px;
+right: 4px;
+top: 28px;
+
+
+
+/* Label */
+
+position: absolute;
+height: 20px;
+left: 9px;
+right: 38px;
+top: 6px;
+
+/* Form/Buttom primary */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+text-align: right;
+
+/* Black/3 | #7F7F7F */
+color: #7F7F7F;
+
+
+
+/* AI */
+
+position: absolute;
+left: 83.33%;
+right: 3.33%;
+top: 12.5%;
+bottom: 12.5%;
+
+
+
+/* Group */
+
+position: absolute;
+left: 4.17%;
+right: 4%;
+top: 4%;
+bottom: 4.17%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 4.17%;
+right: 66.67%;
+top: 4.17%;
+bottom: 66.67%;
+
+/* Neutral Light/5 | #B4B4B4 */
+background: #B4B4B4;
+
+
+/* Vector */
+
+position: absolute;
+left: 66.67%;
+right: 4.17%;
+top: 66.67%;
+bottom: 4.17%;
+
+/* Neutral Light/5 | #B4B4B4 */
+background: #B4B4B4;
+
+
+/* Vector */
+
+position: absolute;
+left: 41.66%;
+right: 4%;
+top: 4%;
+bottom: 41.67%;
+
+/* Neutral Light/5 | #B4B4B4 */
+background: #B4B4B4;
+
+
+/* Vector */
+
+position: absolute;
+left: 4.17%;
+right: 47.23%;
+top: 47.23%;
+bottom: 4.17%;
+
+/* Black/3 | #7F7F7F */
+background: #7F7F7F;
+
+
+/* Form group container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 32px;
+gap: 10px;
+
+width: 860px;
+height: 472px;
+
+/* Neutral Light/White | #FFFFFF */
+background: #FFFFFF;
+/* 1 */
+box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.06);
+border-radius: 4px;
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* Group 26915 */
+
+width: 796px;
+height: 366px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 26934 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px 0px 16px;
+gap: 4px;
+
+position: absolute;
+width: 796px;
+height: 340px;
+left: 32px;
+top: 58px;
+
+
+
+/* Group 26845 */
+
+width: 796px;
+height: 78px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Background */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 0px;
+right: 0px;
+top: 0px;
+bottom: 262px;
+
+background: rgba(255, 255, 255, 0.5);
+border: 1px solid rgba(86, 115, 160, 0.4);
+border-radius: 4px;
+
+
+/* Checkbox Item */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 4px 0px;
+gap: 8px;
+
+position: absolute;
+height: 28px;
+left: 2.01%;
+right: 64.45%;
+top: calc(50% - 28px/2 - 144px);
+
+
+
+/* Components/Forms/Assets/Checkbox-checked */
+
+width: 18px;
+height: 18px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Oval */
+
+position: absolute;
+left: 5%;
+right: 5%;
+top: 5%;
+bottom: 5%;
+
+/* Neutral Light/White | #FFFFFF */
+background: #FFFFFF;
+opacity: 0.5;
+/* Neutral Light/5 | #B4B4B4 */
+border: 1px solid #B4B4B4;
+
+
+/* Value */
+
+width: 241px;
+height: 20px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+/* Primary/Navy | #212C3D */
+color: #212C3D;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+
+/* Value */
+
+position: absolute;
+width: 436px;
+height: 20px;
+left: 43px;
+top: 40px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+/* Primary/Navy | #212C3D */
+color: #212C3D;
+
+
+
+/* Group 26849 */
+
+width: 796px;
+height: 78px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Background */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 0px;
+right: 0px;
+top: 82px;
+bottom: 180px;
+
+background: rgba(255, 255, 255, 0.5);
+border: 1px solid rgba(86, 115, 160, 0.4);
+border-radius: 4px;
+
+
+/* Checkbox Item */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 4px 0px;
+gap: 8px;
+
+position: absolute;
+height: 28px;
+left: 2.01%;
+right: 3.02%;
+top: calc(50% - 28px/2 - 62px);
+
+
+
+/* Components/Forms/Assets/Checkbox-checked */
+
+width: 18px;
+height: 18px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Oval */
+
+position: absolute;
+left: 5%;
+right: 5%;
+top: 5%;
+bottom: 5%;
+
+/* Neutral Light/White | #FFFFFF */
+background: #FFFFFF;
+opacity: 0.5;
+/* Neutral Light/5 | #B4B4B4 */
+border: 1px solid #B4B4B4;
+
+
+/* Value */
+
+width: 730px;
+height: 20px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+/* Primary/Navy | #212C3D */
+color: #212C3D;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+
+/* Value */
+
+position: absolute;
+width: 736px;
+height: 20px;
+left: 43px;
+top: 122px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+/* Primary/Navy | #212C3D */
+color: #212C3D;
+
+
+
+/* Group 26847 */
+
+width: 796px;
+height: 78px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Background */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 0px;
+right: 0px;
+top: 164px;
+bottom: 98px;
+
+background: rgba(255, 255, 255, 0.5);
+border: 1px solid rgba(86, 115, 160, 0.4);
+border-radius: 4px;
+
+
+/* Checkbox Item */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 4px 0px;
+gap: 8px;
+
+position: absolute;
+height: 28px;
+left: 2.01%;
+right: 64.45%;
+top: calc(50% - 28px/2 + 20px);
+
+
+
+/* Components/Forms/Assets/Checkbox-checked */
+
+width: 18px;
+height: 18px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Oval */
+
+position: absolute;
+left: 5%;
+right: 5%;
+top: 5%;
+bottom: 5%;
+
+/* Neutral Light/White | #FFFFFF */
+background: #FFFFFF;
+opacity: 0.5;
+/* Neutral Light/5 | #B4B4B4 */
+border: 1px solid #B4B4B4;
+
+
+/* Value */
+
+width: 241px;
+height: 20px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+/* Primary/Navy | #212C3D */
+color: #212C3D;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+
+/* Value */
+
+position: absolute;
+width: 436px;
+height: 20px;
+left: 43px;
+top: 204px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+/* Primary/Navy | #212C3D */
+color: #212C3D;
+
+
+
+/* Group 26848 */
+
+width: 796px;
+height: 78px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* Background */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 0px;
+right: 0px;
+top: 246px;
+bottom: 16px;
+
+background: rgba(255, 255, 255, 0.5);
+border: 1px solid rgba(86, 115, 160, 0.4);
+border-radius: 4px;
+
+
+/* Checkbox Item */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 4px 0px;
+gap: 8px;
+
+position: absolute;
+height: 28px;
+left: 2.01%;
+right: 46.23%;
+top: calc(50% - 28px/2 + 102px);
+
+
+
+/* Components/Forms/Assets/Checkbox-checked */
+
+width: 18px;
+height: 18px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Oval */
+
+position: absolute;
+left: 5%;
+right: 5%;
+top: 5%;
+bottom: 5%;
+
+/* Neutral Light/White | #FFFFFF */
+background: #FFFFFF;
+opacity: 0.5;
+/* Neutral Light/5 | #B4B4B4 */
+border: 1px solid #B4B4B4;
+
+
+/* Value */
+
+width: 386px;
+height: 20px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+/* Primary/Navy | #212C3D */
+color: #212C3D;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+
+/* Value */
+
+position: absolute;
+width: 436px;
+height: 20px;
+left: 43px;
+top: 286px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+/* Primary/Navy | #212C3D */
+color: #212C3D;
+
+
+
+/* Frame 1 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 2px;
+
+position: absolute;
+width: 141px;
+height: 20px;
+left: 32px;
+top: 32px;
+
+
+
+/* Label */
+
+width: 141px;
+height: 20px;
+
+/* Form/Field label */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+/* Neutral Dark/1 | #384B69 */
+color: #384B69;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Add item button */
+
+width: 139px;
+height: 32px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Rectangle 56 */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+border-radius: 4px;
+
+
+/* Label */
+
+position: absolute;
+left: 23.02%;
+right: 5.76%;
+top: 18.75%;
+bottom: 18.75%;
+
+/* Form/Field label */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+/* Neutral Dark/1 | #384B69 */
+color: #384B69;
+
+
+
+/* Add (24x24) */
+
+position: absolute;
+left: 2.88%;
+right: 79.86%;
+top: 12.5%;
+bottom: 12.5%;
+
+
+
+/* Group */
+
+position: absolute;
+left: 25%;
+right: 25%;
+top: 25%;
+bottom: 25%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 25%;
+right: 25%;
+top: 25%;
+bottom: 25%;
+
+/* Primary/Blue | #2774F0
+
+Usage: Interaction
+*/
+background: #2774F0;
+
+
+/* Group 26926 */
+
+width: 860px;
+height: 460px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 4;
+flex-grow: 0;
+
+
+/* Form group container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 32px;
+gap: 10px;
+
+position: absolute;
+width: 860px;
+height: 412px;
+left: 0px;
+top: 1692px;
+
+/* Neutral Light/White | #FFFFFF */
+background: #FFFFFF;
+/* 1 */
+box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.06);
+border-radius: 4px;
+
+
+/* Group 26931 */
+
+width: 796px;
+height: 348px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Group 26898 */
+
+position: absolute;
+width: 796px;
+height: 170px;
+left: 32px;
+top: 32px;
+
+
+
+/* Background */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 32px;
+right: 32px;
+top: 32px;
+bottom: 210px;
+
+background: rgba(255, 255, 255, 0.5);
+border: 1px solid rgba(86, 115, 160, 0.4);
+border-radius: 4px;
+
+
+/* Checkbox Item */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 4px 0px;
+gap: 8px;
+
+position: absolute;
+height: 28px;
+left: 5.58%;
+right: 6.51%;
+top: calc(50% - 28px/2 - 148px);
+
+
+
+/* Components/Forms/Assets/Checkbox-checked */
+
+width: 18px;
+height: 18px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Oval */
+
+position: absolute;
+left: 5%;
+right: 5%;
+top: 5%;
+bottom: 5%;
+
+/* Neutral Light/White | #FFFFFF */
+background: #FFFFFF;
+opacity: 0.5;
+/* Neutral Light/5 | #B4B4B4 */
+border: 1px solid #B4B4B4;
+
+
+/* Value */
+
+width: 730px;
+height: 20px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+/* Primary/Navy | #212C3D */
+color: #212C3D;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+
+/* Value */
+
+position: absolute;
+width: 713px;
+height: 40px;
+left: 74px;
+top: 72px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+/* or 143% */
+
+/* Primary/Navy | #212C3D */
+color: #212C3D;
+
+
+
+/* Value */
+
+position: absolute;
+width: 180px;
+height: 20px;
+left: 76px;
+top: 128px;
+
+/* Text/Small Regular */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 20px;
+/* identical to box height, or 167% */
+
+/* Black/2 | #555555 */
+color: #555555;
+
+
+
+/* Group 26929 */
+
+position: absolute;
+width: 136px;
+height: 26px;
+left: 77px;
+top: 152px;
+
+
+
+/* Value */
+
+position: absolute;
+width: 104px;
+height: 20px;
+left: 103px;
+top: 156px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 13px;
+line-height: 20px;
+/* identical to box height, or 154% */
+
+/* Black/0 | #000000 */
+color: #000000;
+
+
+
+/* money (16x16) */
+
+position: absolute;
+width: 16px;
+height: 16px;
+left: 83px;
+top: 157px;
+
+
+
+/* Group */
+
+position: absolute;
+left: 0%;
+right: -0.05%;
+top: 5.13%;
+bottom: 4.5%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 5.13%;
+bottom: 19.5%;
+
+/* Secondary/Green | #23AD4B
+
+Usage: Success
+*/
+background: #23AD4B;
+
+
+/* Vector */
+
+position: absolute;
+left: 78.95%;
+right: 0.45%;
+top: 35.17%;
+bottom: 50%;
+
+/* Secondary/Green | #23AD4B
+
+Usage: Success
+*/
+background: #23AD4B;
+
+
+/* Vector */
+
+position: absolute;
+left: 0.3%;
+right: 42.45%;
+top: 51.8%;
+bottom: 22.5%;
+
+/* Secondary/Green | #23AD4B
+
+Usage: Success
+*/
+background: #23AD4B;
+
+
+/* Vector */
+
+position: absolute;
+left: 78.95%;
+right: -0.05%;
+top: 44.17%;
+bottom: 41%;
+
+/* Secondary/Green | #23AD4B
+
+Usage: Success
+*/
+background: #23AD4B;
+
+
+/* Vector */
+
+position: absolute;
+left: 0.3%;
+right: 42.45%;
+top: 60.8%;
+bottom: 13.5%;
+
+/* Secondary/Green | #23AD4B
+
+Usage: Success
+*/
+background: #23AD4B;
+
+
+/* Vector */
+
+position: absolute;
+left: 78.95%;
+right: -0.05%;
+top: 53.17%;
+bottom: 32%;
+
+/* Secondary/Green | #23AD4B
+
+Usage: Success
+*/
+background: #23AD4B;
+
+
+/* Vector */
+
+position: absolute;
+left: 0.3%;
+right: 42.45%;
+top: 69.8%;
+bottom: 4.5%;
+
+/* Secondary/Green | #23AD4B
+
+Usage: Success
+*/
+background: #23AD4B;
+
+
+/* Rectangle 5642 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 136px;
+height: 26px;
+left: 77px;
+top: 152px;
+
+border: 1px solid #1B8121;
+border-radius: 3px;
+
+
+/* Group 26900 */
+
+position: absolute;
+width: 796px;
+height: 170px;
+left: 32px;
+top: 210px;
+
+
+
+/* Background */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 32px;
+right: 32px;
+top: 210px;
+bottom: 32px;
+
+background: rgba(255, 255, 255, 0.5);
+border: 1px solid rgba(86, 115, 160, 0.4);
+border-radius: 4px;
+
+
+/* Checkbox Item */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 4px 0px;
+gap: 8px;
+
+position: absolute;
+height: 28px;
+left: 5.58%;
+right: 6.51%;
+top: calc(50% - 28px/2 + 30px);
+
+
+
+/* Components/Forms/Assets/Checkbox-checked */
+
+width: 18px;
+height: 18px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Oval */
+
+position: absolute;
+left: 5%;
+right: 5%;
+top: 5%;
+bottom: 5%;
+
+/* Neutral Light/White | #FFFFFF */
+background: #FFFFFF;
+opacity: 0.5;
+/* Neutral Light/5 | #B4B4B4 */
+border: 1px solid #B4B4B4;
+
+
+/* Value */
+
+width: 730px;
+height: 20px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+/* Primary/Navy | #212C3D */
+color: #212C3D;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+
+/* Value */
+
+position: absolute;
+width: 713px;
+height: 40px;
+left: 74px;
+top: 250px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+/* or 143% */
+
+/* Primary/Navy | #212C3D */
+color: #212C3D;
+
+
+
+/* Value */
+
+position: absolute;
+width: 180px;
+height: 20px;
+left: 76px;
+top: 306px;
+
+/* Text/Small Regular */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 20px;
+/* identical to box height, or 167% */
+
+/* Black/2 | #555555 */
+color: #555555;
+
+
+
+/* Value */
+
+position: absolute;
+width: 30px;
+height: 20px;
+left: 241px;
+top: 334px;
+
+/* Text/Small Regular */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 20px;
+/* identical to box height, or 167% */
+
+/* Black/2 | #555555 */
+color: #555555;
+
+
+
+/* Group 26929 */
+
+position: absolute;
+width: 156px;
+height: 26px;
+left: 77px;
+top: 330px;
+
+
+
+/* Value */
+
+position: absolute;
+width: 122px;
+height: 20px;
+left: 103px;
+top: 334px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 13px;
+line-height: 20px;
+/* identical to box height, or 154% */
+
+/* Black/0 | #000000 */
+color: #000000;
+
+
+
+/* money (16x16) */
+
+position: absolute;
+width: 16px;
+height: 16px;
+left: 83px;
+top: 335px;
+
+
+
+/* Group */
+
+position: absolute;
+left: 0%;
+right: -0.05%;
+top: 5.13%;
+bottom: 4.5%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 5.13%;
+bottom: 19.5%;
+
+/* Secondary/Green | #23AD4B
+
+Usage: Success
+*/
+background: #23AD4B;
+
+
+/* Vector */
+
+position: absolute;
+left: 78.95%;
+right: 0.45%;
+top: 35.17%;
+bottom: 50%;
+
+/* Secondary/Green | #23AD4B
+
+Usage: Success
+*/
+background: #23AD4B;
+
+
+/* Vector */
+
+position: absolute;
+left: 0.3%;
+right: 42.45%;
+top: 51.8%;
+bottom: 22.5%;
+
+/* Secondary/Green | #23AD4B
+
+Usage: Success
+*/
+background: #23AD4B;
+
+
+/* Vector */
+
+position: absolute;
+left: 78.95%;
+right: -0.05%;
+top: 44.17%;
+bottom: 41%;
+
+/* Secondary/Green | #23AD4B
+
+Usage: Success
+*/
+background: #23AD4B;
+
+
+/* Vector */
+
+position: absolute;
+left: 0.3%;
+right: 42.45%;
+top: 60.8%;
+bottom: 13.5%;
+
+/* Secondary/Green | #23AD4B
+
+Usage: Success
+*/
+background: #23AD4B;
+
+
+/* Vector */
+
+position: absolute;
+left: 78.95%;
+right: -0.05%;
+top: 53.17%;
+bottom: 32%;
+
+/* Secondary/Green | #23AD4B
+
+Usage: Success
+*/
+background: #23AD4B;
+
+
+/* Vector */
+
+position: absolute;
+left: 0.3%;
+right: 42.45%;
+top: 69.8%;
+bottom: 4.5%;
+
+/* Secondary/Green | #23AD4B
+
+Usage: Success
+*/
+background: #23AD4B;
+
+
+/* Rectangle 5642 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 156px;
+height: 26px;
+left: 77px;
+top: 330px;
+
+border: 1px solid #1B8121;
+border-radius: 3px;
+
+
+/* Group 26930 */
+
+position: absolute;
+width: 178px;
+height: 26px;
+left: 279px;
+top: 330px;
+
+
+
+/* Value */
+
+position: absolute;
+width: 144px;
+height: 20px;
+left: 305px;
+top: 334px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 13px;
+line-height: 20px;
+/* identical to box height, or 154% */
+
+/* Black/0 | #000000 */
+color: #000000;
+
+
+
+/* money (16x16) */
+
+position: absolute;
+width: 16px;
+height: 16px;
+left: 285px;
+top: 335px;
+
+
+
+/* Group */
+
+position: absolute;
+left: 0%;
+right: -0.05%;
+top: 5.13%;
+bottom: 4.5%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 5.13%;
+bottom: 19.5%;
+
+/* Secondary/Green | #23AD4B
+
+Usage: Success
+*/
+background: #23AD4B;
+
+
+/* Vector */
+
+position: absolute;
+left: 78.96%;
+right: 0.45%;
+top: 35.17%;
+bottom: 50%;
+
+/* Secondary/Green | #23AD4B
+
+Usage: Success
+*/
+background: #23AD4B;
+
+
+/* Vector */
+
+position: absolute;
+left: 0.3%;
+right: 42.45%;
+top: 51.8%;
+bottom: 22.5%;
+
+/* Secondary/Green | #23AD4B
+
+Usage: Success
+*/
+background: #23AD4B;
+
+
+/* Vector */
+
+position: absolute;
+left: 78.96%;
+right: -0.05%;
+top: 44.17%;
+bottom: 41%;
+
+/* Secondary/Green | #23AD4B
+
+Usage: Success
+*/
+background: #23AD4B;
+
+
+/* Vector */
+
+position: absolute;
+left: 0.3%;
+right: 42.45%;
+top: 60.8%;
+bottom: 13.5%;
+
+/* Secondary/Green | #23AD4B
+
+Usage: Success
+*/
+background: #23AD4B;
+
+
+/* Vector */
+
+position: absolute;
+left: 78.96%;
+right: -0.05%;
+top: 53.17%;
+bottom: 32%;
+
+/* Secondary/Green | #23AD4B
+
+Usage: Success
+*/
+background: #23AD4B;
+
+
+/* Vector */
+
+position: absolute;
+left: 0.3%;
+right: 42.45%;
+top: 69.8%;
+bottom: 4.5%;
+
+/* Secondary/Green | #23AD4B
+
+Usage: Success
+*/
+background: #23AD4B;
+
+
+/* Rectangle 5642 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 178px;
+height: 26px;
+left: 279px;
+top: 330px;
+
+border: 1px solid #1B8121;
+border-radius: 3px;
+
+
+/* Header (Form) */
+
+position: absolute;
+width: 860px;
+height: 48px;
+left: 0px;
+top: 1644px;
+
+
+
+/* Title */
+
+position: absolute;
+height: 32px;
+left: 0px;
+right: 0px;
+top: 0px;
+
+/* Headings/H3 Regular */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 32px;
+/* identical to box height, or 160% */
+
+/* Primary/Blue | #2774F0 */
+color: #2774F0;
+
+
+
+/* Form group container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 32px;
+gap: 10px;
+
+width: 860px;
+height: 343px;
+
+/* Neutral Light/White | #FFFFFF */
+background: #FFFFFF;
+/* 1 */
+box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.06);
+border-radius: 4px;
+
+/* Inside auto layout */
+flex: none;
+order: 5;
+flex-grow: 0;
+
+
+/* Frame 26937 */
+
+width: 796px;
+height: 279px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Wysiwyg Light */
+
+position: absolute;
+width: 796px;
+height: 240px;
+left: 0px;
+top: 0px;
+
+
+
+/* Background */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 0px;
+right: 0px;
+top: 24px;
+bottom: 16px;
+
+/* Neutral Light/White | #FFFFFF */
+background: #FFFFFF;
+/* Neutral Light/5 | #B4B4B4 */
+border: 1px solid #B4B4B4;
+border-radius: 4px;
+
+
+/* Placeholder */
+
+position: absolute;
+height: 130px;
+left: 24px;
+right: 24px;
+top: 88px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+/* or 171% */
+
+/* Black/3 | #7F7F7F */
+color: #7F7F7F;
+
+
+
+/* Background */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 0px;
+right: 0px;
+top: 218px;
+bottom: 16px;
+
+/* Neutral Light/White | #FFFFFF */
+background: #FFFFFF;
+/* Neutral Light/4 | #CCCCCC */
+border: 1px solid #CCCCCC;
+border-radius: 0px 0px 4px 4px;
+
+
+/* Background */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 0px;
+right: 0px;
+top: 24px;
+bottom: 176px;
+
+/* Neutral Light/White | #FFFFFF */
+background: #FFFFFF;
+/* Neutral Light/5 | #B4B4B4 */
+border: 1px solid #B4B4B4;
+border-radius: 4px 4px 0px 0px;
+
+
+/* Bold(24x24) */
+
+position: absolute;
+width: 24px;
+height: 24px;
+left: 8px;
+top: 32px;
+
+
+
+/* Group */
+
+position: absolute;
+left: 29.17%;
+right: 26.04%;
+top: 16.67%;
+bottom: 25%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 29.17%;
+right: 26.04%;
+top: 16.67%;
+bottom: 25%;
+
+/* Primary/Navy | #212C3D
+
+Usage: Text
+*/
+background: #212C3D;
+
+
+/* Italic(24x24) */
+
+position: absolute;
+width: 24px;
+height: 24px;
+left: 36px;
+top: 32px;
+
+
+
+/* Group */
+
+position: absolute;
+left: 25%;
+right: 25%;
+top: 16.67%;
+bottom: 25%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 25%;
+right: 25%;
+top: 16.67%;
+bottom: 25%;
+
+/* Primary/Navy | #212C3D
+
+Usage: Text
+*/
+background: #212C3D;
+
+
+/* Ordered(24x24) */
+
+position: absolute;
+width: 24px;
+height: 24px;
+left: 76px;
+top: 32px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 17.7%;
+right: 65.82%;
+top: 52.08%;
+bottom: 25.01%;
+
+/* Primary/Navy | #212C3D
+
+Usage: Text
+*/
+background: #212C3D;
+
+
+/* Vector */
+
+position: absolute;
+left: 17.72%;
+right: 70.83%;
+top: 21.88%;
+bottom: 55.21%;
+
+/* Primary/Navy | #212C3D
+
+Usage: Text
+*/
+background: #212C3D;
+
+
+/* Vector */
+
+position: absolute;
+left: 41.67%;
+right: 16.67%;
+top: 25%;
+bottom: 66.67%;
+
+/* Primary/Navy | #212C3D
+
+Usage: Text
+*/
+background: #212C3D;
+
+
+/* Vector */
+
+position: absolute;
+left: 41.67%;
+right: 16.67%;
+top: 45.83%;
+bottom: 45.83%;
+
+/* Primary/Navy | #212C3D
+
+Usage: Text
+*/
+background: #212C3D;
+
+
+/* Vector */
+
+position: absolute;
+left: 41.67%;
+right: 16.67%;
+top: 66.67%;
+bottom: 25%;
+
+/* Primary/Navy | #212C3D
+
+Usage: Text
+*/
+background: #212C3D;
+
+
+/* Rectangle 5635 */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+
+
+/* Unordered(24x24) */
+
+position: absolute;
+width: 24px;
+height: 24px;
+left: 104px;
+top: 32px;
+
+
+
+/* Group */
+
+position: absolute;
+left: 16.67%;
+right: 16.67%;
+top: 22.92%;
+bottom: 22.92%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 16.67%;
+right: 70.83%;
+top: 22.92%;
+bottom: 64.58%;
+
+/* Primary/Navy | #212C3D
+
+Usage: Text
+*/
+background: #212C3D;
+
+
+/* Vector */
+
+position: absolute;
+left: 16.67%;
+right: 70.83%;
+top: 64.58%;
+bottom: 22.92%;
+
+/* Primary/Navy | #212C3D
+
+Usage: Text
+*/
+background: #212C3D;
+
+
+/* Vector */
+
+position: absolute;
+left: 16.67%;
+right: 70.83%;
+top: 43.75%;
+bottom: 43.75%;
+
+/* Primary/Navy | #212C3D
+
+Usage: Text
+*/
+background: #212C3D;
+
+
+/* Vector */
+
+position: absolute;
+left: 41.67%;
+right: 16.67%;
+top: 25%;
+bottom: 66.67%;
+
+/* Primary/Navy | #212C3D
+
+Usage: Text
+*/
+background: #212C3D;
+
+
+/* Vector */
+
+position: absolute;
+left: 41.67%;
+right: 16.67%;
+top: 45.83%;
+bottom: 45.83%;
+
+/* Primary/Navy | #212C3D
+
+Usage: Text
+*/
+background: #212C3D;
+
+
+/* Vector */
+
+position: absolute;
+left: 41.67%;
+right: 16.67%;
+top: 66.67%;
+bottom: 25%;
+
+/* Primary/Navy | #212C3D
+
+Usage: Text
+*/
+background: #212C3D;
+
+
+/* Rectangle 5635 */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+
+
+/* Prev(24x24) */
+
+position: absolute;
+width: 24px;
+height: 24px;
+left: 144px;
+top: 32px;
+
+
+
+/* Rectangle 5635 */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+
+
+/* Group */
+
+position: absolute;
+left: 20.83%;
+right: 20.83%;
+top: 20.86%;
+bottom: 20.86%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 20.83%;
+right: 20.83%;
+top: 20.86%;
+bottom: 20.86%;
+
+/* Primary/Navy | #212C3D
+
+Usage: Text
+*/
+background: #212C3D;
+
+
+/* Next(24x24) */
+
+position: absolute;
+width: 24px;
+height: 24px;
+left: 172px;
+top: 32px;
+
+
+
+/* Rectangle 5635 */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+
+
+/* Group */
+
+position: absolute;
+left: 20.83%;
+right: 20.83%;
+top: 20.86%;
+bottom: 20.86%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 79.17%;
+right: -37.5%;
+top: 20.86%;
+bottom: 20.86%;
+
+/* Primary/Navy | #212C3D
+
+Usage: Text
+*/
+background: #212C3D;
+transform: matrix(-1, 0, 0, 1, 0, 0);
+
+
+/* Frame 1 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 2px;
+
+position: absolute;
+width: 160px;
+height: 20px;
+left: 0px;
+top: 0px;
+
+
+
+/* Label */
+
+width: 160px;
+height: 20px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+/* Neutral Dark/1 | #384B69 */
+color: #384B69;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* AI text button */
+
+position: absolute;
+visibility: hidden;
+width: 180px;
+height: 32px;
+right: 4px;
+top: 28px;
+
+
+
+/* Tag item */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 10px;
+
+position: absolute;
+width: 71px;
+height: 24px;
+left: 0px;
+top: 240px;
+
+border-radius: 4px;
+
+
+/* Tag item */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 2px 8px;
+gap: 4px;
+
+width: 71px;
+height: 24px;
+
+/* Neutral Light/1 | #EEEFF1 */
+background: #EEEFF1;
+/* Neutral Light/4 | #CCCCCC */
+border: 1px solid #CCCCCC;
+border-radius: 4px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Value */
+
+width: 55px;
+height: 20px;
+
+/* Form/Field value */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+/* Primary/Navy | #212C3D */
+color: #212C3D;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Tag item */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 10px;
+
+position: absolute;
+width: 74px;
+height: 24px;
+left: 75px;
+top: 240px;
+
+border-radius: 4px;
+
+
+/* Tag item */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 2px 8px;
+gap: 4px;
+
+width: 74px;
+height: 24px;
+
+/* Neutral Light/1 | #EEEFF1 */
+background: #EEEFF1;
+/* Neutral Light/4 | #CCCCCC */
+border: 1px solid #CCCCCC;
+border-radius: 4px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Value */
+
+width: 58px;
+height: 20px;
+
+/* Form/Field value */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+/* Primary/Navy | #212C3D */
+color: #212C3D;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Tag item */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 10px;
+
+position: absolute;
+width: 155px;
+height: 24px;
+left: 153px;
+top: 240px;
+
+border-radius: 4px;
+
+
+/* Tag item */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 2px 8px;
+gap: 4px;
+
+width: 155px;
+height: 24px;
+
+/* Neutral Light/1 | #EEEFF1 */
+background: #EEEFF1;
+/* Neutral Light/4 | #CCCCCC */
+border: 1px solid #CCCCCC;
+border-radius: 4px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Value */
+
+width: 139px;
+height: 20px;
+
+/* Form/Field value */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+/* Primary/Navy | #212C3D */
+color: #212C3D;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Tag item */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 10px;
+
+position: absolute;
+width: 132px;
+height: 24px;
+left: 312px;
+top: 240px;
+
+border-radius: 4px;
+
+
+/* Tag item */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 2px 8px;
+gap: 4px;
+
+width: 132px;
+height: 24px;
+
+/* Neutral Light/1 | #EEEFF1 */
+background: #EEEFF1;
+/* Neutral Light/4 | #CCCCCC */
+border: 1px solid #CCCCCC;
+border-radius: 4px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Value */
+
+width: 116px;
+height: 20px;
+
+/* Form/Field value */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+/* Primary/Navy | #212C3D */
+color: #212C3D;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Group 26928 */
+
+width: 860px;
+height: 226px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 6;
+flex-grow: 0;
+
+
+/* Form group container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 32px;
+gap: 10px;
+
+position: absolute;
+width: 860px;
+height: 178px;
+left: 0px;
+top: 2527px;
+
+/* Neutral Light/White | #FFFFFF */
+background: #FFFFFF;
+/* 1 */
+box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.06);
+border-radius: 4px;
+
+
+/* Dropdown */
+
+width: 288px;
+height: 72px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Background */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 0px;
+right: 0px;
+top: 24px;
+bottom: 16px;
+
+/* Neutral Light/White | #FFFFFF */
+background: #FFFFFF;
+/* Neutral Light/5 | #B4B4B4 */
+border: 1px solid #B4B4B4;
+border-radius: 4px;
+
+
+/* Placeholder */
+
+position: absolute;
+width: 206px;
+height: 20px;
+left: 12px;
+top: 30px;
+
+/* Form/Field placeholder */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+/* Black/3 | #7F7F7F */
+color: #7F7F7F;
+
+
+
+/* Frame 1 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 2px;
+
+position: absolute;
+width: 198px;
+height: 20px;
+left: 0px;
+top: 0px;
+
+
+
+/* Label */
+
+width: 135px;
+height: 20px;
+
+/* Form/Field label required */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+/* Neutral Dark/1 | #384B69 */
+color: #384B69;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Optional */
+
+width: 61px;
+height: 20px;
+
+/* Form/Field validation message */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+/* Neutral Dark/4 | #5673A0 */
+color: #5673A0;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* ArrowDown (16x16) */
+
+position: absolute;
+width: 16px;
+height: 16px;
+right: 8px;
+top: 32px;
+
+
+
+/* Path */
+
+position: absolute;
+left: 25%;
+right: 25%;
+top: 31.25%;
+bottom: 37.5%;
+
+/* Primary/Navy | #212C3D
+
+Usage: Text
+*/
+background: #212C3D;
+
+
+/* Add item button */
+
+width: 139px;
+height: 32px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Rectangle 56 */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+border-radius: 4px;
+
+
+/* Label */
+
+position: absolute;
+left: 23.02%;
+right: -2.88%;
+top: 18.75%;
+bottom: 18.75%;
+
+/* Form/Field label */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+/* Neutral Dark/1 | #384B69 */
+color: #384B69;
+
+
+
+/* Add (24x24) */
+
+position: absolute;
+left: 2.88%;
+right: 79.86%;
+top: 12.5%;
+bottom: 12.5%;
+
+
+
+/* Group */
+
+position: absolute;
+left: 25%;
+right: 25%;
+top: 25%;
+bottom: 25%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 25%;
+right: 25%;
+top: 25%;
+bottom: 25%;
+
+/* Primary/Blue | #2774F0
+
+Usage: Interaction
+*/
+background: #2774F0;
+
+
+/* Header (Form) */
+
+position: absolute;
+width: 860px;
+height: 48px;
+left: 0px;
+top: 2479px;
+
+
+
+/* Title */
+
+position: absolute;
+height: 32px;
+left: 0px;
+right: 0px;
+top: 0px;
+
+/* Headings/H3 Regular */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 32px;
+/* identical to box height, or 160% */
+
+/* Primary/Blue | #2774F0 */
+color: #2774F0;
+
+
+
+/* Form group container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 32px;
+gap: 10px;
+
+width: 860px;
+height: 142px;
+
+/* Neutral Light/White | #FFFFFF */
+background: #FFFFFF;
+/* 1 */
+box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.06);
+border-radius: 4px;
+
+/* Inside auto layout */
+flex: none;
+order: 7;
+flex-grow: 0;
+
+
+/* Tag field */
+
+width: 796px;
+height: 78px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Normal */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #FFFFFF;
+
+
+/* Background */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 0px;
+right: 0px;
+top: 24px;
+bottom: 16px;
+
+/* Neutral Light/White | #FFFFFF */
+background: #FFFFFF;
+/* Neutral Light/5 | #B4B4B4 */
+border: 1px solid #B4B4B4;
+border-radius: 4px;
+
+
+/* Value */
+
+position: absolute;
+visibility: hidden;
+left: 12px;
+right: 12px;
+top: 33px;
+bottom: 25px;
+
+/* Form/Field value */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+/* Primary/Navy | #212C3D */
+color: #212C3D;
+
+
+
+/* Placeholder */
+
+position: absolute;
+width: 66px;
+height: 20px;
+left: 12px;
+top: 33px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+/* Black/3 | #7F7F7F */
+color: #7F7F7F;
+
+
+
+/* Properties/Label */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 74.36%;
+
+
+
+/* Frame 1 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 2px;
+
+position: absolute;
+width: 113px;
+height: 20px;
+left: 0px;
+top: 0px;
+
+
+
+/* Label */
+
+width: 113px;
+height: 20px;
+
+/* Form/Field label */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+/* Neutral Dark/1 | #384B69 */
+color: #384B69;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Form group container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 32px;
+gap: 10px;
+
+width: 860px;
+height: 184px;
+
+/* Neutral Light/White | #FFFFFF */
+background: #FFFFFF;
+/* 1 */
+box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.06);
+border-radius: 4px;
+
+/* Inside auto layout */
+flex: none;
+order: 8;
+flex-grow: 0;
+
+
+/* Tag field */
+
+width: 796px;
+height: 78px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Normal */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #FFFFFF;
+
+
+/* Background */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 0px;
+right: 0px;
+top: 24px;
+bottom: 16px;
+
+/* Neutral Light/White | #FFFFFF */
+background: #FFFFFF;
+/* Neutral Light/5 | #B4B4B4 */
+border: 1px solid #B4B4B4;
+border-radius: 4px;
+
+
+/* Value */
+
+position: absolute;
+visibility: hidden;
+left: 12px;
+right: 12px;
+top: 33px;
+bottom: 25px;
+
+/* Form/Field value */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+/* Primary/Navy | #212C3D */
+color: #212C3D;
+
+
+
+/* Placeholder */
+
+position: absolute;
+width: 87px;
+height: 20px;
+left: 12px;
+top: 33px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+/* Black/3 | #7F7F7F */
+color: #7F7F7F;
+
+
+
+/* Properties/Label */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 74.36%;
+
+
+
+/* Frame 1 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 2px;
+
+position: absolute;
+width: 103px;
+height: 20px;
+left: 0px;
+top: 0px;
+
+
+
+/* Label */
+
+width: 103px;
+height: 20px;
+
+/* Form/Field label */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+/* Neutral Dark/1 | #384B69 */
+color: #384B69;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Add item button */
+
+width: 139px;
+height: 32px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Rectangle 56 */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+border-radius: 4px;
+
+
+/* Label */
+
+position: absolute;
+left: 23.02%;
+right: -3.6%;
+top: 18.75%;
+bottom: 18.75%;
+
+/* Form/Field label */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+/* Neutral Dark/1 | #384B69 */
+color: #384B69;
+
+
+
+/* Add (24x24) */
+
+position: absolute;
+left: 2.88%;
+right: 79.86%;
+top: 12.5%;
+bottom: 12.5%;
+
+
+
+/* Group */
+
+position: absolute;
+left: 25%;
+right: 25%;
+top: 25%;
+bottom: 25%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 25%;
+right: 25%;
+top: 25%;
+bottom: 25%;
+
+/* Primary/Blue | #2774F0
+
+Usage: Interaction
+*/
+background: #2774F0;
+
+
+/* Form group container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 32px;
+gap: 10px;
+
+width: 860px;
+height: 138px;
+
+/* Neutral Light/White | #FFFFFF */
+background: #FFFFFF;
+/* 1 */
+box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.06);
+border-radius: 4px;
+
+/* Inside auto layout */
+flex: none;
+order: 9;
+flex-grow: 0;
+
+
+/* Add item button */
+
+width: 139px;
+height: 32px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Rectangle 56 */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+border-radius: 4px;
+
+
+/* Label */
+
+position: absolute;
+left: 23.02%;
+right: -5.04%;
+top: 18.75%;
+bottom: 18.75%;
+
+/* Form/Field label */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+/* Neutral Dark/1 | #384B69 */
+color: #384B69;
+
+
+
+/* Add (24x24) */
+
+position: absolute;
+left: 2.88%;
+right: 79.86%;
+top: 12.5%;
+bottom: 12.5%;
+
+
+
+/* Group */
+
+position: absolute;
+left: 25%;
+right: 25%;
+top: 25%;
+bottom: 25%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 25%;
+right: 25%;
+top: 25%;
+bottom: 25%;
+
+/* Primary/Blue | #2774F0
+
+Usage: Interaction
+*/
+background: #2774F0;
+
+
+/* Add item button */
+
+width: 139px;
+height: 32px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Rectangle 56 */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+border-radius: 4px;
+
+
+/* Label */
+
+position: absolute;
+left: 23.02%;
+right: -31.65%;
+top: 18.75%;
+bottom: 18.75%;
+
+/* Form/Field label */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+/* Neutral Dark/1 | #384B69 */
+color: #384B69;
+
+
+
+/* Add (24x24) */
+
+position: absolute;
+left: 2.88%;
+right: 79.86%;
+top: 12.5%;
+bottom: 12.5%;
+
+
+
+/* Group */
+
+position: absolute;
+left: 25%;
+right: 25%;
+top: 25%;
+bottom: 25%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 25%;
+right: 25%;
+top: 25%;
+bottom: 25%;
+
+/* Primary/Blue | #2774F0
+
+Usage: Interaction
+*/
+background: #2774F0;
+
+
+/* Form group container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 32px;
+gap: 10px;
+
+width: 860px;
+height: 304px;
+
+/* Neutral Light/White | #FFFFFF */
+background: #FFFFFF;
+/* 1 */
+box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.06);
+border-radius: 4px;
+
+/* Inside auto layout */
+flex: none;
+order: 10;
+flex-grow: 0;
+
+
+/* Wysiwyg Light */
+
+width: 796px;
+height: 240px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Background */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 0px;
+right: 0px;
+top: 24px;
+bottom: 16px;
+
+/* Neutral Light/White | #FFFFFF */
+background: #FFFFFF;
+/* Neutral Light/5 | #B4B4B4 */
+border: 1px solid #B4B4B4;
+border-radius: 4px;
+
+
+/* Placeholder */
+
+position: absolute;
+height: 130px;
+left: 24px;
+right: 24px;
+top: 88px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+/* or 171% */
+
+/* Black/3 | #7F7F7F */
+color: #7F7F7F;
+
+
+
+/* Background */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 0px;
+right: 0px;
+top: 218px;
+bottom: 16px;
+
+/* Neutral Light/White | #FFFFFF */
+background: #FFFFFF;
+/* Neutral Light/4 | #CCCCCC */
+border: 1px solid #CCCCCC;
+border-radius: 0px 0px 4px 4px;
+
+
+/* Background */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 0px;
+right: 0px;
+top: 24px;
+bottom: 176px;
+
+/* Neutral Light/White | #FFFFFF */
+background: #FFFFFF;
+/* Neutral Light/5 | #B4B4B4 */
+border: 1px solid #B4B4B4;
+border-radius: 4px 4px 0px 0px;
+
+
+/* Bold(24x24) */
+
+position: absolute;
+width: 24px;
+height: 24px;
+left: 8px;
+top: 32px;
+
+
+
+/* Group */
+
+position: absolute;
+left: 29.17%;
+right: 26.04%;
+top: 16.67%;
+bottom: 25%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 29.17%;
+right: 26.04%;
+top: 16.67%;
+bottom: 25%;
+
+/* Primary/Navy | #212C3D
+
+Usage: Text
+*/
+background: #212C3D;
+
+
+/* Italic(24x24) */
+
+position: absolute;
+width: 24px;
+height: 24px;
+left: 36px;
+top: 32px;
+
+
+
+/* Group */
+
+position: absolute;
+left: 25%;
+right: 25%;
+top: 16.67%;
+bottom: 25%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 25%;
+right: 25%;
+top: 16.67%;
+bottom: 25%;
+
+/* Primary/Navy | #212C3D
+
+Usage: Text
+*/
+background: #212C3D;
+
+
+/* Ordered(24x24) */
+
+position: absolute;
+width: 24px;
+height: 24px;
+left: 76px;
+top: 32px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 17.7%;
+right: 65.82%;
+top: 52.08%;
+bottom: 25.01%;
+
+/* Primary/Navy | #212C3D
+
+Usage: Text
+*/
+background: #212C3D;
+
+
+/* Vector */
+
+position: absolute;
+left: 17.72%;
+right: 70.83%;
+top: 21.88%;
+bottom: 55.21%;
+
+/* Primary/Navy | #212C3D
+
+Usage: Text
+*/
+background: #212C3D;
+
+
+/* Vector */
+
+position: absolute;
+left: 41.67%;
+right: 16.67%;
+top: 25%;
+bottom: 66.67%;
+
+/* Primary/Navy | #212C3D
+
+Usage: Text
+*/
+background: #212C3D;
+
+
+/* Vector */
+
+position: absolute;
+left: 41.67%;
+right: 16.67%;
+top: 45.83%;
+bottom: 45.83%;
+
+/* Primary/Navy | #212C3D
+
+Usage: Text
+*/
+background: #212C3D;
+
+
+/* Vector */
+
+position: absolute;
+left: 41.67%;
+right: 16.67%;
+top: 66.67%;
+bottom: 25%;
+
+/* Primary/Navy | #212C3D
+
+Usage: Text
+*/
+background: #212C3D;
+
+
+/* Rectangle 5635 */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+
+
+/* Unordered(24x24) */
+
+position: absolute;
+width: 24px;
+height: 24px;
+left: 104px;
+top: 32px;
+
+
+
+/* Group */
+
+position: absolute;
+left: 16.67%;
+right: 16.67%;
+top: 22.92%;
+bottom: 22.92%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 16.67%;
+right: 70.83%;
+top: 22.92%;
+bottom: 64.58%;
+
+/* Primary/Navy | #212C3D
+
+Usage: Text
+*/
+background: #212C3D;
+
+
+/* Vector */
+
+position: absolute;
+left: 16.67%;
+right: 70.83%;
+top: 64.58%;
+bottom: 22.92%;
+
+/* Primary/Navy | #212C3D
+
+Usage: Text
+*/
+background: #212C3D;
+
+
+/* Vector */
+
+position: absolute;
+left: 16.67%;
+right: 70.83%;
+top: 43.75%;
+bottom: 43.75%;
+
+/* Primary/Navy | #212C3D
+
+Usage: Text
+*/
+background: #212C3D;
+
+
+/* Vector */
+
+position: absolute;
+left: 41.67%;
+right: 16.67%;
+top: 25%;
+bottom: 66.67%;
+
+/* Primary/Navy | #212C3D
+
+Usage: Text
+*/
+background: #212C3D;
+
+
+/* Vector */
+
+position: absolute;
+left: 41.67%;
+right: 16.67%;
+top: 45.83%;
+bottom: 45.83%;
+
+/* Primary/Navy | #212C3D
+
+Usage: Text
+*/
+background: #212C3D;
+
+
+/* Vector */
+
+position: absolute;
+left: 41.67%;
+right: 16.67%;
+top: 66.67%;
+bottom: 25%;
+
+/* Primary/Navy | #212C3D
+
+Usage: Text
+*/
+background: #212C3D;
+
+
+/* Rectangle 5635 */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+
+
+/* Prev(24x24) */
+
+position: absolute;
+width: 24px;
+height: 24px;
+left: 144px;
+top: 32px;
+
+
+
+/* Rectangle 5635 */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+
+
+/* Group */
+
+position: absolute;
+left: 20.83%;
+right: 20.83%;
+top: 20.86%;
+bottom: 20.86%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 20.83%;
+right: 20.83%;
+top: 20.86%;
+bottom: 20.86%;
+
+/* Primary/Navy | #212C3D
+
+Usage: Text
+*/
+background: #212C3D;
+
+
+/* Next(24x24) */
+
+position: absolute;
+width: 24px;
+height: 24px;
+left: 172px;
+top: 32px;
+
+
+
+/* Rectangle 5635 */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+
+
+/* Group */
+
+position: absolute;
+left: 20.83%;
+right: 20.83%;
+top: 20.86%;
+bottom: 20.86%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 79.17%;
+right: -37.5%;
+top: 20.86%;
+bottom: 20.86%;
+
+/* Primary/Navy | #212C3D
+
+Usage: Text
+*/
+background: #212C3D;
+transform: matrix(-1, 0, 0, 1, 0, 0);
+
+
+/* Frame 1 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 2px;
+
+position: absolute;
+width: 231px;
+height: 20px;
+left: 0px;
+top: 0px;
+
+
+
+/* Label */
+
+width: 231px;
+height: 20px;
+
+/* Form/Field label */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+/* Neutral Dark/1 | #384B69 */
+color: #384B69;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* AI text button */
+
+position: absolute;
+visibility: hidden;
+width: 180px;
+height: 32px;
+right: 4px;
+top: 28px;
+
+
+
+/* Group 26929 */
+
+width: 860px;
+height: 405px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 11;
+flex-grow: 0;
+
+
+/* Form group container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 32px;
+gap: 10px;
+
+position: absolute;
+width: 860px;
+height: 357px;
+left: 0px;
+top: 3601px;
+
+/* Neutral Light/White | #FFFFFF */
+background: #FFFFFF;
+/* 1 */
+box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.06);
+border-radius: 4px;
+
+
+/* Tag field */
+
+width: 796px;
+height: 209px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Normal */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #FFFFFF;
+
+
+/* Background */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 0px;
+right: 0px;
+top: 24px;
+bottom: 16px;
+
+/* Neutral Light/White | #FFFFFF */
+background: #FFFFFF;
+/* Neutral Light/5 | #B4B4B4 */
+border: 1px solid #B4B4B4;
+border-radius: 4px;
+
+
+/* Value */
+
+position: absolute;
+visibility: hidden;
+left: 12px;
+right: 12px;
+top: 33px;
+bottom: 156px;
+
+/* Form/Field value */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+/* Primary/Navy | #212C3D */
+color: #212C3D;
+
+
+
+/* Placeholder */
+
+position: absolute;
+visibility: hidden;
+width: 66px;
+height: 20px;
+left: 12px;
+top: 33px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+/* Black/3 | #7F7F7F */
+color: #7F7F7F;
+
+
+
+/* Properties/Label */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 74.36%;
+
+
+
+/* Frame 1 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 2px;
+
+position: absolute;
+width: 164px;
+height: 20px;
+left: 0px;
+top: 0px;
+
+
+
+/* Label */
+
+width: 164px;
+height: 20px;
+
+/* Form/Field label */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+/* Neutral Dark/1 | #384B69 */
+color: #384B69;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Add item button */
+
+width: 139px;
+height: 32px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Rectangle 56 */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+border-radius: 4px;
+
+
+/* Label */
+
+position: absolute;
+left: 23.02%;
+right: -70.5%;
+top: 18.75%;
+bottom: 18.75%;
+
+/* Form/Field label */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+/* Neutral Dark/1 | #384B69 */
+color: #384B69;
+
+
+
+/* Add (24x24) */
+
+position: absolute;
+left: 2.88%;
+right: 79.86%;
+top: 12.5%;
+bottom: 12.5%;
+
+
+
+/* Group */
+
+position: absolute;
+left: 25%;
+right: 25%;
+top: 25%;
+bottom: 25%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 25%;
+right: 25%;
+top: 25%;
+bottom: 25%;
+
+/* Primary/Blue | #2774F0
+
+Usage: Interaction
+*/
+background: #2774F0;
+
+
+/* Add item button */
+
+width: 139px;
+height: 32px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Rectangle 56 */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+border-radius: 4px;
+
+
+/* Label */
+
+position: absolute;
+left: 23.02%;
+right: -97.84%;
+top: 18.75%;
+bottom: 18.75%;
+
+/* Form/Field label */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+/* Neutral Dark/1 | #384B69 */
+color: #384B69;
+
+
+
+/* Add (24x24) */
+
+position: absolute;
+left: 2.88%;
+right: 79.86%;
+top: 12.5%;
+bottom: 12.5%;
+
+
+
+/* Group */
+
+position: absolute;
+left: 25%;
+right: 25%;
+top: 25%;
+bottom: 25%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 25%;
+right: 25%;
+top: 25%;
+bottom: 25%;
+
+/* Primary/Blue | #2774F0
+
+Usage: Interaction
+*/
+background: #2774F0;
+
+
+/* Header (Form) */
+
+position: absolute;
+width: 860px;
+height: 48px;
+left: 0px;
+top: 3553px;
+
+
+
+/* Title */
+
+position: absolute;
+height: 32px;
+left: 0px;
+right: 0px;
+top: 0px;
+
+/* Headings/H3 Regular */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 32px;
+/* identical to box height, or 160% */
+
+/* Primary/Blue | #2774F0 */
+color: #2774F0;
+
+
+
+/* Group 26930 */
+
+width: 860px;
+height: 334px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 12;
+flex-grow: 0;
+
+
+/* Form group container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 32px;
+gap: 10px;
+
+position: absolute;
+width: 860px;
+height: 286px;
+left: 0px;
+top: 4022px;
+
+/* Neutral Light/White | #FFFFFF */
+background: #FFFFFF;
+/* 1 */
+box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.06);
+border-radius: 4px;
+
+
+/* Frame 26911 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px 0px 16px;
+gap: 6px;
+
+width: 796px;
+height: 80px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Label */
+
+width: 214px;
+height: 20px;
+
+/* Form/Field label */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+/* Neutral Dark/1 | #384B69 */
+color: #384B69;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Group 26911 */
+
+width: 132px;
+height: 38px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Checkbox Highlighted  */
+
+position: absolute;
+width: 132px;
+height: 38px;
+left: 0px;
+top: 26px;
+
+
+
+/* Frame 26846 */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 5px 16px;
+gap: 10px;
+
+position: absolute;
+width: 480px;
+height: 38px;
+left: 0.5px;
+top: 0px;
+
+border: 1px solid rgba(86, 115, 160, 0.4);
+border-radius: 4px;
+
+
+/* Checkbox Item */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 4px 0px;
+gap: 8px;
+
+width: 448px;
+height: 28px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Components/Forms/Assets/Checkbox-checked */
+
+width: 18px;
+height: 18px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Background */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+/* Neutral Light/White | #FFFFFF */
+background: #FFFFFF;
+/* Neutral Dark/3 | #506B95 */
+border: 1px solid #506B95;
+border-radius: 4px;
+
+
+/* Value */
+
+width: 422px;
+height: 20px;
+
+/* Form/Field value */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+/* Primary/Navy | #212C3D */
+color: #212C3D;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Group 26915 */
+
+width: 494px;
+height: 90px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 26934 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px 0px 8px;
+gap: 4px;
+
+position: absolute;
+width: 494px;
+height: 64px;
+left: 32px;
+top: 148px;
+
+
+
+/* Checkbox List */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+width: 494px;
+height: 56px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Checkbox Item */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 4px 0px;
+gap: 8px;
+
+width: 494px;
+height: 28px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Components/Forms/Assets/Checkbox-checked */
+
+width: 18px;
+height: 18px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Background */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+/* Neutral Light/White | #FFFFFF */
+background: #FFFFFF;
+/* Neutral Dark/3 | #506B95 */
+border: 1px solid #506B95;
+border-radius: 9px;
+
+
+/* Background Copy */
+
+position: absolute;
+left: 27.78%;
+right: 27.78%;
+top: 27.78%;
+bottom: 27.78%;
+
+/* Primary/Blue | #2774F0
+
+Usage: Interaction
+*/
+background: #2774F0;
+border-radius: 9px;
+
+
+/* Value */
+
+width: 468px;
+height: 20px;
+
+/* Form/Field value */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+/* Primary/Navy | #212C3D */
+color: #212C3D;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+
+/* Checkbox Item */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 4px 0px;
+gap: 8px;
+
+width: 494px;
+height: 28px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Components/Forms/Assets/Checkbox-checked */
+
+width: 18px;
+height: 18px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Background */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+/* Neutral Light/White | #FFFFFF */
+background: #FFFFFF;
+/* Neutral Dark/3 | #506B95 */
+border: 1px solid #506B95;
+border-radius: 9px;
+
+
+/* Value */
+
+width: 468px;
+height: 20px;
+
+/* Form/Field value */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+/* Primary/Navy | #212C3D */
+color: #212C3D;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+
+/* Frame 1 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 2px;
+
+position: absolute;
+width: 137px;
+height: 20px;
+left: 32px;
+top: 122px;
+
+
+
+/* Label */
+
+width: 137px;
+height: 20px;
+
+/* Form/Field label */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+/* Neutral Dark/1 | #384B69 */
+color: #384B69;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Add item button */
+
+width: 139px;
+height: 32px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Rectangle 56 */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+border-radius: 4px;
+
+
+/* Label */
+
+position: absolute;
+left: 23.02%;
+right: -34.53%;
+top: 18.75%;
+bottom: 18.75%;
+
+/* Form/Field label */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+/* Neutral Dark/1 | #384B69 */
+color: #384B69;
+
+
+
+/* Add (24x24) */
+
+position: absolute;
+left: 2.88%;
+right: 79.86%;
+top: 12.5%;
+bottom: 12.5%;
+
+
+
+/* Group */
+
+position: absolute;
+left: 25%;
+right: 25%;
+top: 25%;
+bottom: 25%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 25%;
+right: 25%;
+top: 25%;
+bottom: 25%;
+
+/* Primary/Blue | #2774F0
+
+Usage: Interaction
+*/
+background: #2774F0;
+
+
+/* Header (Form) */
+
+position: absolute;
+width: 860px;
+height: 48px;
+left: 0px;
+top: 3974px;
+
+
+
+/* Title */
+
+position: absolute;
+height: 32px;
+left: 0px;
+right: 0px;
+top: 0px;
+
+/* Headings/H3 Regular */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 32px;
+/* identical to box height, or 160% */
+
+/* Primary/Blue | #2774F0 */
+color: #2774F0;
+
+
+
+/* Group 26931 */
+
+width: 860px;
+height: 301px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 13;
+flex-grow: 0;
+
+
+/* Form group container */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 32px;
+gap: 10px;
+
+position: absolute;
+width: 860px;
+height: 253px;
+left: 0px;
+top: 4372px;
+
+/* Neutral Light/1 | #EEEFF1 */
+background: #EEEFF1;
+/* Neutral Light/3 | #DADADA */
+border: 1px solid #DADADA;
+/* 1 */
+box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.06);
+border-radius: 4px;
+
+
+/* Group 26932 */
+
+width: 796px;
+height: 189px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 26911 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 6px;
+
+position: absolute;
+width: 796px;
+height: 189px;
+left: 32px;
+top: 32px;
+
+
+
+/* Dropdown */
+
+width: 360px;
+height: 72px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Background */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 0px;
+right: 0px;
+top: 24px;
+bottom: 16px;
+
+/* Neutral Light/White | #FFFFFF */
+background: #FFFFFF;
+/* Neutral Light/5 | #B4B4B4 */
+border: 1px solid #B4B4B4;
+border-radius: 4px;
+
+
+/* Placeholder */
+
+position: absolute;
+width: 173px;
+height: 20px;
+left: 12px;
+top: 30px;
+
+/* Form/Field placeholder */
+font-family: 'Roboto';
+font-style: italic;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+/* Primary/Navy | #212C3D */
+color: #212C3D;
+
+
+
+/* Frame 14 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 2px;
+
+position: absolute;
+width: 107px;
+height: 20px;
+left: 0px;
+top: 0px;
+
+
+
+/* Label */
+
+width: 107px;
+height: 20px;
+
+/* Form/Field label required */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+/* Neutral Dark/1 | #384B69 */
+color: #384B69;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Optional */
+
+display: none;
+width: 61px;
+height: 20px;
+
+/* Form/Field validation message */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+/* Neutral Dark/4 | #5673A0 */
+color: #5673A0;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* ArrowDown (16x16) */
+
+position: absolute;
+width: 16px;
+height: 16px;
+right: 8px;
+top: 32px;
+
+
+
+/* Path */
+
+position: absolute;
+left: 25%;
+right: 25%;
+top: 31.25%;
+bottom: 37.5%;
+
+/* Primary/Navy | #212C3D
+
+Usage: Text
+*/
+background: #212C3D;
+
+
+/* Frame 26940 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px 0px 12px;
+gap: 10px;
+
+width: 494px;
+height: 40px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Checkbox List */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+width: 494px;
+height: 28px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Checkbox Item */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 4px 0px;
+gap: 8px;
+
+width: 494px;
+height: 28px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Components/Forms/Assets/Checkbox-checked */
+
+width: 18px;
+height: 18px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Background */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+/* Neutral Light/White | #FFFFFF */
+background: #FFFFFF;
+/* Neutral Dark/3 | #506B95 */
+border: 1px solid #506B95;
+border-radius: 4px;
+
+
+/* Value */
+
+width: 468px;
+height: 20px;
+
+/* Form/Field value */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+/* Primary/Navy | #212C3D */
+color: #212C3D;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+
+/* Frame 26942 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px 0px 12px;
+gap: 10px;
+
+width: 500px;
+height: 13px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Divider (Form) */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 10px;
+gap: 10px;
+
+width: 500px;
+height: 1px;
+
+/* Neutral Light/4 | #CCCCCC */
+background: #CCCCCC;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Group 26936 */
+
+width: 247px;
+height: 20px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* Value */
+
+position: absolute;
+width: 127px;
+height: 20px;
+left: 120px;
+top: 143px;
+
+/* Form/Field value */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+/* Primary/Navy | #212C3D */
+color: #212C3D;
+
+
+
+/* Value */
+
+position: absolute;
+width: 39px;
+height: 20px;
+left: 0px;
+top: 143px;
+
+/* Form/Field value */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+/* Primary/Navy | #212C3D */
+color: #212C3D;
+
+
+
+/* Group 26939 */
+
+width: 208px;
+height: 20px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 4;
+flex-grow: 0;
+
+
+/* Value */
+
+position: absolute;
+width: 88px;
+height: 20px;
+left: 120px;
+top: 169px;
+
+/* Form/Field value */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+/* Primary/Navy | #212C3D */
+color: #212C3D;
+
+
+
+/* Value */
+
+position: absolute;
+width: 47px;
+height: 20px;
+left: 0px;
+top: 169px;
+
+/* Form/Field value */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+/* Primary/Navy | #212C3D */
+color: #212C3D;
+
+
+
+/* Header (Form) */
+
+position: absolute;
+width: 860px;
+height: 48px;
+left: 0px;
+top: 4324px;
+
+
+
+/* Title */
+
+position: absolute;
+height: 32px;
+left: 0px;
+right: 46px;
+top: 0px;
+
+/* Headings/H3 Regular */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 32px;
+/* identical to box height, or 160% */
+
+/* Primary/Blue | #2774F0 */
+color: #2774F0;
+
+
+
+/* Link */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+position: absolute;
+width: 192px;
+height: 20px;
+right: 0px;
+top: 4px;
+
+
+
+/* Label */
+
+width: 192px;
+height: 20px;
+
+/* Form/Field value */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+/* Primary/Blue | #2774F0 */
+color: #2774F0;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Underline */
+
+width: 192px;
+height: 0px;
+
+/* Primary/Blue | #2774F0
+
+Usage: Interaction
+*/
+border: 1px dashed #2774F0;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Group 26932 */
+
+width: 860px;
+height: 315px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 14;
+flex-grow: 0;
+
+
+/* Form group container */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 32px;
+gap: 10px;
+
+position: absolute;
+width: 860px;
+height: 267px;
+left: 0px;
+top: 4689px;
+
+/* Neutral Light/1 | #EEEFF1 */
+background: #EEEFF1;
+/* Neutral Light/3 | #DADADA */
+border: 1px solid #DADADA;
+/* 1 */
+box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.06);
+border-radius: 4px;
+
+
+/* Group 26932 */
+
+width: 796px;
+height: 203px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 26911 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 6px;
+
+position: absolute;
+width: 796px;
+height: 203px;
+left: 32px;
+top: 32px;
+
+
+
+/* Group 26944 */
+
+width: 420px;
+height: 20px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Value */
+
+position: absolute;
+width: 150px;
+height: 20px;
+left: 270px;
+top: 0px;
+
+/* Form/Field value */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+/* Primary/Navy | #212C3D */
+color: #212C3D;
+
+
+
+/* Value */
+
+position: absolute;
+width: 231px;
+height: 20px;
+left: 0px;
+top: 0px;
+
+/* Form/Field value */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+/* Primary/Navy | #212C3D */
+color: #212C3D;
+
+
+
+/* Group 26939 */
+
+width: 789px;
+height: 100px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Value */
+
+position: absolute;
+width: 519px;
+height: 100px;
+left: 270px;
+top: 26px;
+
+/* Form/Field value */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 20px;
+/* or 143% */
+
+/* Primary/Navy | #212C3D */
+color: #212C3D;
+
+
+
+/* Value */
+
+position: absolute;
+width: 220px;
+height: 20px;
+left: 0px;
+top: 26px;
+
+/* Form/Field value */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+/* Primary/Navy | #212C3D */
+color: #212C3D;
+
+
+
+/* Group 26940 */
+
+width: 361px;
+height: 71px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* image 17 */
+
+position: absolute;
+width: 94px;
+height: 69px;
+left: 267px;
+top: 134px;
+
+background: url(image.png);
+mix-blend-mode: darken;
+
+
+/* Value */
+
+position: absolute;
+width: 108px;
+height: 20px;
+left: 0px;
+top: 132px;
+
+/* Form/Field value */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+/* Primary/Navy | #212C3D */
+color: #212C3D;
+
+
+
+/* Header (Form) */
+
+position: absolute;
+width: 860px;
+height: 48px;
+left: 0px;
+top: 4641px;
+
+
+
+/* Title */
+
+position: absolute;
+height: 32px;
+left: 0px;
+right: 46px;
+top: 0px;
+
+/* Headings/H3 Regular */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 32px;
+/* identical to box height, or 160% */
+
+/* Primary/Blue | #2774F0 */
+color: #2774F0;
+
+
+
+/* Link */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+position: absolute;
+width: 170px;
+height: 20px;
+right: 0px;
+top: 4px;
+
+
+
+/* Label */
+
+width: 170px;
+height: 20px;
+
+/* Form/Field value */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+/* Primary/Blue | #2774F0 */
+color: #2774F0;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Underline */
+
+width: 170px;
+height: 0px;
+
+/* Primary/Blue | #2774F0
+
+Usage: Interaction
+*/
+border: 1px dashed #2774F0;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
